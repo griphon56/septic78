@@ -1,0 +1,29 @@
+#header{
+
+}
+
+.header-top-line{
+  background-color: #5bb7c2;
+  color: #f4f4f4;
+}
+
+.header-top-line .text p{
+  margin-top: 4px;
+}
+
+.header-top-line .phone img{
+  width: 13px;
+}
+
+.header-top-line .phone ul{
+  margin: 8px 0 8px 0;
+}
+
+.header-top-line .text-phone p{
+  padding: 10px 0 10px 0px;
+  display: inline-block;
+}
+
+.header-top-line p{
+  font-size: 12px;
+}

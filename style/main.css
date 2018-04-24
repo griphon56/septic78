@@ -1,0 +1,18 @@
+/*Беру сетку и карусель*/
+@import url("bootstrap.grid.css");
+@import url("bootstrap.min.css");
+
+/*
+ * Библиотека анимаций*
+ * https://daneden.github.io/animate.css/
+ */
+@import url("animate.css");
+
+/* Все стили которые используются везде*/
+@import url("style-default.css");
+
+/** Стили для шапки сайта */
+@import url("headerView.css");
+
+/** Стили для главного меню */
+@import url("mainMenu.css");
