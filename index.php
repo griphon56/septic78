@@ -13,6 +13,7 @@
      <?php
         include ('header/headerView.php');
         include ('header/mainMenu/mainMenuView.php');
+		include ('ShippingPayment/ShippingPaymentView.php');
      ?>
   </div>
 </body>

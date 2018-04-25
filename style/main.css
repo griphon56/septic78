@@ -16,3 +16,5 @@
 
 /** Стили для главного меню */
 @import url("mainMenu.css");
+/** Стиль  для страницы доставка и оплата*/
+@import url("shippingPayment.css");
