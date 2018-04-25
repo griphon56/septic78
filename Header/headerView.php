@@ -21,3 +21,30 @@
     </div>
   </div>
 </div>
+
+<div class="container-fluid header-search header-cart">
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-md-6">
+        <div class="header-logo">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="search-input">
+          <div class="box-search">
+            <input type="text" id="search" placeholder="Поиск по сайту..." />
+              <img src="../img/headerView/magnifying-glass.png" alt="" />
+            </div>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="cart">
+          <div>
+            <img src="../img/headerView/shopping-purse-icon.png"alt="" alt="">
+            <p>Корзина <span id=header-cost>0.00</span> руб.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

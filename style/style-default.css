@@ -10,3 +10,7 @@ ul li {
 p {
   margin: 0;
 }
+
+input{
+  outline: none;
+}

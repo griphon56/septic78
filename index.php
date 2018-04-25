@@ -14,8 +14,6 @@
         include ('header/headerView.php');
         include ('header/mainMenu/mainMenuView.php');
      ?>
-    
   </div>
-    
 </body>
 </html>

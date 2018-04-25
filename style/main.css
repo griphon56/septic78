@@ -1,12 +1,12 @@
-/*Беру сетку и карусель*/
-@import url("bootstrap.grid.css");
-@import url("bootstrap.min.css");
-
 /*
  * Библиотека анимаций*
  * https://daneden.github.io/animate.css/
  */
 @import url("animate.css");
+
+/*Беру сетку и карусель*/
+@import url("bootstrap.grid.css");
+@import url("bootstrap.min.css");
 
 /* Все стили которые используются везде*/
 @import url("style-default.css");
