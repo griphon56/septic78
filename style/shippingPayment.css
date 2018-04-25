@@ -1,5 +1,18 @@
 .section-header{
-font-size:30px;
-color:#535252;
-text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size:30px;
+  color:#535252;
+  text-transform: uppercase;
+}
+
+.selection{
+  margin-bottom: 20px;
+  font-size:20px;
+  color:#535252;
+  text-transform: uppercase;
+}
+
+.selection-item-text{
+  font-size: 10px;
+  color:#535252;
 }
