@@ -42,6 +42,103 @@
     <div class="row">
        <h5 class="selection-item">Преимущества</h5>
     </div>
-  
+    
+
   </div>
-</div>
+  
+   <div class="row">
+     <div class="row">
+             <div class="col">
+        <div class="advantages">
+           <div class="advantages-img">
+               <img src="../img/ShippingPaymentView/telemarketer.png" alt="icon">
+           </div> 
+              
+           <div class="advantages-text">
+             <p class="advantages-text">
+               Бесплатная консультация наших инжинеров 
+             </p>
+           </div>   
+         </div>
+      </div>
+      
+      <div class="col">
+        <div class="advantages">
+           <div class="advantages-img">
+               <img src="../img/ShippingPaymentView/051-delivery-truck.png" alt="icon">
+           </div> 
+              
+           <div class="advantages-text">
+             <p class="advantages-text">
+               Доставка оборудования на спец-транспорте  
+             </p>
+           </div>   
+         </div>
+      </div>
+      <div class="col">
+        <div class="advantages">
+           <div class="advantages-img">
+               <img src="../img/ShippingPaymentView/051-courier.png" alt="icon">
+           </div> 
+              
+           <div class="advantages-text">
+             <p class="advantages-text">
+               Бесплатный анализ и оценка вашего участка
+             </p>
+           </div>   
+         </div>
+      </div>
+      
+      <div class="col">
+        <div class="advantages">
+           <div class="advantages-img">
+               <img src="../img/ShippingPaymentView/stopwatch.png" alt="icon">
+           </div> 
+              
+           <div class="advantages-text">
+             <p class="advantages-text">
+               Быстый монтаж 
+             </p>
+           </div>   
+         </div>
+      </div>
+      
+      <div class="col">
+        <div class="advantages">
+           <div class="advantages-img">
+               <img src="../img/ShippingPaymentView/settings-1.png" alt="icon">
+           </div> 
+              
+           <div class="advantages-text">
+             <p class="advantages-text">
+               Услуги по модернизации и обслуживанию оборудования
+             </p>
+           </div>   
+         </div>
+      </div>
+      
+    </div>
+      
+      
+
+
+    </div>
+    
+  </div>   
+      
+
+    
+  
+
+ 
+  
+   
+
+  
+      
+        
+      
+  
+  
+
+   
