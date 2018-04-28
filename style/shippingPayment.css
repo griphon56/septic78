@@ -26,10 +26,9 @@
    margin-bottom: 30px;
 }
 
-
-.advantages {  
-  box-sizing: border-box;
-  margin-bottom: 35px;
+.advantages {
+  margin-bottom: 20px;
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -47,9 +46,9 @@
 }
 
 .advantages p{
-  font-size: 25px;
+  text-align: center;
+  padding: 0;
+  margin: 15px 0 0 0 ;
+  font-size: 20px;
 }
 
-.row-advant{
-  margin-left: 85px;
-}
