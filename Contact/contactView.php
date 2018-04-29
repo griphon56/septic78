@@ -68,4 +68,13 @@
 <?php include('contactFormView.php'); ?>
 
 
-div.container-fluid
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 section-desc">
+      <p>Получить полную инхормацию по вопросам сотрудничества с компанией "Septic78.ru" можно в разделе диллерам или по телефону +792156267882</p>
+    </div>
+  </div>
+  <div class="row col-md-12">
+    <h2 class="section-item">Карта наших филиалов</h2>
+  </div>
+</div>
