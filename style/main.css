@@ -16,3 +16,6 @@
 
 /** Стили для главного меню */
 @import url("mainMenu.css");
+
+/** Стили для страницы контактов */
+@import url("contact.css");

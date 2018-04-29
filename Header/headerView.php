@@ -24,7 +24,7 @@
 
 <div class="container-fluid header-search header-cart">
   <div class="container">
-    <div class="row no-gutters">
+    <div class="row no-gutters align-items-center">
       <div class="col-md-6">
         <div class="header-logo">
           <a href="#"><img src="../img/headerView/MItJPsmZS8E.png" alt=""></a>
@@ -45,6 +45,49 @@
             <p>Корзина <span id=header-cost>0.00</span> руб.</p>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<?php include ('mainMenu/mainMenuView.php'); ?>
+
+
+<div class="container-fluid header-target-form">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <h3 class="header-target-form-title">Нужна канализация?</h3>
+        <p class="header-target-form-desc">
+          Septic5 - городской комфорт
+        </p>
+        <p class="header-target-form-desc">
+          в загородном доме с выгодой
+        </p>
+        <p class="header-target-form-desc">
+          для вашего кошелька
+        </p>
+      </div>
+      <div class="col-md-5">
+        <form action="" id="header-form">
+          <div class="row header-form">
+            <div class="header-form-img">
+              <img src="../img/headerView/header-title.png" alt="">
+            </div>
+            <ul>
+              <li>
+                <input type="text" placeholder="Имя">
+              </li>
+              <li>
+                <input type="text" placeholder="Телефон">
+              </li>
+              <li>
+                <input type="submit" class="btn" value="Заказать">
+              </li>
+            </ul>
+          </div>
+        </form> 
       </div>
     </div>
   </div>
