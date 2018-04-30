@@ -14,3 +14,37 @@ p {
 input{
   outline: none;
 }
+
+.section-header, .section-item {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-header{
+  color: #656565;
+  font-size: 30px;
+  margin: 50px 0 20px 0;
+
+}
+
+.section-item {
+  color: #656565;
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+.section-desc {
+  margin: 10px 0;
+  color: #656565;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.section-desc p{
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #ffffff;
+}
+
+.link {
+  text-decoration: underline;
+}

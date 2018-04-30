@@ -16,9 +16,15 @@
 
 /** Стили для главного меню */
 @import url("mainMenu.css");
+
 /** Стиль  для страницы доставка и оплата*/
 @import url("shippingPayment.css");
+
 /** Cтиль для страницы оставить заявку */
 @import url("Form.css");
-/** Cтиля для футра */
-@import url("Footer.css");
+
+/** Стили для страницы контактов */
+@import url("contact.css");
+
+/** Стили для футера страниц */
+@import url("footer.css");
