@@ -41,11 +41,6 @@
 
 }
 
-/* Заменить после добавления Логотипа*/
-.search-input .box-search,.header-cart .cart{
-  margin: 45px 0;
-}
-
 .search-input .box-search{
   border: 1px solid #dcdcdc;
   display: block;
@@ -94,4 +89,85 @@
 .header-cart .cart div p{
   display: inline-block;
   font-size: 11px;
+}
+
+/* Форма захвата */
+
+.header-target-form{
+  background-image: url(../img/headerView/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-target-form .header-target-form-desc, .header-target-form .header-target-form-title{
+  color: #176f79;
+  display: table;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: rgba(247, 247, 247, 0.75);
+  margin: 5px;
+  font-weight: 500;
+}
+
+
+.header-target-form .header-target-form-title{
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.header-target-form .header-target-form-desc{
+
+}
+
+.header-form{
+  background-color: rgba(63, 127, 142, 0.3);
+}
+
+.header-form ul{
+  width: 100%;
+  padding: 30px;
+}
+
+
+.header-form ul li{
+  padding: 10px 0;
+}
+
+.header-form ul li:last-child{
+  padding-bottom: 30px;
+}
+
+
+.header-form .header-form-img{
+  position: relative;
+}
+
+.header-form .header-form-img img{
+  display: block;
+  position: relative;
+  top: 15px;
+  right: 75px;
+  width: 132%;
+}
+
+.header-form input[type="text"]{
+  border: 1px solid #8acdd5;
+  border-radius: 3px;
+  box-shadow: 0px 0px 1px #8acdd5; 
+  color: #444;
+  padding-left: 15px;
+  height: 40px;
+  width: 100%;
+}
+
+.header-form input[type="submit"]{
+  background-color: #3f7f8e;
+  color: #fff;
+  width: 100%;
+  text-transform: uppercase;
+  transition: .3s;
+}
+
+.header-form input[type="submit"]:hover{
+  background-color: #6aabb3;
 }

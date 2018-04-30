@@ -1,3 +1,7 @@
+<?php
+  require_once('header/mainMenu/mainMenu.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,12 +15,12 @@
 <body>
   <div class="wrapper">
      <?php
-        include ('header/headerView.php');
-        include ('header/mainMenu/mainMenuView.php');
-		include ('ShippingPayment/ShippingPaymentView.php');
-        include ('Form/FormView.php');
-        include ('Footer/footerView.php');
-     ?>
+      include ('header/headerView.php');
+
+      include ('index.inc.php');
+
+      include ('footer/footerView.php');
+    ?>
   </div>
 </body>
 </html>
