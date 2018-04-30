@@ -15,6 +15,7 @@
         include ('header/mainMenu/mainMenuView.php');
 		include ('ShippingPayment/ShippingPaymentView.php');
         include ('Form/FormView.php');
+        include ('Footer/footerView.php');
      ?>
   </div>
 </body>
