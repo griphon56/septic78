@@ -1,39 +1,62 @@
-.selection{
-  margin-bottom: 40px;
-  font-size:30px;
+.section-item-text p,.section-item-text ul li{
+  font-size: 17px;
   color:#535252;
+}
+
+.shipping-pay-bg-img {
+  background-image: url(../img/ShippingPaymentView/water.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 680px;  
+}
+
+.shipping-pay-form {
+  padding: 20px 0 40px 0;
+}
+
+.shipping-pay-form .section-item{
+  text-align: center;
+}
+
+.message-container{
+  padding-top: 35px;
+}
+
+.shipping-pay-contact-seal{
+  margin: 10px 0;
+  position: relative;
+}
+
+.shipping-pay-contact-seal img{
+  width: 25px;
+  margin-right: 10px;
+  position: absolute;
+}
+
+.shipping-pay-contact-seal p{
+  display: inline-block;
+  color: #656565;
+  font-size: 15px;
   text-transform: uppercase;
+  margin: 3px 0px 0px 30px;
 }
 
-.selection-item-text{
-  font-size: 20px;
-  color:#535252;
-  margin-bottom: 35px;
-}
-
+/* Преимущества */
 .advantages {
   margin-bottom: 20px;
   margin-top: 20px;
   text-align: center;
 }
 
-.advantages-img{
-  display: block;
-  margin: 0 auto;
-  width: 95px;
-  height: 95px;
-}
-
-.advantages-img img {
-  width: 100%;
+.advantages-img {
+  width: 75px;
   color: #8ACCD4;
   margin-bottom: 15px;
 }
 
-.advantages p{
+.advantages-text{
   text-align: center;
-  padding: 0;
-  margin: 15px 0 0 0 ;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #656565;
 }
-
