@@ -3,7 +3,7 @@
     ['link'=>'Каталог', 'href'=>'index.php?id_page=catalog'],
     ['link'=>'О компании', 'href'=>'index.php?id_page=about_company'],
     ['link'=>'Наши услуги', 'href'=>'index.php?id_page=service'],
-    ['link'=>'Доставка и оплата', 'href'=>'index.php?id_page=payment'],
+    ['link'=>'Доставка и оплата', 'href'=>'index.php?id_page=shipping_pay'],
     ['link'=>'Контакты', 'href'=>'index.php?id_page=contact']
   ];
 

@@ -20,8 +20,8 @@
 /** Стиль  для страницы доставка и оплата*/
 @import url("shippingPayment.css");
 
-/** Cтиль для страницы оставить заявку */
-@import url("Form.css");
+/** Cтиль для форма оставить заявку */
+@import url("requestForm.css");
 
 /** Стили для страницы контактов */
 @import url("contact.css");

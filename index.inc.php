@@ -8,6 +8,9 @@
     case 'about_company':
       include ('aboutCompany/aboutCompanyView.php');
       break;
+    case 'shipping_pay':
+      include ('shippingPayment/shippingPaymentView.php');
+      break;
     default:
       include ('notFound.php');
   }
