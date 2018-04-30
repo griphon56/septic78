@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/Shipping_and_payment
 <div class="container-fluid footer">
   <div class="container">
     <div class="row">
