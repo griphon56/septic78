@@ -59,3 +59,19 @@
   text-transform: uppercase;
   margin: 3px 0px 0px 30px;
 }
+
+/*Документы*/
+
+.document{
+  padding-bottom: 40px;
+}
+
+.document-bg-img{
+  background-image: url(../img/contactView/Voda-posle-edyi.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.document-img img{
+  width: 100%;
+}

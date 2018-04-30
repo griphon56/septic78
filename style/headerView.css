@@ -94,7 +94,7 @@
 /* Форма захвата */
 
 .header-target-form{
-  background-image: url(../img/headerView/30-aqua-top.jpg);
+  background-image: url(../img/headerView/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -161,7 +161,7 @@
 }
 
 .header-form input[type="submit"]{
-  background-color: #8acdd5;
+  background-color: #3f7f8e;
   color: #fff;
   width: 100%;
   text-transform: uppercase;

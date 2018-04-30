@@ -27,7 +27,7 @@
     <div class="row no-gutters align-items-center">
       <div class="col-md-6">
         <div class="header-logo">
-          <a href="#"><img src="../img/headerView/MItJPsmZS8E.png" alt=""></a>
+          <a href="#"><img src="../img/headerView/3.png" alt=""></a>
         </div>
       </div>
       <div class="col-md-4">

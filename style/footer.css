@@ -20,8 +20,8 @@
 
 }
 
-.footer-item li{
-
+.footer-item img{
+  width: 16px;
 }
 
 .footer-item li p, .footer-item li a{
@@ -29,4 +29,34 @@
   font-size: 14px;
   padding-bottom: 5px;
   display: block;
+}
+
+.footer-item li p{
+  display: inline-block;
+}
+
+
+/* Копирайт */
+.copyright{
+  background-color: #f9fbfc;
+  border-top: 1px solid #dcdcdc;
+  padding: 20px 0;
+}
+
+.copyright .copyright-title{
+  font-size: 11px;
+  color: #929292;
+}
+
+.copyright-social{
+ text-align: right;
+}
+
+.copyright-social li{
+  display: inline-block;
+  padding-left: 3px;
+}
+
+.copyright-social img{
+  width: 20px;
 }

@@ -78,3 +78,28 @@
     <h2 class="section-item">Карта наших филиалов</h2>
   </div>
 </div>
+
+
+<?php include('contactYandexMapView.php'); ?>
+
+
+<div class="container-fluid document">
+  <div class="container">
+    <div class="row col-md-12">
+      <h2 class="section-header">Документы</h2>
+    </div>
+    <div class="row document-bg-img">
+      <div class="col-md-5">
+        <div class="document-img">
+          <img src="../img/contactView/1-page-001.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+      <div class="col-md-5">
+        <div class="document-img">
+          <img src="../img/contactView/2-page-001.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -7,15 +7,18 @@
         </div>
         <ul class="footer-item">
           <li>
+            <img src="../img/footerView/facebook-placeholder-for-locate-places-on-maps.png" alt="">
             <p>ул. Речная 64</p>
           </li>
           <li>
+            <img src="../img/footerView/telephone-of-old-design.png" alt="">
             <p>+7 (821) 413-92-98</p>
           </li>
           <li>
-            <p>+8 (800) 200-68-57</p>
+            <p>  +8 (800) 200-68-57</p>
           </li>
           <li>
+            <img src="../img/footerView/close-envelope.png" alt="">
             <p>mail@example.com</p>
           </li>
         </ul>
@@ -50,6 +53,24 @@
           <li><a href="#">Погреба</a></li>
           <li><a href="#">Бойлеры</a></li>
           <li><a href="#">Насосные системы</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid copyright">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-md-3">
+        <p class="copyright-title">&copy; Web Studio "Little Landing", 2018</p>
+      </div>
+      <div class="col-md-3">
+        <ul class="copyright-social">
+          <li><a href="#"><img src="../img/footerView/facebook-logo-button.png" alt=""></a></li>
+          <li><a href="#"><img src="../img/footerView/instagram.png" alt=""></a></li>
+          <li><a href="#"><img src="../img/footerView/twitter-logo-button.png" alt=""></a></li>
         </ul>
       </div>
     </div>
