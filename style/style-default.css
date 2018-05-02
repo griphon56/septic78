@@ -1,6 +1,6 @@
 ul {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 ul li {
@@ -13,6 +13,14 @@ p {
 
 input{
   outline: none;
+}
+
+.active-menu{
+  padding-top: 17px !important;
+  background-color: #5bb7c2;
+  color: #f4f4f4 !important;
+  text-decoration: none;
+  border-top: 3px solid #289dab;
 }
 
 .section-header, .section-item {
@@ -31,6 +39,7 @@ input{
   color: #656565;
   margin: 20px 0;
   font-size: 24px;
+  text-shadow: 1px 1px 0px #ffffff;
 }
 
 .section-desc {

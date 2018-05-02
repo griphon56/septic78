@@ -1,5 +1,6 @@
 <?php
-  $id_page = isset($_GET['id_page']) ? strtolower(strip_tags(trim($_GET['id_page']))) : 0;
+  $id_page = getPageId();
+
   switch($id_page)
   {
     case 'contact':
