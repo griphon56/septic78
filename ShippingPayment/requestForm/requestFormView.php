@@ -1,5 +1,5 @@
 <div class="container-fluid shipping-pay-form contact-form">
- <div class="shipping-pay-form-bg-img">
+<!-- <div class="shipping-pay-form-bg-img">-->
    <div class="container">
     <div class="row justify-content-end">
       <div class="col-md-8">
@@ -35,5 +35,5 @@
       </div>
     </div>
   </div>
-  </div>
+<!--  </div>-->
 </div>  

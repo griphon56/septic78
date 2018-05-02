@@ -12,6 +12,9 @@
     case 'shipping_pay':
       include ('shippingPayment/shippingPaymentView.php');
       break;
+    case 'service':
+      include ('service/serviceView.php');
+      break;
     default:
       include ('notFound.php');
   }
