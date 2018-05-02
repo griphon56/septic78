@@ -1,13 +1,14 @@
 .section-item-text p,.section-item-text ul li{
   font-size: 17px;
+  text-shadow: 1px 1px 0px #ffffff;
   color:#535252;
 }
 
 .shipping-pay-bg-img {
   background-image: url(../img/ShippingPaymentView/water.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position-x: 680px;  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 680px;  
 }
 
 .shipping-pay-form {
