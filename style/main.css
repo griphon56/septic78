@@ -29,5 +29,8 @@
 /** Стили для страницы улуги */
 @import url("service.css");
 
+/** Стили для страницы о компании */
+@import url("aboutCompany.css");
+
 /** Стили для футера страниц */
 @import url("footer.css");
