@@ -44,74 +44,59 @@
   </div>
 </div>
 
-<div class="container-fluid">  
-   <div class=" container">
-      <div class="row col">
-        <h5 class="section-item">Преимущества</h5>
-      </div>
-   </div>
-   <div class="row justify-content-around">
-    <div class="col-md-2">
-      <div class="advantages">
-         <img src="../img/ShippingPaymentView/telemarketer.png" alt="icon" class="advantages-img">
-         <p class="advantages-text">
-         Бесплатная консультация наших инжинеров
-         </p> 
-       </div>
+<div class="shipping-pay-form-bg">
+  <img class="img-bg" src="../img/ShippingPaymentView/water-2.png" alt="">
+  <div class="container-fluid">  
+     <div class=" container">
+        <div class="row col">
+          <h5 class="section-item">Преимущества</h5>
+        </div>
+     </div>
+     <div class="row justify-content-around">
+      <div class="col-md-2">
+        <div class="advantages">
+           <img src="../img/ShippingPaymentView/telemarketer.png" alt="icon" class="advantages-img">
+           <p class="advantages-text">
+             Бесплатная консультация наших инжинеров
+           </p> 
+         </div>
+      </div>    
+      <div class="col-md-2">
+    <div class="advantages">
+     <img src="../img/ShippingPaymentView/051-courier.png" alt="icon" class="advantages-img">
+     <p class="advantages-text">
+        Анализ и оценка грунта перд началом работ 
+     </p> 
+     </div>
     </div>    
-    <div class="col-md-2">
-  <div class="advantages">
-   <img src="../img/ShippingPaymentView/051-courier.png" alt="icon" class="advantages-img">
-   <p class="advantages-text">
-      Анализ и оценка грунта перд началом работ 
-   </p> 
-   </div>
-  </div>    
-    <div class="col-md-2">
-  <div class="advantages">
-   <img src="../img/ShippingPaymentView/051-delivery-truck.png" alt="icon" class="advantages-img">
-   <p class="advantages-text">
-      Доставка оборудования на спец-транспорте  
-   </p> 
-   </div>
-  </div>   
-    <div class="col-md-2">
-  <div class="advantages">
-   <img src="../img/ShippingPaymentView/stopwatch.png" alt="icon" class="advantages-img">
-   <p class="advantages-text">
-      Быстрый монтаж
-   </p> 
-   </div>
-  </div>   
-    <div class="col-md-2">
-  <div class="advantages">
-   <img src="../img/ShippingPaymentView/settings-1.png" alt="icon" class="advantages-img">
-   <p class="advantages-text">
-      Услуги по обслужованию и модернизации оборудования 
-   </p> 
-   </div>
-  </div>   
+      <div class="col-md-2">
+    <div class="advantages">
+     <img src="../img/ShippingPaymentView/051-delivery-truck.png" alt="icon" class="advantages-img">
+     <p class="advantages-text">
+        Доставка оборудования на спец-транспорте  
+     </p> 
+     </div>
+    </div>   
+      <div class="col-md-2">
+    <div class="advantages">
+     <img src="../img/ShippingPaymentView/stopwatch.png" alt="icon" class="advantages-img">
+     <p class="advantages-text">
+        Быстрый монтаж
+     </p> 
+     </div>
+    </div>   
+      <div class="col-md-2">
+    <div class="advantages">
+     <img src="../img/ShippingPaymentView/settings-1.png" alt="icon" class="advantages-img">
+     <p class="advantages-text">
+        Услуги по обслужованию и модернизации оборудования 
+     </p> 
+     </div>
+    </div>   
+    </div>
   </div>
-</div>
 
-<?php
-  include('requestform/requestformView.php');
-?>
-
-      
-
-    
-  
-
- 
-  
-   
-
-  
-      
-        
-      
-  
-  
-
-   
+  <?php
+    include('requestform/requestformView.php');
+  ?>
+</div>   

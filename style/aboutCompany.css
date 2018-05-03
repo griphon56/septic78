@@ -7,21 +7,21 @@
 }
 
 .about-img {
-	width: 90%;
+  width: 90%;
 }
 
 .position-img {
-	position: relative;
-	height: 500px;
+  position: relative;
+  height: 500px;
 }
 
 .about-sertific-img {
-	position: absolute;
-	height: 100%;
-	z-index: 10;
+  position: absolute;
+  height: 100%;
+  z-index: 10;
 }
 
 .y-class {
-	z-index: 100;
-	left: 100px;
+  z-index: 100;
+  left: 100px;
 }

@@ -10,7 +10,7 @@
   <title>Septic78</title>
   
   <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
-
+  <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
   <div class="wrapper">
@@ -22,5 +22,8 @@
       include ('footer/footerView.php');
     ?>
   </div>
+  
+  
+  <script src="js/main.js"></script>
 </body>
 </html>

@@ -15,6 +15,12 @@ input{
   outline: none;
 }
 
+/*
+.container-fluid{
+  padding: 0px 1px;
+}
+*/
+
 .active-menu{
   padding-top: 17px !important;
   background-color: #5bb7c2;

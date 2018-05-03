@@ -18,3 +18,35 @@
   background-position-y: -90px;
 */
 }
+
+.request-form {
+  padding: 20px 0 40px 0;
+  margin-bottom: 50px!important;
+}
+
+.request-form .section-item{
+  text-align: center;
+}
+
+.message-container{
+  padding-top: 35px;
+}
+
+.request-form-desc{
+  margin: 10px 0;
+  position: relative;
+}
+
+.request-form-desc img{
+  width: 25px;
+  margin-right: 10px;
+  position: absolute;
+}
+
+.request-form-desc p{
+  display: inline-block;
+  color: #656565;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 3px 0px 0px 30px;
+}

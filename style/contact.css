@@ -8,8 +8,6 @@
 .contact-form{
   margin: 10px 0;
   background-image: url(../img/contactView/bg_form.png);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .contact-form-title{

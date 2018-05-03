@@ -1,0 +1,52 @@
+.service-form-bg{
+  position: relative;
+}
+
+.service-form-bg .img-bg{
+  position: absolute;
+  width: 50%;
+  right: 0px;
+}
+
+/* Слайдер */
+.slider{
+  padding: 0px 1px!important;
+}
+
+.slide-item{
+  position: relative;
+  height: 500px;
+}
+
+.slide-item img{
+  position: absolute;
+}
+
+.slide-item-desc{
+  background-color: rgba(101, 101, 101, 0.3);
+  box-shadow: 1px 0px 4px #7d7d7d;
+  height: 480px;
+  padding: 30px;
+}
+
+.slide-item-desc p, .slide-item-desc h2{
+  color: #ffffff;
+  font-size: 14px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-shadow: 0px 0px 2px #000;
+}
+
+.slide-item-desc h2{
+  font-size: 20px;
+}
+
+
+.carousel-control-next, .carousel-control-prev{
+  width: 3%;
+  opacity: .7;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    padding: 20px;
+    background-color: rgba(169, 169, 169, 0.5);
