@@ -63,3 +63,25 @@ input{
 .link {
   text-decoration: underline;
 }
+
+.form-text-submite input[type="text"]{
+  border: 1px solid #8acdd5;
+  border-radius: 3px;
+  box-shadow: 0px 0px 1px #8acdd5; 
+  color: #444;
+  padding-left: 15px;
+  height: 40px;
+  width: 100%;
+}
+
+.form-text-submite input[type="submit"]{
+  background-color: #3f7f8e;
+  color: #fff;
+  width: 100%;
+  text-transform: uppercase;
+  transition: .3s;
+}
+
+.form-text-submite input[type="submit"]:hover{
+  background-color: #6aabb3;
+}

@@ -41,12 +41,12 @@
   font-size: 20px;
 }
 
-
 .carousel-control-next, .carousel-control-prev{
   width: 3%;
   opacity: .7;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
-    padding: 20px;
-    background-color: rgba(169, 169, 169, 0.5);
+  padding: 20px;
+  background-color: rgba(169, 169, 169, 0.5);
+}

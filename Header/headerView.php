@@ -70,8 +70,8 @@
         </p>
       </div>
       <div class="col-md-5">
-        <form action="" id="header-form">
-          <div class="row header-form">
+        <form action="" class="header-form">
+          <div class="row form-text-submite">
             <div class="header-form-img">
               <img src="../img/headerView/header-title.png" alt="">
             </div>

@@ -17,7 +17,7 @@
   text-align: center;
 }
 
-.contact-form input[type="text"]{
+/*.contact-form input[type="text"]{
   border: 1px solid #8acdd5;
   border-radius: 3px;
   box-shadow: 0px 0px 1px #8acdd5; 
@@ -37,7 +37,7 @@
 
 .contact-form input[type="submit"]:hover{
   background-color: #6aabb3;
-}
+}*/
 
 .contact-seal {
   margin: 15px 0 50px 0;
@@ -59,7 +59,6 @@
 }
 
 /*Документы*/
-
 .document{
   padding-bottom: 40px;
 }

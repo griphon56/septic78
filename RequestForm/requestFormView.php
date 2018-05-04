@@ -1,6 +1,6 @@
 <div class="container-fluid request-form contact-form">
    <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center form-text-submite">
       <div class="col-md-8">
         <h3 class="section-item">ОСТАВЬТЕ ЗАЯВКУ</h3>
         <form action="#" id="request-form">
