@@ -5,7 +5,7 @@
        <h3 class="contact-form-title">Оставьте свои контакты и мы перезвоним вам</h3>
      </div>
    </div>
-    <form action="#" id="contact-form" class="form-text-submite">
+    <form action="#" id="contact-form" class="form-text-submit">
       <div class="row">
         <div class="col-md-4"><input type="text" placeholder="Имя"></div>
         <div class="col-md-4"><input type="text" placeholder="Телефон"></div>
