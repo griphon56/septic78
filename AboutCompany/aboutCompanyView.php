@@ -27,21 +27,52 @@
 				<img src="../img/aboutView/water.png" alt="icon" class="about-img">
 			</div>
 		</div>
-	  	<div class="row col">
-		    <h3 class="section-item">Сертификаты и дипломы</h3>
-		</div>
+  </div>
+</div>
 
-		<div class="about-bg-img">
-			<div class="row position-img">
-				<div class="col-md-6">
-					<img src="../img/aboutView/1.jpg" alt="icon" class="about-sertific-img">
-					<img src="../img/aboutView/2.jpg" alt="icon" class="about-sertific-img y-class">
-				</div>
-				<div class="col-md-6">
-					<img src="../img/aboutView/3.jpg" alt="icon" class="about-sertific-img y-class">
-					<img src="../img/aboutView/4.jpg" alt="icon" class="about-sertific-img">
-				</div>
-			</div>
-	  	</div>
-	</div>
+
+<div class="about-bg-img">
+  <div class="container-fluid">
+    <div class="container" id="container">
+      <div class="row col">
+        <h3 class="section-item">Сертификаты и дипломы</h3>
+      </div>
+      <div class="row position-img">
+        <div class="col-md-6" id="mode-gallery">
+          <a href="../img/aboutView/1.jpg" rel="superbox[gallery][my_gallery1]">
+            <img src="../img/aboutView/1.jpg" alt="icon" class="about-sertific-img">
+          </a>
+          <a href="../img/aboutView/2.jpg" rel="superbox[gallery][my_gallery1]">
+            <img src="../img/aboutView/2.jpg" alt="icon" class="about-sertific-img y-class">
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a href="../img/aboutView/3.jpg" rel="superbox[gallery][my_gallery2]">
+            <img src="../img/aboutView/3.jpg" alt="icon" class="about-sertific-img y-class">
+          </a>
+          <a href="../img/aboutView/4.jpg" rel="superbox[gallery][my_gallery2]">
+            <img src="../img/aboutView/4.jpg" alt="icon" class="about-sertific-img">
+          </a>
+        </div>
+      </div>
+      <div class="row position-img">
+        <div class="col-md-6">
+          <a href="../img/aboutView/5.jpg" rel="superbox[gallery][my_gallery3]">
+            <img src="../img/aboutView/5.jpg" alt="icon" class="about-sertific-img">
+          </a>
+          <a href="../img/aboutView/6.jpg" rel="superbox[gallery][my_gallery3]">
+            <img src="../img/aboutView/6.jpg" alt="icon" class="about-sertific-img y-class">
+          </a>
+        </div>
+        <div class="col-md-6">
+          <a href="../img/aboutView/7.jpg" rel="superbox[gallery][my_gallery4]">
+            <img src="../img/aboutView/7.jpg" alt="icon" class="about-sertific-img y-class">
+          </a>
+          <a href="../img/aboutView/8.jpg" rel="superbox[gallery][my_gallery4]">
+            <img src="../img/aboutView/8.jpg" alt="icon" class="about-sertific-img">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

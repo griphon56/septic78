@@ -1,9 +1,8 @@
 .about-bg-img {
   background-image: url(../img/aboutView/bg.png);
-  background-size: contain;
   background-repeat: no-repeat;
-  background-position-y: 100px; 
-  width: 100%; 
+  background-position-y: 50%;
+  background-size: 100%;
 }
 
 .about-img {
@@ -13,6 +12,7 @@
 .position-img {
   position: relative;
   height: 500px;
+  margin-bottom: 50px;
 }
 
 .about-sertific-img {

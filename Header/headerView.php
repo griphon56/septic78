@@ -71,7 +71,7 @@
       </div>
       <div class="col-md-5">
         <form action="" class="header-form">
-          <div class="row form-text-submite">
+          <div class="row form-text-submit">
             <div class="header-form-img">
               <img src="../img/headerView/header-title.png" alt="">
             </div>

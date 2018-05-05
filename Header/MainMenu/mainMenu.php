@@ -38,7 +38,10 @@ function getPageId()
 function drawMenu(array $a_menu)
 {
   $id_page = getPageId();
-  
+
+  if(empty($id_page))
+    $id_page = 'catalog';
+
   echo('<ul>');
   foreach($a_menu as $item)
   {

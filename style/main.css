@@ -34,3 +34,6 @@
 
 /** Стили для футера страниц */
 @import url("footer.css");
+
+/* Стили для плагина картинок*/
+@import url("jquery.superbox.css");
