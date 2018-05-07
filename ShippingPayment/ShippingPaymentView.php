@@ -49,7 +49,7 @@
   <div class="container-fluid">  
      <div class=" container">
         <div class="row col">
-          <h5 class="section-item">Преимущества</h5>
+          <h5 class="section-item">Наши преимущества</h5>
         </div>
      </div>
      <div class="row justify-content-around">
