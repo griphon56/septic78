@@ -19,7 +19,7 @@
           <p>+8 (800) 200-68-57 (бесплатно по рф)</p>
         </div>
         <div class="section-desc">
-          <p><span class="link">septikstroy@septic78.ru</span></p>
+          <p><span class="link">septikstroy@septic5.ru</span></p>
           <p>Единая эл. почта для справок</p>
         </div>
       </div>
@@ -71,7 +71,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12 section-desc">
-      <p>Получить полную инхормацию по вопросам сотрудничества с компанией "Septic78.ru" можно в разделе диллерам или по телефону +792156267882</p>
+      <p>Получить полную инхормацию по вопросам сотрудничества с компанией "Септик5.рф" можно в разделе диллерам или по телефону +792156267882</p>
     </div>
   </div>
   <div class="row col-md-12">

@@ -60,7 +60,7 @@
       <div class="col-md-7">
         <h3 class="header-target-form-title">Нужна канализация?</h3>
         <p class="header-target-form-desc">
-          Septic5 - городской комфорт
+          Септик5.рф - городской комфорт
         </p>
         <p class="header-target-form-desc">
           в загородном доме с выгодой
