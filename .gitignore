@@ -1,0 +1,4 @@
+*.log
+.idea/workspace.xml
+*.xml
+.idea/septic78.iml
