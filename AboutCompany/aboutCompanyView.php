@@ -37,39 +37,39 @@
       <div class="row col">
         <h3 class="section-item">Сертификаты и дипломы</h3>
       </div>
-      <div class="row position-img">
+      <div class="row position-img swipebox">
         <div class="col-md-6" id="mode-gallery">
-          <a href="../img/aboutView/1.jpg" rel="superbox[gallery][my_gallery1]">
+          <a href="../img/aboutView/1.jpg" rel="gallery-1" class="swipebox">
             <img src="../img/aboutView/1.jpg" alt="icon" class="about-sertific-img">
           </a>
-          <a href="../img/aboutView/2.jpg" rel="superbox[gallery][my_gallery1]">
+          <a href="../img/aboutView/2.jpg" rel="gallery-1" class="swipebox">
             <img src="../img/aboutView/2.jpg" alt="icon" class="about-sertific-img y-class">
           </a>
         </div>
         <div class="col-md-6">
-          <a href="../img/aboutView/3.jpg" rel="superbox[gallery][my_gallery2]">
+          <a href="../img/aboutView/3.jpg" rel="gallery-2" class="swipebox">
             <img src="../img/aboutView/3.jpg" alt="icon" class="about-sertific-img y-class">
           </a>
-          <a href="../img/aboutView/4.jpg" rel="superbox[gallery][my_gallery2]">
+          <a href="../img/aboutView/4.jpg" rel="gallery-2" class="swipebox">
             <img src="../img/aboutView/4.jpg" alt="icon" class="about-sertific-img">
           </a>
         </div>
       </div>
-      <div class="row position-img">
+      <div class="row position-img swipebox">
         <div class="col-md-6">
-          <a href="../img/aboutView/5.jpg" rel="superbox[gallery][my_gallery3]">
+          <a href="../img/aboutView/5.jpg" rel="gallery-3" class="swipebox">
             <img src="../img/aboutView/5.jpg" alt="icon" class="about-sertific-img">
           </a>
-          <a href="../img/aboutView/6.jpg" rel="superbox[gallery][my_gallery3]">
+          <a href="../img/aboutView/6.jpg" rel="gallery-3" class="swipebox">
             <img src="../img/aboutView/6.jpg" alt="icon" class="about-sertific-img y-class">
           </a>
         </div>
         <div class="col-md-6">
-          <a href="../img/aboutView/7.jpg" rel="superbox[gallery][my_gallery4]">
+          <a href="../img/aboutView/7.jpg" rel="gallery-4" class="swipebox">
             <img src="../img/aboutView/7.jpg" alt="icon" class="about-sertific-img y-class">
           </a>
-          <a href="../img/aboutView/8.jpg" rel="superbox[gallery][my_gallery4]">
-            <img src="../img/aboutView/8.jpg" alt="icon" class="about-sertific-img">
+          <a href="../img/aboutView/8.JPG" rel="gallery-4" class="swipebox">
+            <img src="../img/aboutView/8.JPG" alt="icon" class="about-sertific-img">
           </a>
         </div>
       </div>

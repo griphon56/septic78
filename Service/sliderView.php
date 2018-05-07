@@ -3,7 +3,7 @@
     <div class="carousel-inner">
        <div class="carousel-item active">
         <div class="slide-item">
-          <img class="img-fluid" src="../img/headerView/30-aqua-top.jpg" alt="First slide">
+          <img class="img-fluid" src="../img/serviceView/3-min-3.jpg" alt="First slide">
           <div class="container">
             <div class="row justify-content-end">
               <div class="col-md-5 slide-item-desc">
