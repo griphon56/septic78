@@ -45,7 +45,7 @@
 </div>
 
 <div class="shipping-pay-form-bg">
-  <img class="img-bg" src="../img/ShippingPaymentView/water-2.png" alt="">
+  <img class="img-bg" src="../img/shippingPaymentView/water-2.png" alt="">
   <div class="container-fluid">  
      <div class=" container">
         <div class="row col">
@@ -55,7 +55,7 @@
      <div class="row justify-content-around">
       <div class="col-md-2">
         <div class="advantages">
-           <img src="../img/ShippingPaymentView/telemarketer.png" alt="icon" class="advantages-img">
+           <img src="../img/shippingPaymentView/telemarketer.png" alt="icon" class="advantages-img">
            <p class="advantages-text">
              Бесплатная консультация наших инжинеров
            </p> 
@@ -63,7 +63,7 @@
       </div>    
       <div class="col-md-2">
     <div class="advantages">
-     <img src="../img/ShippingPaymentView/051-courier.png" alt="icon" class="advantages-img">
+     <img src="../img/shippingPaymentView/051-courier.png" alt="icon" class="advantages-img">
      <p class="advantages-text">
         Анализ и оценка грунта перд началом работ 
      </p> 
@@ -71,7 +71,7 @@
     </div>    
       <div class="col-md-2">
     <div class="advantages">
-     <img src="../img/ShippingPaymentView/051-delivery-truck.png" alt="icon" class="advantages-img">
+     <img src="../img/shippingPaymentView/051-delivery-truck.png" alt="icon" class="advantages-img">
      <p class="advantages-text">
         Доставка оборудования на спец-транспорте  
      </p> 
@@ -79,7 +79,7 @@
     </div>   
       <div class="col-md-2">
     <div class="advantages">
-     <img src="../img/ShippingPaymentView/stopwatch.png" alt="icon" class="advantages-img">
+     <img src="../img/shippingPaymentView/stopwatch.png" alt="icon" class="advantages-img">
      <p class="advantages-text">
         Быстрый монтаж
      </p> 
@@ -87,7 +87,7 @@
     </div>   
       <div class="col-md-2">
     <div class="advantages">
-     <img src="../img/ShippingPaymentView/settings-1.png" alt="icon" class="advantages-img">
+     <img src="../img/shippingPaymentView/settings-1.png" alt="icon" class="advantages-img">
      <p class="advantages-text">
         Услуги по обслужованию и модернизации оборудования 
      </p> 
@@ -97,6 +97,6 @@
   </div>
 
   <?php
-    include('requestform/requestformView.php');
+    include('../Requestform/requestformView.php');
   ?>
 </div>   
