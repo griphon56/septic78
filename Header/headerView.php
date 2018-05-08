@@ -41,7 +41,7 @@
       <div class="col-md-2">
         <div class="cart">
           <div>
-            <img src="../img/headerView/shopping-purse-icon.png"alt="" alt="">
+            <img src="../img/headerView/shopping-purse-icon.png" alt="" alt="">
             <p>Корзина <span id=header-cost>0.00</span> руб.</p>
           </div>
         </div>
@@ -51,7 +51,7 @@
 </div>
 
 
-<?php include ('mainMenu/mainMenuView.php'); ?>
+<?php include ('MainMenu/mainMenuView.php'); ?>
 
 
 <div class="container-fluid header-target-form">

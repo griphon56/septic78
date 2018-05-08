@@ -4,16 +4,16 @@
   switch($id_page)
   {
     case 'contact':
-      include ('contact/contactView.php');
+      include ('Contact/contactView.php');
       break;
     case 'about_company':
-      include ('aboutCompany/aboutCompanyView.php');
+      include ('AboutCompany/aboutCompanyView.php');
       break;
     case 'shipping_pay':
-      include ('shippingPayment/shippingPaymentView.php');
+      include ('ShippingPayment/shippingPaymentView.php');
       break;
     case 'service':
-      include ('service/serviceView.php');
+      include ('Service/serviceView.php');
       break;
     default:
       include ('notFound.php');
