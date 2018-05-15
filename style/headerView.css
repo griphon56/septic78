@@ -74,7 +74,8 @@
 }
 
 .header-cart .cart:hover{
-  background-color: #dcdcdc;
+  background-color: #5bb7c2;
+  color: #f4f4f4;
 }
 
 .header-cart .cart div{
@@ -101,7 +102,7 @@
 }
 
 .header-target-form .header-target-form-desc, .header-target-form .header-target-form-title{
-  color: #176f79;
+  color: #444;
   display: table;
   padding: 5px;
   border-radius: 4px;

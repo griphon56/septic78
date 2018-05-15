@@ -23,9 +23,8 @@
 }
 
 .slide-item-desc{
-  background-color: rgba(101, 101, 101, 0.3);
-  box-shadow: 1px 0px 4px #7d7d7d;
-  height: 480px;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 500px;
   padding: 30px;
 }
 
@@ -46,7 +45,12 @@
   opacity: .7;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
+.carousel-control-next-icon {
+  background-image: url(../img/serviceView/double-right.png);
   padding: 20px;
-  background-color: rgba(169, 169, 169, 0.5);
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../img/serviceView/double-left.png);
+  padding: 20px;
 }

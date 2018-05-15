@@ -6,14 +6,14 @@
       'id'=>'catalog'
     ],
     [
-      'link'=>'О компании',
-      'href'=>'index.php?id_page=about_company',
-      'id'=>'about_company'
-    ],
-    [
       'link'=>'Наши услуги',
       'href'=>'index.php?id_page=service',
       'id'=>'service'
+    ],
+    [
+      'link'=>'О компании',
+      'href'=>'index.php?id_page=about_company',
+      'id'=>'about_company'
     ],
     [
       'link'=>'Доставка и оплата',

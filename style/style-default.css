@@ -75,7 +75,7 @@ input{
 }
 
 .form-text-submit input[type="submit"]{
-  background-color: #3f7f8e;
+  background-color: #5bb7c2;
   color: #fff;
   width: 100%;
   text-transform: uppercase;
@@ -83,5 +83,5 @@ input{
 }
 
 .form-text-submit input[type="submit"]:hover{
-  background-color: #6aabb3;
+  background-color: #289dab;
 }

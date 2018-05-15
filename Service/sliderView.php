@@ -3,7 +3,7 @@
     <div class="carousel-inner">
        <div class="carousel-item active">
         <div class="slide-item">
-          <img class="img-fluid" src="../img/serviceView/3-min-3.jpg" alt="First slide">
+          <img class="img-fluid" src="../img/serviceView/1.png" alt="First slide">
           <div class="container">
             <div class="row justify-content-end">
               <div class="col-md-5 slide-item-desc">
@@ -15,10 +15,9 @@
           </div>
         </div>
       </div>
-
        <div class="carousel-item">  
         <div class="slide-item">
-          <img class="img-fluid" src="../img/headerView/30-aqua-top.jpg" alt="First slide">
+          <img class="img-fluid" src="../img/serviceView/2.png" alt="First slide">
           <div class="container">
             <div class="row justify-content-start">
               <div class="col-md-5 slide-item-desc">
@@ -30,7 +29,25 @@
           </div>
         </div>
       </div>
+
+       <div class="carousel-item">  
+        <div class="slide-item">
+          <img class="img-fluid" src="../img/serviceView/3.png" alt="First slide">
+          <div class="container">
+            <div class="row justify-content-end">
+              <div class="col-md-5 slide-item-desc">
+                <h2>Обустройство скважины с кессоном</h2>
+
+                <p>Когда выполняется обустройство скважины на воду, сама обсадная труба не выводится на нулевой уровень. Ее конец оставляют на глубине около полутора – двух метров.</p>
+
+                <p>Во избежание замерзания водопроводная труба выводится в кессон, в котором располагается либо все технологическое оборудование, либо его часть. Это фильтры, гидроаккумулятор, насос, и т.д.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
 
     <a class="carousel-control-prev" href="#carousel" data-slide="prev">
       <span class="carousel-control-prev-icon"></span>
