@@ -33,7 +33,7 @@
 }
 
 .header-search .header-logo img{
-  width: 240px;
+  width: 260px;
   margin: 25px 0;
 }
 
@@ -97,6 +97,7 @@
   background-image: url(../img/headerView/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 150px;
 }
 
 .header-target-form .header-target-form-desc, .header-target-form .header-target-form-title{
@@ -115,12 +116,9 @@
   text-transform: uppercase;
 }
 
-.header-target-form .header-target-form-desc{
-
-}
-
 .header-form{
-  background-color: rgba(63, 127, 142, 0.3);
+  background-color: rgba(247, 247, 247, 0.75);
+  border-radius: 4px;
 }
 
 .header-form ul{
@@ -132,11 +130,6 @@
 .header-form ul li{
   padding: 10px 0;
 }
-
-.header-form ul li:last-child{
-  padding-bottom: 30px;
-}
-
 
 .header-form .header-form-img{
   position: relative;
