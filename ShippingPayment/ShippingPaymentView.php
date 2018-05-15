@@ -96,7 +96,5 @@
     </div>
   </div>
 
-  <?php
-    include('../Requestform/requestformView.php');
-  ?>
+  <?php include('RequestForm/requestFormView.php');?>
 </div>   
