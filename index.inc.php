@@ -12,6 +12,9 @@
     case 'contact':
       include ('Contact/contactView.php');
       break;
+    case 'home':
+      include ('Home/homeView.php');
+      break;
     case 'shipping_pay':
       include ('ShippingPayment/shippingPaymentView.php');
       break;

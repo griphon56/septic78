@@ -1,6 +1,11 @@
 <?php
   $a_menu = [
     [
+      'link'=>'Главная',
+      'href'=>'index.php?id_page=home',
+      'id'=>'home'
+    ],
+    [
       'link'=>'Каталог',
       'href'=>'index.php?id_page=catalog',
       'id'=>'catalog'
@@ -40,7 +45,7 @@ function drawMenu(array $a_menu)
   $id_page = getPageId();
 
   if(empty($id_page))
-    $id_page = 'catalog';
+    $id_page = 'home';
 
   echo('<ul>');
   foreach($a_menu as $item)

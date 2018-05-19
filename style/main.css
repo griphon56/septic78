@@ -8,6 +8,12 @@
 @import url("bootstrap.grid.css");
 @import url("bootstrap.min.css");
 
+/* Slick карусель
+ * http://kenwheeler.github.io/slick/
+ */
+@import url("slick-theme.css");
+@import url("slick.css");
+
 /* Все стили которые используются везде*/
 @import url("style-default.css");
 
@@ -16,6 +22,9 @@
 
 /** Стили для главного меню */
 @import url("mainMenu.css");
+
+/** Стиль  для Главной страницы*/
+@import url("homeView.css");
 
 /** Стиль  для страницы доставка и оплата*/
 @import url("shippingPayment.css");

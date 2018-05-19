@@ -22,6 +22,7 @@
     ?>
   </div>
 
+  <script src="js/slick.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
