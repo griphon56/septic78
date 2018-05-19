@@ -15,7 +15,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="contact-seal">
-          <img src="../img/contactView/locked-padlock.png"alt="" alt="">
+          <img src="../img/contactView/locked-padlock.png" alt="">
           <p>Мы гарантируем конфеденциальность ваших данных</p>
         </div>
       </div>

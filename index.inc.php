@@ -3,11 +3,14 @@
 
   switch($id_page)
   {
-    case 'contact':
-      include ('Contact/contactView.php');
-      break;
     case 'about_company':
       include ('AboutCompany/aboutCompanyView.php');
+      break;
+    case 'catalog':
+      include ('Catalog/catalogView.php');
+      break;
+    case 'contact':
+      include ('Contact/contactView.php');
       break;
     case 'shipping_pay':
       include ('ShippingPayment/shippingPaymentView.php');
