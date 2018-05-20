@@ -49,3 +49,6 @@
 
 /* Стили для плагина картинок*/
 @import url("swipebox.css");
+
+/* Стили для Страница не доступна*/
+@import url("notFound.css");
