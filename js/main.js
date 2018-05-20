@@ -1,6 +1,11 @@
 // Карусель в услуг
 $('.carousel').carousel();
 
+// Карусель продуктов
+$('#product-hit-sales').carousel({
+  interval : false
+});
+
 // Плагин для картинок
 ;( function( $ ) {
   $( '.swipebox' ).swipebox( {

@@ -1,5 +1,5 @@
-/*
- * Библиотека анимаций*
+/**
+ * Библиотека анимаций
  * https://daneden.github.io/animate.css/
  */
 @import url("animate.css");
@@ -8,7 +8,8 @@
 @import url("bootstrap.grid.css");
 @import url("bootstrap.min.css");
 
-/* Slick карусель
+/**
+ * Slick карусель
  * http://kenwheeler.github.io/slick/
  */
 @import url("slick-theme.css");

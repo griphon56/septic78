@@ -1,7 +1,7 @@
 <div class="slider">
   <div id="carousel" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-       <div class="carousel-item active">
+      <div class="carousel-item active">
         <div class="slide-item">
           <img class="img-fluid" src="../img/serviceView/1.png" alt="First slide">
           <div class="container">
@@ -15,7 +15,8 @@
           </div>
         </div>
       </div>
-       <div class="carousel-item">  
+
+      <div class="carousel-item">
         <div class="slide-item">
           <img class="img-fluid" src="../img/serviceView/2.png" alt="First slide">
           <div class="container">
@@ -30,7 +31,7 @@
         </div>
       </div>
 
-       <div class="carousel-item">  
+      <div class="carousel-item">
         <div class="slide-item">
           <img class="img-fluid" src="../img/serviceView/3.png" alt="First slide">
           <div class="container">
@@ -47,7 +48,6 @@
         </div>
       </div>
     </div>
-
 
     <a class="carousel-control-prev" href="#carousel" data-slide="prev">
       <span class="carousel-control-prev-icon"></span>

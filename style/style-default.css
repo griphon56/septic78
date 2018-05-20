@@ -85,3 +85,9 @@ input{
 .form-text-submit input[type="submit"]:hover{
   background-color: #289dab;
 }
+
+.hr-blue{
+  background-color: #289dab;
+  height: 2px;
+  margin-bottom: 50px;
+}
