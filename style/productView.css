@@ -76,7 +76,6 @@
 .bootstrap-slider-product-hit-sales{
   position: relative;
   padding: 0;
-  margin-bottom: 30px;
 }
 
 .slider-product-control-prev-icon,.slider-product-control-next-icon {
@@ -101,6 +100,7 @@
 
 .slider-product-indicators .indicators-text{
   color: #656565;
+  font-size: 20px;
   font-weight: 600;
 }
 
@@ -115,4 +115,9 @@
 
 .slider-product-control-next-icon .icon-arrow,.slider-product-control-prev-icon .icon-arrow{
   width: 25px;
+}
+
+/*Слайдер product List*/
+.product-list-row {
+  margin-bottom: 40px;
 }

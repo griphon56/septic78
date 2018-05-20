@@ -2,9 +2,10 @@
 $('.carousel').carousel();
 
 // Карусель продуктов
-$('#product-hit-sales').carousel({
-  interval : false
-});
+$('#product-hit-sales').carousel();
+
+// Карусель продуктов
+$('#product-list').carousel();
 
 // Плагин для картинок
 ;( function( $ ) {

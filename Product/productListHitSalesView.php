@@ -24,10 +24,11 @@
     class="container carousel slide"
     id="product-hit-sales"
     data-ride="carousel"
+    data-interval="false"
   >
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <div class="row">
+        <div class="row product-list-row">
           <div class="col-md-3">
             <div class="product-item">
               <ul>
@@ -121,7 +122,7 @@
       </div>
 
       <div class="carousel-item">
-        <div class="row">
+        <div class="row product-list-row">
           <div class="col-md-3">
             <div class="product-item">
               <ul>
