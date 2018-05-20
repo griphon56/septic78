@@ -1,6 +1,9 @@
 <?php
   $id_page = getPageId();
 
+  if(empty($id_page))
+    $id_page = 'home';
+
   switch($id_page)
   {
     case 'about_company':

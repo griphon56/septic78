@@ -26,6 +26,9 @@
 /** Стиль  для Главной страницы*/
 @import url("homeView.css");
 
+/** Стиль  для Товаров*/
+@import url("productView.css");
+
 /** Стиль  для страницы доставка и оплата*/
 @import url("shippingPayment.css");
 
