@@ -22,8 +22,7 @@
           <div class="container">
             <div class="row justify-content-start">
               <div class="col-md-5 slide-item-desc">
-                <h2>Покупка автономную канализацию
-я</h2>
+                <h2>Покупка автономной канализации</h2>
                 <p>Для всех желающих купить автономную канализацию, наша компания может предложить большое количество самых разнообразных вариантов в широком ценовом диапазоне. Наши квалифицированные сотрудники обеспечат грамотную помощь по подбору автономной канализации с определенными техническими параметрами, которые будут полностью удовлетворять потребностям клиентов. Для каждого индивидуального случая оптимальное решение будет иметь свои конкретные характеристики. Все системы автономной канализации, представленные в нашем каталоге, имеют доступную стоимость и быстрые сроки поставки. Монтаж установок осуществляется профессиональными специалистами, которые имеют большой опыт работы в этом направлении. Сотрудничество с нами гарантирует каждому клиенту приобретение качественной автономной канализационной установки по доступной цене.</p>
               </div>
             </div>
@@ -48,7 +47,7 @@
         </div>
       </div>
 
-          <div class="carousel-item">
+      <div class="carousel-item">
         <div class="slide-item">
           <img class="img-fluid" src="../img/homeView/1.jpg" alt="First slide">
           <div class="container">
@@ -63,11 +62,12 @@
         </div>
       </div>
 
-    <a class="carousel-control-prev" href="#carousel" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#carousel" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a>
+      <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#carousel" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
   </div>
 </div>
