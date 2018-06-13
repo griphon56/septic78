@@ -40,10 +40,10 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price-active">25 900 руб.</p>
+                        <p class="price-active"><span class="js-price-active">78 770</span> руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -62,10 +62,10 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price-active">62 030 руб.</p>
+                        <p class="price-active"><span class="js-price-active">62 030</span> руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -84,11 +84,11 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price">25 900 руб.</p>
+                        <p class="price"><span class="js-price-active">25 900</span> руб.</p>
                         <p class="discount">75 550 руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -107,10 +107,10 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price-active">62 030 руб.</p>
+                        <p class="price-active"><span class="js-price-active">62 030</span> руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -131,10 +131,10 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price-active">25 900 руб.</p>
+                        <p class="price-active"><span class="js-price-active">78 770</span> руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -153,10 +153,10 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price-active">62 030 руб.</p>
+                        <p class="price-active"><span class="js-price-active">62 030</span> руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -175,11 +175,11 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price">25 900 руб.</p>
+                        <p class="price"><span class="js-price-active">25 900</span> руб.</p>
                         <p class="discount">75 550 руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -198,10 +198,10 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price-active">62 030 руб.</p>
+                        <p class="price-active"><span class="js-price-active">62 030</span> руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -222,10 +222,10 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price-active">25 900 руб.</p>
+                        <p class="price-active"><span class="js-price-active">78 770</span> руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -244,10 +244,10 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price-active">62 030 руб.</p>
+                        <p class="price-active"><span class="js-price-active">62 030</span> руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -266,11 +266,11 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price">25 900 руб.</p>
+                        <p class="price"><span class="js-price-active">25 900</span> руб.</p>
                         <p class="discount">75 550 руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -289,10 +289,10 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price-active">62 030 руб.</p>
+                        <p class="price-active"><span class="js-price-active">62 030</span> руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -316,10 +316,10 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price-active">25 900 руб.</p>
+                        <p class="price-active"><span class="js-price-active">78 770</span> руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -338,10 +338,10 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price-active">62 030 руб.</p>
+                        <p class="price-active"><span class="js-price-active">62 030</span> руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -360,11 +360,11 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price">25 900 руб.</p>
+                        <p class="price"><span class="js-price-active">25 900</span> руб.</p>
                         <p class="discount">75 550 руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -383,10 +383,10 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price-active">62 030 руб.</p>
+                        <p class="price-active"><span class="js-price-active">62 030</span> руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -407,10 +407,10 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price-active">25 900 руб.</p>
+                        <p class="price-active"><span class="js-price-active">78 770</span> руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -429,10 +429,10 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price-active">62 030 руб.</p>
+                        <p class="price-active"><span class="js-price-active">62 030</span> руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -451,11 +451,11 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price">25 900 руб.</p>
+                        <p class="price"><span class="js-price-active">25 900</span> руб.</p>
                         <p class="discount">75 550 руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -474,10 +474,10 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price-active">62 030 руб.</p>
+                        <p class="price-active"><span class="js-price-active">62 030</span> руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -498,10 +498,10 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price-active">25 900 руб.</p>
+                        <p class="price-active"><span class="js-price-active">78 770</span> руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -520,10 +520,10 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price-active">62 030 руб.</p>
+                        <p class="price-active"><span class="js-price-active">62 030</span> руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -542,11 +542,11 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price">25 900 руб.</p>
+                        <p class="price"><span class="js-price-active">25 900</span> руб.</p>
                         <p class="discount">75 550 руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
@@ -565,10 +565,10 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price-active">62 030 руб.</p>
+                        <p class="price-active"><span class="js-price-active">62 030</span> руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>

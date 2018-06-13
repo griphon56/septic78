@@ -102,6 +102,10 @@
   font-weight: 600;
 }
 
+.calc-cost-box .calc-cost-btn:hover{
+  background-color: #38858e;
+}
+
 .calc-cost-box-table{
   width: 100%;
 }

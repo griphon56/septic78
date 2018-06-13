@@ -42,13 +42,13 @@
         <div class="container-cart">
           <div class="js-container-cart-count-product container-cart-count-product">
             <div class="cart-count-product">
-              <span>5</span>
+              <span class="js-cart-count-product">0</span>
             </div>
           </div>
           <div class="cart">
             <div>
               <img src="../img/headerView/shopping-purse-icon.png" alt="">
-              <p>Корзина <span id=header-cost>150000.00</span> руб.</p>
+              <p>Корзина <span id=header-cost>0</span> руб.</p>
             </div>
           </div>
         </div>
