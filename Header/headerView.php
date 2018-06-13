@@ -39,10 +39,17 @@
         </div>
       </div>
       <div class="col-md-2">
-        <div class="cart">
-          <div>
-            <img src="../img/headerView/shopping-purse-icon.png" alt="" alt="">
-            <p>Корзина <span id=header-cost>0.00</span> руб.</p>
+        <div class="container-cart">
+          <div class="js-container-cart-count-product container-cart-count-product">
+            <div class="cart-count-product">
+              <span>5</span>
+            </div>
+          </div>
+          <div class="cart">
+            <div>
+              <img src="../img/headerView/shopping-purse-icon.png" alt="">
+              <p>Корзина <span id=header-cost>150000.00</span> руб.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -77,7 +84,7 @@
                 <input type="text" placeholder="Имя">
               </li>
               <li>
-                <input type="text" placeholder="Телефон">
+                <input type="tel" placeholder="Телефон">
               </li>
               <li>
                 <input type="submit" class="btn" value="Заказать">

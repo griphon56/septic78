@@ -40,4 +40,6 @@
 
 <?php include('Home/homeSliderBrandView.php');?>
 
+<?php include('FormCalculationCost/formCalculationCostView.php');?>
+
 <?php include('Footer/footerAboutUs.php');?>

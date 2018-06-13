@@ -33,6 +33,9 @@
 /** Стиль  для страницы доставка и оплата*/
 @import url("shippingPayment.css");
 
+/** Стиль Калькулятора стоимости канализации*/
+@import url("formCalculationCostView.css");
+
 /** Cтиль для форма оставить заявку */
 @import url("requestForm.css");
 

@@ -40,10 +40,10 @@
                   <div class="container">
                     <div class="row">
                       <div class="product-item-cost col-9">
-                        <p class="price-active">25 900 руб.</p>
+                        <p class="price-active">50 777 руб.</p>
                       </div>
                       <div class="col-3 add-cart-box">
-                        <a href="#" class="add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
+                        <a href="#" class="add-to-cart js-add-to-cart"><img src="../img/productView/shopping-cart.png" alt=""></a>
                       </div>
                     </div>
                   </div>
