@@ -12,17 +12,18 @@
             <ul>
               <li class="calc-cost-relative">
                 <h4 class="calc-cost-text">Количество человек в доме</h4>
-                <input  class="calc-cost-count" type="text" value="3"/>
+                <input  class="calc-cost-count js-calc-cost-count" type="text" value="0"/>
               </li>
               <li>
-                <div class="calc-cost-scroll"></div>
+                <div class="calc-cost-range-container">
+                  <input type="range" min="1" max="30" value="3" class="calc-cost-range" id="range-calc-cost"/>
+                </div>
               </li>
               <li>
                 <h4 class="calc-cost-text">Производитель</h4>
-                <select name="calc-cost-generator" id="calc-cost-generator" class="scroll">
-                  <option value="Септик Астра">Септик Астра</option>
-                  <option value="Септик Астра1">Септик Астра1</option>
-                  <option value="Септик Астра2">Септик Астра2</option>
+                <select name="calc-cost-generator" id="calc-cost-generator" class="calc-cost-generator">
+                  <option value="sepAstra">Септик Астра</option>
+                  <option value="sepRostok">Септик Росток</option>
                 </select>
               </li>
             </ul>
@@ -45,13 +46,14 @@
               <tr >
                 <td rowspan="3">
                   <div class="calc-cost-box-img-title">
-                    <img src="../img/formCalculationCostView/1.png" alt="">
+                    <img class="js-calc-cost-box-img-title" src="../img/formCalculationCostView/2.png" alt="">
                   </div>
                 </td>
                 <td>
                   <div class="calc-cost-icon-desc">
                     <img src="../img/formCalculationCostView/light-bulb.png" alt="">
-                    <span>3 чел.</span>
+                    <span class="js-calc-cost-count-people">0</span>
+                    <span> чел.</span>
                   </div>
                   <div class="calc-cost-icon-desc">
                     <img src="../img/formCalculationCostView/light-bulb.png" alt="">
@@ -74,8 +76,8 @@
               <tr>
                 <td class="calc-cost-item-total">
                   <p>Рекомендуем:</p>
-                  <h4>Септик Юнилос Астра 3</h4>
-                  <p>Цена 62 050 руб.</p>
+                  <h4 class="js-calc-cost-title-septic">Септик Юнилос Астра 3</h4>
+                  <p>Цена <span class="js-calc-cost-price-septic">62 050 руб.</span></p>
                 </td>
               </tr>
             </table>

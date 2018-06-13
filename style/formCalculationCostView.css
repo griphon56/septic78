@@ -19,6 +19,39 @@
 
 }
 
+.calc-cost-range-container {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.calc-cost-range{
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #5bb7c2;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.calc-cost-range::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #38858e;
+  cursor: pointer;
+}
+
+.calc-cost-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #38858e;
+  cursor: pointer;
+}
+
 .calc-cost-box .calc-cost-text{
   color: #525252;
   display: inline-block;
@@ -39,7 +72,7 @@
   width: 60px;
 }
 
-.calc-cost-box .scroll{
+.calc-cost-box .calc-cost-generator{
   border: 1px solid #5bb7c2;
   color: #525252;
   height: 28px;
