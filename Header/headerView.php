@@ -1,3 +1,5 @@
+<?php include ('Notification/notificationView.php'); ?>
+
 <div class="container-fluid header-top-line">
   <div class="container">
     <div class="row no-gutters">

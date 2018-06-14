@@ -33,4 +33,7 @@ function add_to_cart(o_sender)
     $jq_cart_count_container.show();
   else
     $jq_cart_count_container.hide();
+
+  // Уведомление о добавлении товара.
+  $('.notif').fadeIn().fadeOut(1000);
 }
