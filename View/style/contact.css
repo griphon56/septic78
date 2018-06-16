@@ -1,0 +1,52 @@
+.contact {
+  background-image: url(../img/contactView/water-treatment_large.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0px 100px;
+}
+
+.contact-form{
+  margin: 10px 0;
+  background-image: url(../img/contactView/bg_form.png);
+}
+
+.contact-form-title{
+  color: #444;
+  margin: 50px 0 35px 0;
+  font-size: 25px;
+  text-align: center;
+}
+
+.contact-seal {
+  margin: 15px 0 50px 0;
+  position: relative;
+}
+
+.contact-seal img{
+  width: 25px;
+  margin-right: 10px;
+  position: absolute;
+}
+
+.contact-seal p{
+  display: inline-block;
+  color: #656565;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 3px 0px 0px 30px;
+}
+
+/*Документы*/
+.document{
+  padding-bottom: 40px;
+}
+
+.document-bg-img{
+  background-image: url(../img/contactView/Voda-posle-edyi.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.document-img img{
+  width: 100%;
+}

@@ -1,0 +1,43 @@
+.section-item-text p,.section-item-text ul li{
+  font-size: 17px;
+  text-shadow: 1px 1px 0px #ffffff;
+  color:#535252;
+  padding-bottom: 10px;
+}
+
+.shipping-pay-form-bg{
+  position: relative;
+}
+
+.shipping-pay-form-bg .img-bg{
+  position: absolute;
+  width: 35%;
+}
+
+.shipping-pay-bg-img {
+  background-image: url(../img/ShippingPaymentView/water.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 680px;  
+}
+
+/* Преимущества */
+.advantages {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+  transition: .2s;
+}
+
+.advantages-img {
+  width: 75px;
+  color: #289dab;
+  margin-bottom: 15px;
+}
+
+.advantages-text{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #656565;
+}
