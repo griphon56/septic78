@@ -14,12 +14,6 @@ define('VIEW', '/View/');
 // папка с активным шаблоном
 define('TEMPLATE', PATH.VIEW);
 
-// папка с картинками контента
-//define('PRODUCTIMG', PATH.'userfiles/product_img/baseimg/');
-
-// папка с картинками галереи
-//define('GALLERYIMG', PATH.'userfiles/product_img/');
-
 // максимально допустимый вес загружаемых картинок - 1 Мб
 define('SIZE', 1048576);
 
