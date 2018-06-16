@@ -14,7 +14,7 @@
 <body>
 <div class="wrapper">
 
-<?php include(PATH.VIEW.'Notification/notificationView.php'); ?>
+<?php include(USER_TEMPLATE.'Notification/notificationView.php'); ?>
 
 <div class="container-fluid header-top-line">
   <div class="container">

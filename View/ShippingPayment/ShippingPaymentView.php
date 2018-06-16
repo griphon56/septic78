@@ -83,5 +83,5 @@
     </div>
   </div>
 
-  <?php include(PATH.VIEW.'RequestForm/requestFormView.php');?>
+  <?php include(USER_TEMPLATE.'RequestForm/requestFormView.php');?>
 </div>   

@@ -16,26 +16,26 @@ if(empty($id_page))
 switch($id_page)
 {
   case 'about_company':
-    $view = PATH.VIEW.'AboutCompany/aboutCompanyView.php';
+    $view = USER_TEMPLATE.'AboutCompany/aboutCompanyView.php';
     break;
   case 'catalog':
-    $view = PATH.VIEW.'Catalog/catalogView.php';
+    $view = USER_TEMPLATE.'Catalog/catalogView.php';
     break;
   case 'contact':
-    $view = PATH.VIEW.'Contact/contactView.php';
+    $view = USER_TEMPLATE.'Contact/contactView.php';
     break;
   case 'home':
-    $view = PATH.VIEW.'Home/homeView.php';
+    $view = USER_TEMPLATE.'Home/homeView.php';
     break;
   case 'shipping_pay':
-    $view = PATH.VIEW.'ShippingPayment/shippingPaymentView.php';
+    $view = USER_TEMPLATE.'ShippingPayment/shippingPaymentView.php';
     break;
   case 'service':
-    $view = PATH.VIEW.'Service/serviceView.php';
+    $view = USER_TEMPLATE.'Service/serviceView.php';
     break;
   default:
-    $view = PATH.VIEW.'notFound.php';
+    $view = USER_TEMPLATE.'notFound.php';
 }
 
 // Подключение View
-require_once PATH.VIEW.'index.php';
+require_once USER_TEMPLATE.'index.php';

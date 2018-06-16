@@ -11,8 +11,11 @@ define('CONTROLLER', 'Controller/Controller.php');
 // Вид.
 define('VIEW', '/View/');
 
-// папка с активным шаблоном
-define('TEMPLATE', PATH.VIEW);
+// Директория с активным шаблоном клиента
+define('USER_TEMPLATE', PATH.VIEW);
+
+// Директория с активным шаблоном администратора
+define('ADMIN_TEMPLATE', PATH.'/Admin/View/');
 
 // максимально допустимый вес загружаемых картинок - 1 Мб
 define('SIZE', 1048576);

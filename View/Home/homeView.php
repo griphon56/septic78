@@ -1,4 +1,4 @@
-<?php include(PATH.VIEW.'Home/homeSliderSkillView.php');?>
+<?php include(USER_TEMPLATE.'Home/homeSliderSkillView.php');?>
 
 <div class="container">
   <div class="row">
@@ -8,7 +8,7 @@
   </div>
 </div>
 
-<?php include(PATH.VIEW.'Product/productListHitSalesView.php');?>
+<?php include(USER_TEMPLATE.'Product/productListHitSalesView.php');?>
 
 <div class="container">
   <div class="row">
@@ -18,7 +18,7 @@
   </div>
 </div>
 
-<?php include(PATH.VIEW.'Product/productListView.php');?>
+<?php include(USER_TEMPLATE.'Product/productListView.php');?>
 
 <div class="container">
   <div class="row">
@@ -28,7 +28,7 @@
   </div>
 </div>
 
-<?php include(PATH.VIEW.'Home/homeSliderView.php');?>
+<?php include(USER_TEMPLATE.'Home/homeSliderView.php');?>
 
 <div class="container">
   <div class="row">
@@ -38,8 +38,8 @@
   </div>
 </div>
 
-<?php include(PATH.VIEW.'Home/homeSliderBrandView.php');?>
+<?php include(USER_TEMPLATE.'Home/homeSliderBrandView.php');?>
 
-<?php include(PATH.VIEW.'FormCalculationCost/formCalculationCostView.php');?>
+<?php include(USER_TEMPLATE.'FormCalculationCost/formCalculationCostView.php');?>
 
-<?php include(PATH.VIEW.'Footer/footerAboutUs.php');?>
+<?php include(USER_TEMPLATE.'Footer/footerAboutUs.php');?>
