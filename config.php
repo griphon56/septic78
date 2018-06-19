@@ -39,5 +39,5 @@ define('TITLE', 'Септик5.рф');
 define('ADMIN_EMAIL', '');
 
 $link = mysqli_connect(HOST, USER, PASS,DB) or die('No connect to Server');
-mysqli_query($link, "SET NAMES 'UTF8'") or die('Cant set charset');
+//mysqli_query($link, "SET NAMES 'UTF8'") or die('Cant set charset');
 ?>

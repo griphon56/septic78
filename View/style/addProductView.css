@@ -1,0 +1,30 @@
+.table-category-product{
+  margin-top: 20px;
+}
+
+.add-product-category-submit{
+  float: right;
+}
+
+.add-product-container{
+  margin: 10px 0;
+}
+
+.add-product-item li{
+  margin: 10px 0;
+}
+
+.add-product-item input[type="text"],.add-product-item textarea,.add-product-item select{
+  color: #656565;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.add-product-item .active-product-checkbox-label{
+  display: inline-block;
+  width: 150px;
+}
+
+.add-product-item label{
+  width: 100%;
+}

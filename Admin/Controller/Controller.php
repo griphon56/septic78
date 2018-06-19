@@ -14,14 +14,23 @@ if(empty($id_page))
 
 switch($id_page)
 {
-  case 'create_product':
+  case 'product_category':
+    $view = ADMIN_TEMPLATE.'Product/productCategoryView.php';
+    break;
+  case 'add_product_category':
+    $view = ADMIN_TEMPLATE.'Product/addProductCategoryView.php';
+    break;
+  case 'product':
+    $view = ADMIN_TEMPLATE.'Product/productView.php';
+    break;
+  case 'add_product':
     $view = ADMIN_TEMPLATE.'Product/addProductView.php';
     break;
   case 'admin':
     $view = ADMIN_TEMPLATE.'Home/homeView.php';
     break;
   default:
-    $view = ADMIN_TEMPLATE.'notFound.php';
+    $view = USER_TEMPLATE.'notFound.php';
 }
 
 // Подключение View

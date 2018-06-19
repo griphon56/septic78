@@ -2,7 +2,7 @@
 /**
  * Дебаг лог.
  *
- * @param array $a_data Массив.
+ * @param array $a_data Массив для вывода.
  */
 function debug_log(array $a_data)
 {
@@ -24,6 +24,8 @@ function getPageId()
 }
 
 /**
+ * Метод отрисовки Основного меню сайта.
+ *
  * @param array $a_menu Массив меню.
  */
 function drawMenu(array $a_menu)
