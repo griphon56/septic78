@@ -20,6 +20,9 @@ switch($id_page)
   case 'add_product_category':
     $view = ADMIN_TEMPLATE.'Product/addProductCategoryView.php';
     break;
+  case 'edit_product_category':
+    $view = ADMIN_TEMPLATE.'Product/editProductCategoryView.php';
+    break;
   case 'product':
     $view = ADMIN_TEMPLATE.'Product/productView.php';
     break;

@@ -40,3 +40,5 @@ $.getScript('../view/js/formCalculationCost.js');
 
 // Плагин корзины в шапке сайта
 $.getScript('../view/js/cartHeader.js');
+
+// $.getScript('/Admin/View/Product/ajax.js');

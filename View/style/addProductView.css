@@ -2,7 +2,7 @@
   margin-top: 20px;
 }
 
-.add-product-category-submit{
+.add-product-category-submit,.edit-product-category-submit{
   float: right;
 }
 
@@ -18,6 +18,10 @@
   color: #656565;
   padding: 5px 10px;
   width: 100%;
+}
+
+.add-product-item textarea{
+  height: 200px;
 }
 
 .add-product-item .active-product-checkbox-label{

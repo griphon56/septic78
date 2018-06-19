@@ -17,9 +17,11 @@
     foreach ($a_data as $a_item)
     {
       echo('<tr><td>'.$a_item['s_title'].'</td>');
-      echo('<td><a href="#" class="btn btn-info" name="'.$a_item['k_product_caregory'].'">Изменить</a></td>');
-      echo('<td><a href="#" class="btn btn-danger" name="'.$a_item['k_product_caregory'].'">Удалить</a></td></tr>');
+      echo('<td><a href="index.php?id_page=edit_product_category&k_product_category='.$a_item['k_product_category'].'" class="btn btn-info">Изменить</a></td>');
+      echo('<td><button type="submit" onclick="del_category(this);" class="btn btn-danger" name="'.$a_item['k_product_category'].'">Удалить</button></td></tr>');
     }
   ?>
   </table>
 </div>
+
+<script src="/Admin/View/Product/ajax.js"></script>
