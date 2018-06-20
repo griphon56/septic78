@@ -45,6 +45,18 @@ function drawMenu(array $a_menu)
     else
       echo('<a href='.$item["href"].'>'.$item["link"].'</a>');
 
+    //sub menu
+    if(isset($item['a_submenu']))
+    {
+      echo('<ul class="header-submenu">');
+      foreach($item['a_submenu'] as $a_item)
+      {
+        echo('<li>');
+          echo('<a href=' . $a_item["href"] . '>' . $a_item["link"] . '</a>');
+        echo('</li>');
+      }
+      echo('</ul>');
+    }
     echo('</li>');
   }
   echo('</ul>');

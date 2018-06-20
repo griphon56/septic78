@@ -1,4 +1,17 @@
 <?php
+
+$a_product_category_data = getProductCategory();
+
+$a_product_category = [];
+foreach ($a_product_category_data as $a_item)
+{
+  $a_product_category[] = [
+    'link' => $a_item['s_title'],
+    'href'=>'index.php?id_page=catalog&k_product_category='.$a_item['k_product_category'],
+    'id'=>'catalog',
+    ];
+}
+
 $a_menu = [
   [
     'link'=>'Главная',
@@ -7,8 +20,9 @@ $a_menu = [
   ],
   [
     'link'=>'Каталог',
-    'href'=>'index.php?id_page=catalog',
-    'id'=>'catalog'
+    'href'=>$a_product_category[0]['href'],
+    'id'=>'catalog',
+    'a_submenu' => $a_product_category
   ],
   [
     'link'=>'Наши услуги',

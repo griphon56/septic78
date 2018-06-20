@@ -7,6 +7,7 @@ require_once MODEL;
 
 // Подключение библиотеки функций
 require_once 'Core/Function.php';
+require_once 'Admin/Function/Function.php';
 
 $id_page = getPageId();
 

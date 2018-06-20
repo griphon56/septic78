@@ -2,11 +2,20 @@
   background-color: #f4f4f4;
 }
 
-.main-menu ul li{
-  display: inline-block;
+.main-menu .active-menu{
+  padding-top: 17px;
+  background-color: #5bb7c2;
+  color: #f4f4f4;
+  text-decoration: none;
+  border-top: 3px solid #289dab;
 }
 
-.main-menu ul li a{
+.main-menu ul li{
+  display: inline-block;
+  position: relative;
+}
+
+.main-menu ul li a, .header-submenu li a{
   display: block;
   padding: 20px 14px;
   text-transform: uppercase;
@@ -21,4 +30,32 @@
   color: #f4f4f4;
   text-decoration: none;
   border-top: 3px solid #289dab;
+}
+
+.main-menu ul li a:hover + .header-submenu{
+  display: block;
+}
+
+.header-submenu{
+  background-color: #f4f4f4;
+  display: none;
+  position: absolute;
+  width: 165px;
+  z-index: 10;
+}
+
+.header-submenu:hover{
+  display: block;
+}
+
+.main-menu .header-submenu li{
+   display: block;
+}
+
+.main-menu .header-submenu li a:hover{
+  background-color: #5bb7c2;
+  border: none;
+  color: #f4f4f4;
+  padding: 20px 14px;
+  text-decoration: none;
 }
