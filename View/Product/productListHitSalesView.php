@@ -41,15 +41,16 @@
       $i_count = 0;
       foreach($a_product as $a_item)
       {
-        $i_count += 1;
-
-        if($i_count==1)
+        if($i_count==0)
         {
           echo('<div class="carousel-item active">');
             echo('<div class="row product-list-row">');
         }
-        if($i_count % 5 == 0)
+
+        $i_count += 1;
+        if($i_count == 5)
         {
+          $i_count=1;
           echo('<div class="carousel-item">');
             echo('<div class="row product-list-row">');
         }
@@ -88,7 +89,7 @@
           echo('</div>');
         echo('</div>');
 
-        if($i_count % 4 == 0)
+        if($i_count == 4)
         {
           echo('</div>');
           echo('</div>');
