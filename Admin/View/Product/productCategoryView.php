@@ -16,7 +16,10 @@
 
     foreach ($a_data as $a_item)
     {
+      $s_active = $a_item['is_active'] ? 'Активный' : 'Неактивный';
+
       echo('<tr><td>'.$a_item['s_title'].'</td>');
+      echo('<td>'.$s_active.'</td>');
       echo('<td><a href="index.php?id_page=edit_product_category&k_product_category='.$a_item['k_product_category'].'" class="btn btn-info">Изменить</a></td>');
       echo('<td><button type="submit" onclick="del_category(this);" class="btn btn-danger" name="'.$a_item['k_product_category'].'">Удалить</button></td></tr>');
     }

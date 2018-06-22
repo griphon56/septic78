@@ -30,7 +30,7 @@ function addProduct()
   $k_product_category = trim($_POST['id_category']);
 
   $img_product = '';
-  if($s_name&&isset($_POST['img_product']))
+  if($s_name)
     $img_product = uploadImage('img_product','product');
 
   $i_price = trim($_POST['i_cost']);
@@ -108,7 +108,7 @@ function editProduct(string $k_product)
   $k_product_category = trim($_POST['id_category']);
 
   $img_product = '';
-  if($s_name&&isset($_POST['img_product']))
+  if($s_name)
     $img_product = uploadImage('img_product','product');
 
   $i_price = trim($_POST['i_cost']);

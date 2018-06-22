@@ -30,7 +30,7 @@
                     name="is_active"
                     value="1"
                     <?php
-                      if($a_data[0]['is_active'])
+                      if(!empty($a_data[0]['is_active']))
                         echo('checked');
                     ?>
                     id="is_active" />

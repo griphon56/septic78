@@ -26,12 +26,12 @@ function addProductCategory()
   $link = mysqli_connect('localhost', 'root', '', 'septic');
   mysqli_set_charset($link, 'utf8');
 
-  $is_active = $_POST['$is_active'] ?? 0;
+  $is_active = $_POST['is_active'] ?? 0;
   $s_name_category = trim($_POST['name_category']);
   $s_desc_category = trim($_POST['desc_category']);
 
   $s_img='';
-  if($s_name_category&&isset($_POST['img_category']))
+  if($s_name_category)
     $s_img = uploadImage('img_category','category_product');
 
   $query = "
@@ -78,12 +78,12 @@ function editProductCategory(string $k_product_category)
   $link = mysqli_connect('localhost', 'root', '', 'septic');
   mysqli_set_charset($link, 'utf8');
 
-  $is_active = $_POST['$is_active'] ?? 0;
+  $is_active = $_POST['is_active'] ?? 0;
   $s_name_category = trim($_POST['name_category']);
   $s_desc_category = trim($_POST['desc_category']);
 
   $s_img='';
-  if($s_name_category&&isset($_POST['img_category']))
+  if($s_name_category)
     $s_img = uploadImage('img_category','category_product');
 
   $query = "

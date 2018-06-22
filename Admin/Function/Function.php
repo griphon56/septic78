@@ -8,7 +8,7 @@
  * @param bool|null $is_active Если <tt>true</tt> то выведет все активные товары.
  * @return array <tt>Массив продуктов</tt>
  */
-function getProduct(string $k_product=null, string $k_product_category=null, bool $is_active=null)
+function getProduct(string $k_product=null, string $k_product_category=null, bool $is_active=null, bool $is_stock=null)
 {
   $link = mysqli_connect(HOST, USER, PASS,DB) or die('No connect to Server');
   mysqli_set_charset($link,'utf8');
@@ -18,6 +18,10 @@ function getProduct(string $k_product=null, string $k_product_category=null, boo
     $where = 'product.k_product='.$k_product.$q_active;
   elseif($k_product_category)
     $where = 'product.k_product_category='.$k_product_category.$q_active;
+  elseif(!$k_product_category&&!$k_product&&$is_active)
+    $where = 'product.is_active=1';
+  elseif(!$k_product_category&&!$k_product&&$is_stock)
+    $where = 'product.is_stock=1';
   else
     $where = 'true';
 
@@ -142,8 +146,8 @@ function uploadImage(string $_FILES_offset, string $path_dir)
 
   // Зададим ограничения для картинок
   $limitBytes  = 1024 * 1024 * 5;
-  $limitWidth  = 1280;
-  $limitHeight = 768;
+  $limitWidth  = 1980;
+  $limitHeight = 1980;
 
   // Проверим нужные параметры
   if (filesize($filePath) > $limitBytes)

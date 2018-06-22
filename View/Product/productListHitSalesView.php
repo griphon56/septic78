@@ -1,3 +1,6 @@
+<?php
+  $a_product = getProduct(null,null, null,1);
+?>
 <div class="container-fluid bootstrap-slider-product-hit-sales">
   <a class="carousel-control-prev slider-product-control-prev" href="#product-hit-sales" data-slide="prev">
     <span class="slider-product-control-prev-icon">
@@ -11,12 +14,18 @@
   </a>
 
   <ul class="carousel-indicators">
-    <li data-target="#product-hit-sales" data-slide-to="0" class="active slider-product-indicators">
-      <span class="indicators-text">1</span>
-    </li>
-    <li data-target="#product-hit-sales" data-slide-to="1" class="slider-product-indicators">
-      <span class="indicators-text">2</span>
-    </li>
+    <?php
+      for($i=0;$i<abs(count($a_product)/4);$i++)
+      {
+        $i_item = $i+1;
+        if($i==0)
+          echo('<li data-target="#product-hit-sales" data-slide-to="'.$i.'"active class="slider-product-indicators">');
+        else
+          echo('<li data-target="#product-hit-sales" data-slide-to="'.$i.'"class="slider-product-indicators">');
+        echo('<span class="indicators-text">'.$i_item.'</span>');
+        echo('</li>');
+      }
+    ?>
   </ul>
 
   <div class="hr-blue"></div>
@@ -27,201 +36,65 @@
     data-interval="false"
   >
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="row product-list-row">
-          <div class="col-md-3">
-            <div class="product-item">
-              <ul>
-                <li class="product-item-img"><img src="<?=VIEW?>img/productView/1.png" alt=""></li>
-                <li class="product-item-title">
-                  <h4>Септик Росток Мини</h4>
-                </li>
-                <li class="product-item-box">
-                  <div class="container">
-                    <div class="row">
-                      <div class="product-item-cost col-9">
-                        <p class="price-active"><span class="js-price-active">78 770</span> руб.</p>
-                      </div>
-                      <div class="col-3 add-cart-box">
-                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart">
-                          <img src="<?=VIEW?>img/productView/shopping-cart.png" alt="">
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="product-item">
-              <ul>
-                <li class="product-item-img"><img src="<?=VIEW?>img/productView/2.png" alt=""></li>
-                <li class="product-item-title">
-                  <h4>Септик Юнилос Астра 8</h4>
-                </li>
-                <li class="product-item-box">
-                  <div class="container">
-                    <div class="row">
-                      <div class="product-item-cost col-9">
-                        <p class="price-active"><span class="js-price-active">62 030</span> руб.</p>
-                      </div>
-                      <div class="col-3 add-cart-box">
-                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="<?=VIEW?>img/productView/shopping-cart.png" alt=""></a>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="product-item">
-              <ul>
-                <li class="product-item-img"><img src="<?=VIEW?>img/productView/1.png" alt=""></li>
-                <li class="product-item-title">
-                  <h4>Септик Росток Мини</h4>
-                </li>
-                <li class="product-item-box">
-                  <div class="container">
-                    <div class="row">
-                      <div class="product-item-cost col-9">
-                        <p class="price"><span class="js-price-active">25 900</span> руб.</p>
-                        <p class="discount">75 550 руб.</p>
-                      </div>
-                      <div class="col-3 add-cart-box">
-                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="<?=VIEW?>img/productView/shopping-cart.png" alt=""></a>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="product-item">
-              <ul>
-                <li class="product-item-img"><img src="<?=VIEW?>img/productView/1.png" alt=""></li>
-                <li class="product-item-title">
-                  <h4>Септик Росток Мини</h4>
-                </li>
-                <li class="product-item-box">
-                  <div class="container">
-                    <div class="row">
-                      <div class="product-item-cost col-9">
-                        <p class="price-active"><span class="js-price-active">78 770</span> руб.</p>
-                      </div>
-                      <div class="col-3 add-cart-box">
-                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart">
-                          <img src="<?=VIEW?>img/productView/shopping-cart.png" alt="">
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="carousel-item">
-        <div class="row product-list-row">
-          <div class="col-md-3">
-            <div class="product-item">
-              <ul>
-                <li class="product-item-img"><img src="<?=VIEW?>img/productView/1.png" alt=""></li>
-                <li class="product-item-title">
-                  <h4>Септик Росток Мини</h4>
-                </li>
-                <li class="product-item-box">
-                  <div class="container">
-                    <div class="row">
-                      <div class="product-item-cost col-9">
-                        <p class="price-active"><span class="js-price-active">78 770</span> руб.</p>
-                      </div>
-                      <div class="col-3 add-cart-box">
-                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart">
-                          <img src="<?=VIEW?>img/productView/shopping-cart.png" alt="">
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="product-item">
-              <ul>
-                <li class="product-item-img"><img src="<?=VIEW?>img/productView/2.png" alt=""></li>
-                <li class="product-item-title">
-                  <h4>Септик Юнилос Астра 8</h4>
-                </li>
-                <li class="product-item-box">
-                  <div class="container">
-                    <div class="row">
-                      <div class="product-item-cost col-9">
-                        <p class="price-active"><span class="js-price-active">62 030</span> руб.</p>
-                      </div>
-                      <div class="col-3 add-cart-box">
-                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="<?=VIEW?>img/productView/shopping-cart.png" alt=""></a>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="product-item">
-              <ul>
-                <li class="product-item-img"><img src="<?=VIEW?>img/productView/1.png" alt=""></li>
-                <li class="product-item-title">
-                  <h4>Септик Росток Мини</h4>
-                </li>
-                <li class="product-item-box">
-                  <div class="container">
-                    <div class="row">
-                      <div class="product-item-cost col-9">
-                        <p class="price"><span class="js-price-active">25 900</span> руб.</p>
-                        <p class="discount">75 550 руб.</p>
-                      </div>
-                      <div class="col-3 add-cart-box">
-                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart"><img src="<?=VIEW?>img/productView/shopping-cart.png" alt=""></a>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="product-item">
-              <ul>
-                <li class="product-item-img"><img src="<?=VIEW?>img/productView/1.png" alt=""></li>
-                <li class="product-item-title">
-                  <h4>Септик Росток Мини</h4>
-                </li>
-                <li class="product-item-box">
-                  <div class="container">
-                    <div class="row">
-                      <div class="product-item-cost col-9">
-                        <p class="price-active"><span class="js-price-active">78 770</span> руб.</p>
-                      </div>
-                      <div class="col-3 add-cart-box">
-                        <a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart">
-                          <img src="<?=VIEW?>img/productView/shopping-cart.png" alt="">
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php
+      $i_count = 0;
+      foreach($a_product as $a_item)
+      {
+        $i_count += 1;
+
+        if($i_count==1)
+        {
+          echo('<div class="carousel-item active">');
+            echo('<div class="row product-list-row">');
+        }
+        if($i_count % 5 == 0)
+        {
+          echo('<div class="carousel-item">');
+            echo('<div class="row product-list-row">');
+        }
+
+        echo('<div class="col-md-3">');
+          echo('<div class="product-item">');
+            echo('<ul>');
+              echo('<li class="product-item-img"><img src="'.VIEW.'upload_img/product/'.$a_item['img'].'" alt=""></li>');
+              echo('<li class="product-item-title">');
+                echo('<h4>'.$a_item['s_name'].'</h4>');
+              echo('</li>');
+              echo('<li class="product-item-box">');
+                echo('<div class="container">');
+                  echo('<div class="row">');
+                    echo('<div class="product-item-cost col-9">');
+
+                      if($a_item['i_discount'])
+                      {
+                        echo('<p class="price"><span class="js-price-active">'.number_format($a_item['i_price'], 0, '.', ' ').'</span> руб.</p>');
+                        echo('<p class="discount">'.number_format($a_item['i_discount'], 0, '.', ' ').' руб.</p>');
+                      }
+                      else
+                      {
+                        echo ('<p class="price-active"><span class="js-price-active">'.number_format($a_item['i_price'], 0, '.', ' ').'</span> руб.</p>');
+                      }
+                    echo('</div>');
+                    echo('<div class="col-3 add-cart-box">');
+                      echo('<a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart">
+                              <img src="'.VIEW.'img/productView/shopping-cart.png" alt="">
+                            </a>');
+                    echo('</div>');
+                  echo('</div>');
+                echo('</div>');
+              echo('</li>');
+            echo('</ul>');
+          echo('</div>');
+        echo('</div>');
+
+        if($i_count % 4 == 0)
+        {
+          echo('</div>');
+          echo('</div>');
+        }
+      }
+      ?>
     </div>
   </div>
 </div>
