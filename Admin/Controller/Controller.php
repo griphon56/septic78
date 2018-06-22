@@ -29,6 +29,9 @@ switch($id_page)
   case 'add_product':
     $view = ADMIN_TEMPLATE.'Product/addProductView.php';
     break;
+  case 'edit_product':
+    $view = ADMIN_TEMPLATE.'Product/editProductView.php';
+    break;
   case 'admin':
     $view = ADMIN_TEMPLATE.'Home/homeView.php';
     break;

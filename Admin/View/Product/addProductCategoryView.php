@@ -12,7 +12,7 @@
               <ul class="add-product-item">
                 <li>
                   <label for="name_category">Название категории</label>
-                  <input type="text" name="name_category" id="name_category" value=""/>
+                  <input type="text" placeholder="Септик" name="name_category" id="name_category" value=""/>
                 </li>
                 <li>
                   <label for="desc_category">Описание категории</label>

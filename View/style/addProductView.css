@@ -28,3 +28,12 @@
 .add-product-item label{
   width: 100%;
 }
+
+.include-with-product{
+
+}
+
+.include-with-product img{
+  margin-bottom: 10px;
+  width: 70px;
+}

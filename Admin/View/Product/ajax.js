@@ -55,3 +55,30 @@ function del_category(o_sender)
   else
     alert('Нечего удалять');
 }
+
+/**
+ * Метод удаления товара.
+ * @param o_sender
+ */
+function del_product(o_sender)
+{
+  $this = $(o_sender);
+  var k_product = $this.attr('name');
+
+  if (k_product) {
+    $.ajax({
+      type: 'POST',
+      url: '/Admin/View/Product/actionProduct.php',
+      data: {
+        action_form: 'del_product',
+        k_product: k_product
+      },
+      success: function (msg) {
+        $this.closest('tr').css({'display' : 'none'});
+        alert(msg);
+      }
+    });
+  }
+  else
+    alert('Нечего удалять');
+}
