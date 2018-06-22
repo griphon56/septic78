@@ -1,8 +1,54 @@
 <?php
 
-function addProductCategory()
+/**
+ * Метод для получения продуктов.
+ *
+ * @param string|null $k_product <tt>Ключ продукта</tt>, для вывода одного товара.
+ * @param string|null $k_product_category <tt>Ключ категории товара</tt>, для вывода всех активных товаров одной категории.
+ * @param bool|null $is_active Если <tt>true</tt> то выведет все активные товары.
+ * @return array <tt>Массив продуктов</tt>
+ */
+function getProduct(string $k_product=null, string $k_product_category=null, bool $is_active=null)
 {
+  $link = mysqli_connect(HOST, USER, PASS,DB) or die('No connect to Server');
+  mysqli_set_charset($link,'utf8');
 
+  $q_active = $is_active ? ' and is_active=1' : '';
+  if($k_product)
+    $where = 'product.k_product='.$k_product.$q_active;
+  elseif($k_product_category)
+    $where = 'product.k_product_category='.$k_product_category.$q_active;
+  else
+    $where = 'true';
+
+  $query = "
+    select
+      product.i_discount,
+      product.img,
+      product.i_price,
+      product.is_active,
+      product.is_stock,
+      product.k_product,
+      product_category.s_title as name_category,
+      product.s_name,
+      product.z_data
+    from 
+      product inner join
+      product_category on
+        product_category.k_product_category=product.k_product_category
+    where
+      ".$where.";
+  ";
+
+  $r_query = mysqli_query($link,$query);
+  mysqli_close($link);
+
+  $a_product = [];
+  while($row = mysqli_fetch_assoc($r_query)){
+    $a_product[] = $row;
+  }
+
+  return $a_product;
 }
 
 /**
@@ -24,6 +70,7 @@ function getProductCategory(string $k_product_category=null)
   $query = "
     select 
       k_product_category,
+      is_active,
       s_description,
       s_img,
       s_title
@@ -36,7 +83,7 @@ function getProductCategory(string $k_product_category=null)
   $r_query = mysqli_query($link,$query);
   mysqli_close($link);
 
-  $a_category = array();
+  $a_category = [];
   while($row = mysqli_fetch_assoc($r_query)){
     $a_category[] = $row;
   }
@@ -44,4 +91,85 @@ function getProductCategory(string $k_product_category=null)
   return $a_category;
 }
 
+/**
+ * @param string $_FILES_offset <tt>Смещение в Суперглобальном массиве <var>_FILES</var></tt>
+ * @param string $path_dir <tt>Название дериктории для сохранения картинки.</tt>
+ * @return string Имя картинки с расширением.
+ */
+function uploadImage(string $_FILES_offset, string $path_dir)
+{
+  $filePath  = $_FILES[$_FILES_offset]['tmp_name'];
+  $errorCode = $_FILES[$_FILES_offset]['error'];
+
+  // Проверим на ошибки
+  if ($errorCode !== UPLOAD_ERR_OK || !is_uploaded_file($filePath))
+  {
+    // Массив с названиями ошибок
+    $errorMessages = [
+      UPLOAD_ERR_INI_SIZE   => 'Размер файла превысил значение upload_max_filesize в конфигурации PHP.',
+      UPLOAD_ERR_FORM_SIZE  => 'Размер загружаемого файла превысил значение MAX_FILE_SIZE в HTML-форме.',
+      UPLOAD_ERR_PARTIAL    => 'Загружаемый файл был получен только частично.',
+      UPLOAD_ERR_NO_FILE    => 'Файл не был загружен.',
+      UPLOAD_ERR_NO_TMP_DIR => 'Отсутствует временная папка.',
+      UPLOAD_ERR_CANT_WRITE => 'Не удалось записать файл на диск.',
+      UPLOAD_ERR_EXTENSION  => 'PHP-расширение остановило загрузку файла.',
+    ];
+
+    // Зададим неизвестную ошибку
+    $unknownMessage = 'При загрузке файла произошла неизвестная ошибка.';
+
+    // Если в массиве нет кода ошибки, скажем, что ошибка неизвестна
+    $outputMessage = isset($errorMessages[$errorCode]) ? $errorMessages[$errorCode] : $unknownMessage;
+
+    // Выведем название ошибки
+    die($outputMessage);
+  }
+
+  // Создадим ресурс FileInfo
+  $fi = finfo_open(FILEINFO_MIME_TYPE);
+
+  // Получим MIME-тип
+  $mime = (string) finfo_file($fi, $filePath);
+
+  // Закроем ресурс
+  finfo_close($fi);
+
+  // Проверим ключевое слово image (image/jpeg, image/png и т. д.)
+  if (strpos($mime, 'image') === false) die('Можно загружать только изображения.');
+
+  // Результат функции запишем в переменную
+  $image = getimagesize($filePath);
+
+  // Зададим ограничения для картинок
+  $limitBytes  = 1024 * 1024 * 5;
+  $limitWidth  = 1280;
+  $limitHeight = 768;
+
+  // Проверим нужные параметры
+  if (filesize($filePath) > $limitBytes)
+    die('Размер изображения не должен превышать 5 Мбайт.');
+
+  if ($image[1] > $limitHeight)
+    die('Высота изображения не должна превышать 768 точек.');
+
+  if ($image[0] > $limitWidth)
+    die('Ширина изображения не должна превышать 1280 точек.');
+
+  // Сгенерируем новое имя файла на основе MD5-хеша
+  $s_name = md5_file($filePath);
+
+  // Сгенерируем расширение файла на основе типа картинки
+  $extension = image_type_to_extension($image[2]);
+
+  // Сократим .jpeg до .jpg
+  $format = str_replace('jpeg', 'jpg', $extension);
+
+  // Переместим картинку с новым именем и расширением в папку /pics
+  if (!move_uploaded_file($filePath, $_SERVER['DOCUMENT_ROOT'].'/View/upload_img/'.$path_dir.'/' . $s_name . $format))
+  {
+    die('При записи изображения на диск произошла ошибка.');
+  }
+
+  return $s_name.$format;
+}
 ?>

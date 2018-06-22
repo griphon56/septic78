@@ -5,29 +5,13 @@ $(document).ready(function()
    */
   $('.add-product-category-submit').click(function(event)
   {
-    event.preventDefault();
-    var desc_category = $('#desc_category').val();
-    var img_category = $('input[name="img_category"]').val();
     var name_category = $('input[name="name_category"]').val();
 
-    if(name_category.length)
+    if(!name_category.length)
     {
-      $.ajax({
-        type: 'POST',
-        url: '/Admin/View/Product/actionProductCategory.php',
-        data:{
-          action_form: 'add_category',
-          desc_category: desc_category,
-          img_category: img_category,
-          name_category: name_category
-        },
-        success:function(){
-          alert('Категория добавлена.');
-        }
-      });
-    }
-    else
+      event.preventDefault();
       alert('Категория без названия.');
+    }
   });
 
   /**
@@ -35,31 +19,13 @@ $(document).ready(function()
    */
   $('.edit-product-category-submit').click(function(event)
   {
-    event.preventDefault();
-    var desc_category = $('#desc_category').val();
-    var img_category = $('input[name="img_category"]').val();
-    var k_product_category = $('input[name="k_product_category"]').val();
     var name_category = $('input[name="name_category"]').val();
 
-    if(name_category.length)
+    if(!name_category.length)
     {
-      $.ajax({
-        type: 'POST',
-        url: '/Admin/View/Product/actionProductCategory.php',
-        data:{
-          action_form: 'edit_category',
-          desc_category: desc_category,
-          k_product_category: k_product_category,
-          img_category: img_category,
-          name_category: name_category
-        },
-        success:function(msg){
-          alert('Категория изменена.'+msg);
-        }
-      });
-    }
-    else
+      event.preventDefault();
       alert('Категория без названия.');
+    }
   });
 });
 
@@ -82,7 +48,7 @@ function del_category(o_sender)
       },
       success: function (msg) {
         $this.closest('tr').css({'display' : 'none'});
-        alert('Категория удалена.' + msg);
+        alert(msg);
       }
     });
   }

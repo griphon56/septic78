@@ -17,9 +17,6 @@ define('USER_TEMPLATE', PATH.VIEW);
 // Директория с активным шаблоном администратора
 define('ADMIN_TEMPLATE', PATH.'/Admin/View/');
 
-// максимально допустимый вес загружаемых картинок - 1 Мб
-define('SIZE', 1048576);
-
 // сервер БД
 define('HOST', 'localhost');
 

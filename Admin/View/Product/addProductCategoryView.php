@@ -1,8 +1,11 @@
+<?php
+  include('../Admin/View/Product/actionProductCategory.php');
+?>
 <div class="container">
   <div class="row add-product-container">
     <div class="col">
       <h3 class="section-item">Добавление категории</h3>
-      <form action="" method="post">
+      <form action="" method="post" enctype="multipart/form-data">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
@@ -16,8 +19,12 @@
                   <textarea name="desc_category" id="desc_category">Септик Астра</textarea>
                 </li>
                 <li>
+                  <label for="is_active" class="active-product-checkbox-label">Активный</label>
+                  <input type="checkbox" name="is_active" value="1" id="is_active"/>
+                </li>
+                <li>
                   <label for="img_category">Картинка</label>
-                  <input type="text" name="img_category" id="img_category" value=""/>
+                  <input type="file" name="img_category" id="img_category" value=""/>
                 </li>
               </ul>
             </div>
@@ -27,7 +34,7 @@
               <a href="index.php?id_page=product_category" class="btn btn-info">Отмена</a>
             </div>
             <div class="col-md-3">
-              <input type="submit" value="Добавить" class="add-product-category-submit btn btn-success">
+              <input type="submit" value="add_category" name="action_form" class="add-product-category-submit float-right btn btn-success">
             </div>
           </div>
         </div>
