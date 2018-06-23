@@ -34,6 +34,9 @@ switch($id_page)
   case 'service':
     $view = USER_TEMPLATE.'Service/serviceView.php';
     break;
+  case 'product':
+    $view = USER_TEMPLATE.'Product/productView.php';
+    break;
   default:
     $view = USER_TEMPLATE.'notFound.php';
 }

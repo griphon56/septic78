@@ -184,8 +184,14 @@ function getProductCategory(string $k_product_category=null)
   mysqli_close($link);
 
   $a_category = [];
-  while($row = mysqli_fetch_assoc($r_query)){
-    $a_category[] = $row;
+  if($k_product_category)
+  {
+    $a_category = mysqli_fetch_assoc($r_query);
+  }
+  else
+  {
+    while ($row = mysqli_fetch_assoc($r_query))
+      $a_category[] = $row;
   }
 
   return $a_category;

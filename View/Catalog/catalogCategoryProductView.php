@@ -1,6 +1,15 @@
 <?php
-  $a_product = getProduct();
+  $k_product_category = $_REQUEST['k_product_category'];
+  $a_product = getProduct($k_product_category);
 ?>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2 class="section-item"><?=$a_product[0]['name_category']?></h2>
+    </div>
+  </div>
+</div>
+
 <div class="container-fluid bootstrap-slider-product-hit-sales">
 
   <div
@@ -38,7 +47,7 @@
     <div class="hr-blue"></div>
 
     <div class="carousel-inner">
-    <?php
+      <?php
       $i_count = 0;
       $j_count = 0;
       foreach($a_product as $a_item)
@@ -105,8 +114,8 @@
           echo('</div>');
         }
       }
-    ?>
-    </div>
+      ?>
     </div>
   </div>
+</div>
 </div>

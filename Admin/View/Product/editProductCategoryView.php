@@ -13,15 +13,15 @@
               <ul class="add-product-item">
                 <li style="display: none;">
                   <label for="k_product_category">ID</label>
-                  <input type="text" name="k_product_category" readonly id="k_product_category" value="<?=$a_data[0]['k_product_category']?>"/>
+                  <input type="text" name="k_product_category" readonly id="k_product_category" value="<?=$a_data['k_product_category']?>"/>
                 </li>
                 <li>
                   <label for="name_category">Название категории</label>
-                  <input type="text" name="name_category" id="name_category" value="<?=$a_data[0]['s_title']?>"/>
+                  <input type="text" name="name_category" id="name_category" value="<?=$a_data['s_title']?>"/>
                 </li>
                 <li>
                   <label for="desc_category">Описание категории</label>
-                  <textarea name="desc_category" id="desc_category"><?=$a_data[0]['s_description']?></textarea>
+                  <textarea name="desc_category" id="desc_category"><?=$a_data['s_description']?></textarea>
                 </li>
                 <li>
                   <label for="is_active" class="active-product-checkbox-label">Активный</label>
@@ -30,7 +30,7 @@
                     name="is_active"
                     value="1"
                     <?php
-                      if(!empty($a_data[0]['is_active']))
+                      if(!empty($a_data['is_active']))
                         echo('checked');
                     ?>
                     id="is_active" />
