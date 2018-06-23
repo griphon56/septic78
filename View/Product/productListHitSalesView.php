@@ -1,40 +1,42 @@
 <?php
-  $a_product = getProduct(null,null, null,1);
+  $a_product = getProductHitSales();
 ?>
 <div class="container-fluid bootstrap-slider-product-hit-sales">
-  <a class="carousel-control-prev slider-product-control-prev" href="#product-hit-sales" data-slide="prev">
-    <span class="slider-product-control-prev-icon">
-      <img class="icon-arrow" src="<?=VIEW?>img/productView/left-arrow.png" alt="">
-    </span>
-  </a>
-  <a class="carousel-control-next slider-product-control-next" href="#product-hit-sales" data-slide="next">
-    <span class="slider-product-control-next-icon">
-      <img class="icon-arrow" src="<?=VIEW?>img/productView/right-arrow.png" alt="">
-    </span>
-  </a>
-
-  <ul class="carousel-indicators">
-    <?php
-      for($i=0;$i<abs(count($a_product)/4);$i++)
-      {
-        $i_item = $i+1;
-        if($i==0)
-          echo('<li data-target="#product-hit-sales" data-slide-to="'.$i.'"active class="slider-product-indicators">');
-        else
-          echo('<li data-target="#product-hit-sales" data-slide-to="'.$i.'"class="slider-product-indicators">');
-        echo('<span class="indicators-text">'.$i_item.'</span>');
-        echo('</li>');
-      }
-    ?>
-  </ul>
-
-  <div class="hr-blue"></div>
   <div
     class="container carousel slide"
     id="product-hit-sales"
     data-ride="carousel"
     data-interval="false"
   >
+
+    <a class="carousel-control-prev slider-product-control-prev" href="#product-hit-sales" data-slide="prev">
+      <span class="slider-product-control-prev-icon">
+        <img class="icon-arrow" src="<?=VIEW?>img/productView/left-arrow.png" alt="">
+      </span>
+    </a>
+    <a class="carousel-control-next slider-product-control-next" href="#product-hit-sales" data-slide="next">
+      <span class="slider-product-control-next-icon">
+        <img class="icon-arrow" src="<?=VIEW?>img/productView/right-arrow.png" alt="">
+      </span>
+    </a>
+
+    <ol class="carousel-indicators">
+      <?php
+      for($i=0;$i<abs(count($a_product)/4);$i++)
+      {
+        $i_item = $i+1;
+        if($i==0)
+          echo('<li data-target="#product-hit-sales" data-slide-to="'.$i.'"class="active slider-product-indicators">');
+        else
+          echo('<li data-target="#product-hit-sales" data-slide-to="'.$i.'"class="slider-product-indicators">');
+        echo('<span class="indicators-text">'.$i_item.'</span>');
+        echo('</li>');
+      }
+      ?>
+    </ol>
+
+    <div class="hr-blue"></div>
+
     <div class="carousel-inner">
 
       <?php

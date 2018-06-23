@@ -33,7 +33,10 @@
 
                     foreach ($a_category as $a_item)
                     {
-                      echo('<option value="'.$a_item['k_product_category'].'">'.$a_item['s_title'].'</option>');
+                      if($a_item['k_product_category']==$a_product[0]['k_product_category'])
+                        echo('<option value="'.$a_item['k_product_category'].'" selected>'.$a_item['s_title'].'</option>');
+                      else
+                        echo('<option value="'.$a_item['k_product_category'].'">'.$a_item['s_title'].'</option>');
                     }
                     ?>
                   </select>

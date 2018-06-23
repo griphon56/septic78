@@ -87,7 +87,7 @@
 .slider-product-control-prev, .slider-product-control-next {
   position: inherit;
   display: inline-flex;
-  left: 85%;
+  left: 90%;
 }
 
 .bootstrap-slider-product-hit-sales .slider-product-indicators{
