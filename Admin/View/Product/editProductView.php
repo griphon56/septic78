@@ -1,7 +1,7 @@
 <?php
   include('../Admin/View/Product/actionProduct.php');
 
-  $a_product = getProduct($_REQUEST['k_product']);
+  $a_product = getAllProduct($_REQUEST['k_product']);
 
   $z_data = unserialize($a_product[0]['z_data']);
 
