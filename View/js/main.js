@@ -35,10 +35,13 @@ $(document).ready(function() {
   });
 });
 
-// Плагин расчета стоимости сепиков
+// Плагин расчета стоимости сепиков.
 $.getScript('../view/js/formCalculationCost.js');
 
-// Плагин корзины в шапке сайта
+// Плагин корзины в шапке сайта.
 $.getScript('../view/js/cartHeader.js');
+
+// inputQuantity in Page single product.
+$.getScript('../view/js/inputQuantity.js');
 
 // $.getScript('/Admin/View/Product/ajax.js');

@@ -65,3 +65,6 @@
 
 /* Стили для Страница не доступна */
 @import url("notFound.css");
+
+/* Стили для Input[type="number"] "Счётчик" */
+@import url("input-quantity.css");

@@ -1,0 +1,62 @@
+.quantity {
+  position: relative;
+  margin-top: 4px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  color: #656565;
+  float: left;
+  display: block;
+  padding: 10px 5px 10px 35px;
+  border: 2px solid #5bb7c2;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  float: left;
+  position: relative;
+  height: 42px;
+}
+
+.quantity-button {
+  color: #5bb7c2;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  width: 20px;
+  text-align: center;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  top: 6px;
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  right: 42px;
+  top: 6px;
+}

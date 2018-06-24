@@ -198,6 +198,45 @@ function getProductCategory(string $k_product_category=null)
 }
 
 /**
+ * Метод получения продуктов по категории.
+ *
+ * @param string $k_product <tt>Ключ товара</tt>, для вывода одного товара.
+ * @return array <tt>Массив  содержащий информацию одного товара.</tt>
+ */
+function getSingleProduct(string $k_product)
+{
+  $link = mysqli_connect(HOST, USER, PASS,DB) or die('No connect to Server');
+  mysqli_set_charset($link,'utf8');
+
+  $query = "
+    select
+      product.i_discount,
+      product.img,
+      product.i_price,
+      product.is_active,
+      product.is_stock,
+      product.k_product,
+      product.k_product_category,
+      product.s_name,
+      product.z_data
+    from 
+      product
+    where
+      product.k_product=".$k_product.";
+  ";
+
+  $r_query = mysqli_query($link,$query);
+  mysqli_close($link);
+
+  $a_product =  mysqli_fetch_assoc($r_query);
+
+  if(!isset($a_product))
+    $a_product = [];
+
+  return $a_product;
+}
+
+/**
  * @param string $_FILES_offset <tt>Смещение в Суперглобальном массиве <var>_FILES</var></tt>
  * @param string $path_dir <tt>Название дериктории для сохранения картинки.</tt>
  * @return string Имя картинки с расширением.
