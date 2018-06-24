@@ -23,7 +23,7 @@ if($_POST)
  */
 function addProductCategory()
 {
-  $link = mysqli_connect('localhost', 'root', '', 'septic');
+  $link = mysqli_connect(HOST, USER, PASS, DB);
   mysqli_set_charset($link, 'utf8');
 
   $is_active = $_POST['is_active'] ?? 0;
@@ -75,7 +75,7 @@ function ajaxRemoveProductCategory(string $k_product_category)
  */
 function editProductCategory(string $k_product_category)
 {
-  $link = mysqli_connect('localhost', 'root', '', 'septic');
+  $link = mysqli_connect(HOST, USER, PASS, DB);
   mysqli_set_charset($link, 'utf8');
 
   $is_active = $_POST['is_active'] ?? 0;

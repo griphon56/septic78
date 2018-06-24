@@ -23,7 +23,7 @@ if($_POST)
  */
 function addProduct()
 {
-  $link = mysqli_connect('localhost', 'root', '', 'septic');
+  $link = mysqli_connect(HOST, USER, PASS, DB);
   mysqli_set_charset($link, 'utf8');
 
   $s_name = trim($_POST['name_product']);
@@ -101,7 +101,7 @@ function ajaxRemoveProduct(string $k_product)
  */
 function editProduct(string $k_product)
 {
-  $link = mysqli_connect('localhost', 'root', '', 'septic');
+  $link = mysqli_connect(HOST, USER, PASS, DB);
   mysqli_set_charset($link, 'utf8');
 
   $s_name = trim($_POST['name_product']);
