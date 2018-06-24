@@ -36,12 +36,12 @@ $(document).ready(function() {
 });
 
 // Плагин расчета стоимости сепиков.
-$.getScript('../view/js/formCalculationCost.js');
+$.getScript('../View/js/formCalculationCost.js');
 
 // Плагин корзины в шапке сайта.
-$.getScript('../view/js/cartHeader.js');
+$.getScript('../View/js/cartHeader.js');
 
 // inputQuantity in Page single product.
-$.getScript('../view/js/inputQuantity.js');
+$.getScript('../View/js/inputQuantity.js');
 
 // $.getScript('/Admin/View/Product/ajax.js');
