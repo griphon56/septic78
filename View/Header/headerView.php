@@ -51,24 +51,26 @@
       <div class="col-md-4">
         <div class="search-input">
           <div class="box-search">
-            <input type="text" id="search" placeholder="Поиск по сайту..." />
+            <input type="search" id="search" placeholder="Поиск по сайту..." />
               <img src="<?=VIEW?>img/headerView/magnifying-glass.png" alt="" />
             </div>
         </div>
       </div>
       <div class="col-md-2">
         <div class="container-cart">
-          <div class="js-container-cart-count-product container-cart-count-product">
-            <div class="cart-count-product">
-              <span class="js-cart-count-product">0</span>
+          <a class="cart-container-box" href="index.php?id_page=cart">
+            <div class="js-container-cart-count-product container-cart-count-product">
+              <div class="cart-count-product">
+                <span class="js-cart-count-product">0</span>
+              </div>
             </div>
-          </div>
-          <div class="cart">
-            <div>
-              <img src="<?=VIEW?>img/headerView/shopping-purse-icon.png" alt="">
-              <p>Корзина <span id=header-cost>0</span> руб.</p>
+            <div class="cart">
+              <div>
+                <img src="<?=VIEW?>img/headerView/shopping-purse-icon.png" alt="">
+                <p>Корзина <span id=header-cost>0</span> руб.</p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>

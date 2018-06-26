@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h3 class="calc-cost-title">Расчет стоимости автономной канализации</h3>
+            <h3 class="section-header-h3">Расчет стоимости автономной канализации</h3>
           </div>
         </div>
         <div class="row">
@@ -12,7 +12,7 @@
             <ul>
               <li class="calc-cost-relative">
                 <h4 class="calc-cost-text">Количество человек в доме</h4>
-                <input  class="calc-cost-count js-calc-cost-count" type="text" value="0"/>
+                <input class="calc-cost-count js-calc-cost-count" type="text" value="0"/>
               </li>
               <li>
                 <div class="calc-cost-range-container">

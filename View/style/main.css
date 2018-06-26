@@ -68,3 +68,6 @@
 
 /* Стили для Input[type="number"] "Счётчик" */
 @import url("input-quantity.css");
+
+/* Стили для страницы Корзина */
+@import url("cartView.css");

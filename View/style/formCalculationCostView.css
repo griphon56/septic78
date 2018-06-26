@@ -7,18 +7,6 @@
   border-bottom: 1px solid #dcdcdc;
 }
 
-.calc-cost-container .calc-cost-title{
-  color: #525252;
-  font-size: 24px;
-  margin-bottom: 40px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.calc-cost-box{
-
-}
-
 .calc-cost-range-container {
   width: 100%;
   margin: 25px 0;

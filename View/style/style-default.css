@@ -24,7 +24,14 @@ input{
   color: #656565;
   font-size: 30px;
   margin: 50px 0 20px 0;
+}
 
+.section-header-h3{
+  color: #525252;
+  font-size: 24px;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .section-item {
@@ -50,6 +57,7 @@ input{
   text-decoration: underline;
 }
 
+/*INPUT type=TEXT*/
 .form-text-submit input[type="text"],.form-text-submit input[type="tel"]{
   border: 1px solid #8acdd5;
   border-radius: 3px;
@@ -76,4 +84,58 @@ input{
   background-color: #289dab;
   height: 2px;
   margin-bottom: 50px;
+}
+
+/*CHECKBOX*/
+.label-input{
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 15px;
+  font-size: 13px;
+}
+
+.label-input:before {
+  content: "";
+  display: inline-block;
+
+  width: 16px;
+  height: 16px;
+
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background-color: #fff;
+  box-shadow: 0 0 1px 1px #5bb7c2;
+}
+
+.radio-container .label-input:before {
+  border-radius: 8px;
+}
+
+input[type=checkbox],input[type=radio] {
+  display: none;
+}
+
+input[type=radio]:checked + .label-input:before {
+  content: "\2022";
+  color: #5bb7c2;
+  font-size: 30px;
+  text-align: center;
+  line-height: 11px;
+}
+
+.checkbox-container .label-input:before {
+  border-radius: 3px;
+}
+
+input[type=checkbox]:checked + .label-input:before {
+  content: "\2713";
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+  font-size: 15px;
+  color: #5bb7c2;
+  text-align: center;
+  line-height: 15px;
 }

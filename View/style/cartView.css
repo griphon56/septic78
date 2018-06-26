@@ -1,0 +1,39 @@
+.cart-order-clearance{
+  background-image: url(../img/formCalculationCostView/bg_form.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 40px 0;
+  margin-bottom: 30px;
+}
+
+.cart-placeholder-input{
+  font-size: 14px;
+  color: #656565;
+  font-weight: 400;
+  margin: 10px 0 20px 0;
+  text-transform: uppercase;
+}
+
+.cart-order-delivery-method{
+  font-size: 20px;
+  color: #656565;
+  text-transform: uppercase;
+  margin: 15px 0;
+  font-weight: 400;
+}
+
+.cart-order-label{
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #656565;
+}
+
+.cart-order-label{
+  text-decoration: solid;
+}
+
+.cart-order-btn{
+  width: 100%;
+}

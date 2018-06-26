@@ -66,6 +66,11 @@
 
 /* Корзина в шапке*/
 
+.container-cart .cart-container-box{
+  color: #444;
+  text-decoration: none;
+}
+
 .container-cart .cart{
   background-color: #f4f4f4;
   border-radius: 5px;
@@ -76,8 +81,8 @@
 }
 
 .container-cart .cart:hover{
-  background-color: #5bb7c2;
-  color: #f4f4f4;
+  background-color: #dcdcdc;
+  color: #111;
 }
 
 .container-cart .cart div img{
