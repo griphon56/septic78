@@ -86,6 +86,12 @@ input{
   margin-bottom: 50px;
 }
 
+.hr-silver{
+  background-color: #d0d0d0;
+  height: 1px;
+  margin: 10px 0;
+}
+
 /*CHECKBOX*/
 .label-input{
   display: inline-block;
@@ -99,10 +105,8 @@ input{
 .label-input:before {
   content: "";
   display: inline-block;
-
   width: 16px;
   height: 16px;
-
   margin-right: 10px;
   position: absolute;
   left: 0;

@@ -55,7 +55,7 @@
 .product-item-box .add-to-cart{
   padding: 10px;
   display: inline-block;
-  margin: -5px;
+  margin: 0 -6px;
 }
 
 .product-item-box .add-cart-box{

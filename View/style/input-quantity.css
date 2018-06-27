@@ -19,8 +19,9 @@ input[type=number]
   color: #656565;
   float: left;
   display: block;
-  padding: 10px 5px 10px 35px;
+  padding: 10px 24px 10px 15px;
   border: 2px solid #5bb7c2;
+  text-align: center
 }
 
 .quantity input:focus {
@@ -53,10 +54,11 @@ input[type=number]
 .quantity-button.quantity-up {
   position: absolute;
   top: 6px;
+  left: -3px;
 }
 
 .quantity-button.quantity-down {
   position: absolute;
-  right: 42px;
+  right: 48px;
   top: 6px;
 }

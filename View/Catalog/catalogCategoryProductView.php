@@ -94,7 +94,7 @@
         }
         echo('</div>');
         echo('<div class="col-3 add-cart-box">');
-        echo('<a href="#" onclick="add_to_cart(this); return false;" class="add-to-cart">
+        echo('<a href="#" onclick="add_to_cart(this); return false;" name="'.$a_item['k_product'].'" class="add-to-cart">
                 <img src="'.VIEW.'img/productView/shopping-cart.png" alt="">
               </a>');
         echo('</div>');

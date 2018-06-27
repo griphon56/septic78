@@ -14,7 +14,10 @@
 <body>
 <div class="wrapper">
 
-<?php include(USER_TEMPLATE.'Notification/notificationView.php'); ?>
+<?php
+  include(USER_TEMPLATE.'Notification/notificationView.php');
+  $a_cart_data = getCartHeaderSession();
+?>
 
 <div class="container-fluid header-top-line">
   <div class="container">
@@ -57,17 +60,20 @@
         </div>
       </div>
       <div class="col-md-2">
-        <div class="container-cart">
+        <div class="container-cart" id="cart-header">
           <a class="cart-container-box" href="index.php?id_page=cart">
-            <div class="js-container-cart-count-product container-cart-count-product">
+            <div
+              class="js-container-cart-count-product container-cart-count-product"
+              <?php if($a_cart_data['i_qty']) echo('style="display:block;"');?>
+            >
               <div class="cart-count-product">
-                <span class="js-cart-count-product">0</span>
+                <span class="js-cart-count-product"><?=$a_cart_data['i_qty']?></span>
               </div>
             </div>
             <div class="cart">
               <div>
                 <img src="<?=VIEW?>img/headerView/shopping-purse-icon.png" alt="">
-                <p>Корзина <span id=header-cost>0</span> руб.</p>
+                <p>Корзина <span id=header-cost><?=number_format($a_cart_data['i_total'], 0, '.', ' ');?></span> руб.</p>
               </div>
             </div>
           </a>

@@ -53,12 +53,12 @@
           <div class="container">
             <div class="row col">
               <p class="product-single-price">Стоимость:
-                <span class="js-price-active"> <?=number_format($a_product['i_price'], 0, '.', ' ')?></span><span> руб.</span>
+                <span class="js-price-active"><?=number_format($a_product['i_price'], 0, '.', ' ')?></span><span> руб.</span>
               </p>
             </div>
             <div class="row">
               <div class="col-md-8">
-                <a href="#" onclick="add_to_cart_single(this); return false;" class="btn btn-info product-single-btn">Заказать</a>
+                <a href="#" onclick="add_to_cart_single(this); return false;" name="<?=$a_product['k_product']?>" class="btn btn-info product-single-btn">Заказать</a>
               </div>
               <div class="col-md-4">
                 <div class="quantity">
