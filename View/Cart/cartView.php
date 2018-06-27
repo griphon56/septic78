@@ -18,7 +18,7 @@
           $i_total += $a_item['i_price'] * $a_item['i_qty'];
           $i += 1;
           echo('
-            <div class="row cart-product-item">
+            <div class="row cart-product-item align-items-center">
               <div class="col-md-2">
                 <img src="' . VIEW . 'upload_img/product/' . $a_item['img'] . '" alt="">
               </div>
