@@ -1,4 +1,4 @@
-<div class="container-fluid cart-order-clearance">
+<div class="container-fluid cart-order-clearance" id="cart-order-clearance">
   <form action="" method="post" class="form-text-submit">
     <div class="container">
       <div class="row">
@@ -14,7 +14,7 @@
           <input type="text" class="cart-order-input" placeholder="Телефон" maxlength="13" name="s_phone">
         </div>
         <div class="col-md-4">
-          <input type="text" class="cart-order-input" placeholder="example@gmail.com" name="s_mail">
+          <input type="text" class="cart-order-input" placeholder="example@gmail.com" name="s_email">
           <h4 class="cart-placeholder-input">Отправка информации о заказе</h4>
         </div>
       </div>
@@ -25,7 +25,7 @@
         </div>
         <div class="col-md-4">
           <div class="checkbox-container">
-            <input type="checkbox" value="0" name="is_agree" id="is_agree">
+            <input type="checkbox" value="1" name="is_agree" id="is_agree">
             <label class="cart-order-label label-input" for="is_agree">Согласен с условиями <span>публичной сферы</span></label>
           </div>
         </div>
@@ -51,7 +51,7 @@
           </div>
         </div>
         <div class="col-md-4">
-          <a href="#" onclick="return false;" class="btn btn-info cart-order-btn">Отправить</a>
+          <a href="#" onclick="save_order(this); return false;" class="btn btn-info cart-order-btn">Отправить</a>
         </div>
       </div>
     </div>

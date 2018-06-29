@@ -89,6 +89,8 @@ function getCartProduct(array $a_data)
 }
 
 /**
+ * Формирует массив для корзины в шапке.
+ *
  * @return array
  */
 function getCartHeaderSession()
@@ -110,5 +112,13 @@ function getCartHeaderSession()
     'i_total' => $i_total,
     'i_qty' => $i_qty
   ];
+}
+
+/**
+ *
+ */
+function sendMessageCart()
+{
+  // empty.
 }
 ?>

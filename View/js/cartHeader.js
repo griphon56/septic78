@@ -122,31 +122,3 @@ function add_to_cart_single(o_sender)
   // Уведомление о добавлении товара.
   $('.notif').fadeIn().fadeOut(1000);
 }
-
-function del_product_cart(o_sender)
-{
-  $this = $(o_sender);
-
-  var k_product = $this.attr('name');
-
-  if (k_product)
-  {
-    $.ajax({
-      type: 'POST',
-      url: '/View/Cart/actionCartProduct.php',
-      data: {
-        action_cart: 'del',
-        k_product: k_product
-      },
-      success: function(data)
-      {
-        $this.closest('.cart-product-item').remove();
-        $("#cart-total").load("index.php?id_page=cart #cart-total > *");
-      }
-    });
-  }
-  else
-  {
-    alert('Товар не удален.');
-  }
-}

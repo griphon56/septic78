@@ -44,4 +44,7 @@ $.getScript('../View/js/cartHeader.js');
 // inputQuantity in Page single product.
 $.getScript('../View/js/inputQuantity.js');
 
+// Cart
+$.getScript('../View/Cart/ajaxCart.js');
+
 // $.getScript('/Admin/View/Product/ajax.js');
