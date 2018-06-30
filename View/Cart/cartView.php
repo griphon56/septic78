@@ -26,8 +26,8 @@
               <h3 class="cart-product-text">' . $a_item['s_name'] . '</h3>
               </div>
               <div class="col-md-3">
-                <div class="quantity" name="' . $a_item['k_product'] . '" onmouseenter="edit_product_cart(this);">
-                  <input type="number" min="1" max="50" step="1" value="' . $a_item['i_qty'] . '"  name="qty_product">
+                <div class="quantity">
+                  <input type="number" min="1" max="50" step="1" value="' . $a_item['i_qty'] . '" name="' . $a_item['k_product'] . '">
                 </div>
               </div>
               <div class="col-md-3 js_cart_product_total' . $a_item['k_product'] . '">
@@ -38,9 +38,6 @@
               </a>
             </div>
           ');
-
-          if ($i != count($a_data))
-            echo('<div class="hr-silver"></div>');
         }
       }
       else
@@ -55,8 +52,8 @@
   </form>
 
   <div class="row">
-    <div class="col-md-9"></div>
-    <div class="col-md-3" id="cart-total">
+    <div class="col-md-8"></div>
+    <div class="col-md-4" id="cart-total">
       <p class="cart-total">
         Итого <?php echo(number_format($i_total, 0, '.', ' ')); ?> руб.
       </p>

@@ -115,7 +115,7 @@ function getCartHeaderSession()
 }
 
 /**
- *
+ * Метод отправки уведомления заказчику и BO.
  */
 function sendMessageCart()
 {

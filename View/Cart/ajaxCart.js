@@ -1,13 +1,11 @@
-function edit_product_cart(o_sender)
+$(document).ready(function()
 {
-  $this = $(o_sender);
-  var k_product = $this.attr('name');
-
   /**
-   * Добавление товара в корзине (кол-во).
+   * Изменение количества товаров в корзине на странице Cart (add).
    */
-  $this.find('.quantity-up').click(function(event)
+  $('.quantity-up').click(function(event)
   {
+    var k_product = $(this).closest('.quantity').find('input[type="number"]').attr('name');
     if (k_product)
     {
       $.ajax({
@@ -15,6 +13,7 @@ function edit_product_cart(o_sender)
         url: '/View/Cart/actionCartProduct.php',
         data: {
           action_cart: 'add',
+          i_qty: 1,
           k_product: k_product
         },
         success: function(data)
@@ -28,10 +27,11 @@ function edit_product_cart(o_sender)
   });
 
   /**
-   * Удаление товара из корзины (кол-во).
+   * Изменение количества товаров в корзине на странице Cart (del).
    */
-  $this.find('.quantity-down').click(function(event)
+  $('.quantity-down').click(function(event)
   {
+    var k_product = $(this).closest('.quantity').find('input[type="number"]').attr('name');
     if (k_product)
     {
       $.ajax({
@@ -50,8 +50,13 @@ function edit_product_cart(o_sender)
       });
     }
   });
-}
+});
 
+/**
+ * Метод удаления товара из корзины.
+ *
+ * @param o_sender
+ */
 function del_product_cart(o_sender)
 {
   $this = $(o_sender);
@@ -70,7 +75,7 @@ function del_product_cart(o_sender)
       success: function(data)
       {
         $this.closest('.cart-product-item').remove();
-        $("#cart-product-container").load("index.php?id_page=cart #cart-product-container > *");
+        $("#cart-total").load("index.php?id_page=cart #cart-total > *");
         $("#cart-header").load("index.php #cart-header > *");
       }
     });
@@ -81,6 +86,11 @@ function del_product_cart(o_sender)
   }
 }
 
+/**
+ * Метод сохранения заказа.
+ *
+ * @param o_sender
+ */
 function save_order(o_sender)
 {
   $this = $(o_sender);

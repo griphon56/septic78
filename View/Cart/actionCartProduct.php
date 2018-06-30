@@ -33,31 +33,34 @@ if($_POST)
  */
 function addCartProduct(string $k_product)
 {
-  $i_qty = empty((int)$_POST['i_qty']) ? 1 : (int)$_POST['i_qty'];
-  $i_price = (int)$_POST['i_price'];
-  if(!isset($_SESSION['cart'][$k_product]))
+  if($_SESSION['cart'][$k_product]['i_qty']<50)
   {
-    $_SESSION['cart'][$k_product] = [
-      'k_product' => $k_product,
-      'i_qty' => $i_qty,
-      'i_price' => $i_qty * $i_price,
-      'i_price_product' => $i_price
-    ];
+    $i_qty = empty((int)$_POST['i_qty']) ? 1 : (int)$_POST['i_qty'];
+    $i_price = (int)$_POST['i_price'];
+    if (!isset($_SESSION['cart'][$k_product]))
+    {
+      $_SESSION['cart'][$k_product] = [
+        'k_product' => $k_product,
+        'i_qty' => $i_qty,
+        'i_price' => $i_qty * $i_price,
+        'i_price_product' => $i_price
+      ];
+    }
+    else
+    {
+      $i_price_product = $_SESSION['cart'][$k_product]['i_price_product'];
+
+      $_SESSION['cart'][$k_product]['k_product'] = $k_product;
+      $_SESSION['cart'][$k_product]['i_qty'] += $i_qty;
+      $_SESSION['cart'][$k_product]['i_price'] += $i_qty * $i_price_product;
+    }
+
+    $a_data = getCartHeaderSession();
+
+    // [1] => 'i_total'
+    // [2] => 'i_qty'
+    echo($a_data['i_total'] . '/' . $a_data['i_qty']);
   }
-  else
-  {
-    $i_price_product =  $_SESSION['cart'][$k_product]['i_price_product'];
-
-    $_SESSION['cart'][$k_product]['k_product'] = $k_product;
-    $_SESSION['cart'][$k_product]['i_qty'] += $i_qty;
-    $_SESSION['cart'][$k_product]['i_price'] += $i_qty * $i_price_product;
-  }
-
-  $a_data = getCartHeaderSession();
-
-  // [1] => 'i_total'
-  // [2] => 'i_qty'
-  echo($a_data['i_total'].'/'.$a_data['i_qty']);
 }
 
 /**
@@ -67,7 +70,7 @@ function addCartProduct(string $k_product)
  */
 function delCartProductSingle(string $k_product)
 {
-  if($_SESSION['cart'][$k_product]['i_qty']>0)
+  if($_SESSION['cart'][$k_product]['i_qty']>1)
   {
     $i_price = (int)$_SESSION['cart'][$k_product]['i_price_product'];
 
