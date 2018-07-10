@@ -144,9 +144,12 @@
 
 .header-target-form .header-target-form-title{
   margin-bottom: 20px;
+  font-size: 36px;
   text-transform: uppercase;
 }
-
+header-target-form-desc{
+  font-size: 28px;
+}
 .header-form{
   background-color: rgba(247, 247, 247, 0.75);
   border-radius: 4px;
