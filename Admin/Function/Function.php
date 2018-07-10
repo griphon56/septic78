@@ -198,7 +198,7 @@ function getProductCategory(string $k_product_category=null)
 }
 
 /**
- * Метод получения продуктов по категории.
+ * Метод получения одного продукта.
  *
  * @param string $k_product <tt>Ключ товара</tt>, для вывода одного товара.
  * @return array <tt>Массив  содержащий информацию одного товара.</tt>
@@ -362,5 +362,95 @@ function getServiceCategory(string $k_service_category=null)
   }
 
   return $a_category;
+}
+
+/**
+ * Метод для получения продуктов.
+ *
+ * @param string|null $k_service_category <tt>Ключ категории услуги</tt>, для вывода всех активных услуг одной категории.
+ * @param bool|null $is_active Если <tt>true</tt> то выведет все активные услуги.
+ * @return array <tt>Массив услуг</tt>
+ */
+function getAllService(string $k_service_category=null, bool $is_active=null)
+{
+  $link = mysqli_connect(HOST, USER, PASS,DB) or die('No connect to Server');
+  mysqli_set_charset($link,'utf8');
+
+  $q_active = $is_active ? ' and is_active=1' : '';
+
+  if($k_service_category)
+    $where = 'service.k_service_category='.$k_service_category.$q_active;
+  elseif(!$k_service_category&&$is_active)
+    $where = 'service.is_active=1';
+  else
+    $where = 'true';
+
+  $query = "
+    select
+      service.img,
+      service.is_active,
+      service.k_service,
+      service.k_service_category,
+      service.s_description,
+      service.s_name,
+      service_category.s_name as name_category,
+      service.z_data
+    from 
+      service inner join
+      service_category on
+        service_category.k_service_category=service.k_service_category
+    where
+      ".$where.";
+  ";
+
+  $r_query = mysqli_query($link,$query);
+  mysqli_close($link);
+
+  $a_service = [];
+  while($row = mysqli_fetch_assoc($r_query)){
+    $a_service[] = $row;
+  }
+
+  return $a_service;
+}
+
+/**
+ * Метод получения одной услуги.
+ *
+ * @param string $k_service <tt>Ключ услуги</tt>, для вывода одной услуги.
+ * @return array <tt>Массив содержащий информацию об одной услуге.</tt>
+ */
+function getSingleService(string $k_service)
+{
+  $link = mysqli_connect(HOST, USER, PASS,DB) or die('No connect to Server');
+  mysqli_set_charset($link,'utf8');
+
+  $query = "
+    select
+      service.img,
+      service.is_active,
+      service.k_service,
+      service.k_service_category,
+      service.s_description,
+      service.s_name,
+      service_category.s_name as name_category,
+      service.z_data
+    from 
+      service inner join
+      service_category on
+        service_category.k_service_category=service.k_service_category
+    where
+      service.k_service=".$k_service.";
+  ";
+
+  $r_query = mysqli_query($link,$query);
+  mysqli_close($link);
+
+  $a_service =  mysqli_fetch_assoc($r_query);
+
+  if(!isset($a_service))
+    $a_service = [];
+
+  return $a_service;
 }
 ?>

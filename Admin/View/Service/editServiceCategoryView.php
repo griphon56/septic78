@@ -12,7 +12,7 @@ $a_data = getServiceCategory($_REQUEST['k_service_category']);
             <div class="col-md-6">
               <ul class="add-product-item">
                 <li style="display: none;">
-                  <label for="k_product_category">ID</label>
+                  <label for="k_service_category">ID</label>
                   <input type="text" name="k_service_category" readonly id="k_service_category" value="<?=$a_data['k_service_category']?>"/>
                 </li>
                 <li>

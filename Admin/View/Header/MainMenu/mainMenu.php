@@ -19,6 +19,11 @@ $a_menu = [
     'link' => 'Категории услуг',
     'href' => 'index.php?id_page=service_category',
     'id' => 'service_category'
+  ],
+  [
+    'link' => 'Услуги',
+    'href' => 'index.php?id_page=service',
+    'id' => 'service'
   ]
 ];
 
