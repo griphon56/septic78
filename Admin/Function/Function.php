@@ -376,7 +376,7 @@ function getAllService(string $k_service_category=null, bool $is_active=null)
   $link = mysqli_connect(HOST, USER, PASS,DB) or die('No connect to Server');
   mysqli_set_charset($link,'utf8');
 
-  $q_active = $is_active ? ' and is_active=1' : '';
+  $q_active = $is_active ? ' and service.is_active=1' : '';
 
   if($k_service_category)
     $where = 'service.k_service_category='.$k_service_category.$q_active;

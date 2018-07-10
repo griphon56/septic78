@@ -9,6 +9,12 @@
   margin: 10px;
 }
 
+.product-item-img>a {
+  display: block;
+  height: 240px;
+  overflow: hidden;
+}
+
 .product-item-img img{
   width: 100%;
 }
