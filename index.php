@@ -8,6 +8,5 @@ require_once 'config.php';
  * Подключение контроллера
  */
 require_once CONTROLLER;
-/* Работает блять!
 
 ?>
