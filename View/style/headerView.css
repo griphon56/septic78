@@ -22,10 +22,11 @@
 .header-top-line .text-phone p{
   padding: 10px 0 10px 0px;
   display: inline-block;
+
 }
 
 .header-top-line p{
-  font-size: 12px;
+  font-size: 24px;
 }
 
 .header-search{
