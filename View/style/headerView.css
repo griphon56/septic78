@@ -20,13 +20,15 @@
 }
 
 .header-top-line .text-phone p{
-  padding: 10px 0 10px 0px;
+  padding: 0px 0px 0px 0px;
   display: inline-block;
+  font-size: 19px;
 
 }
 
+
 .header-top-line p{
-  font-size: 12px;
+  font-size: 19px;
 }
 
 .header-search{
