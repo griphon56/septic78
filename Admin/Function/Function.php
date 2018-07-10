@@ -152,7 +152,7 @@ function getProductHitSales(string $k_product_category=null)
 }
 
 /**
- * Получает асооциативный массив категорий.
+ * Получает асооциативный массив категорий продуктов.
  *
  * @param string $k_product_category Ключ категории.
  * @return array
@@ -316,5 +316,51 @@ function uploadImage(string $_FILES_offset, string $path_dir)
   }
 
   return $s_name.$format;
+}
+
+/**
+ * Получает асооциативный массив категорий услуг.
+ *
+ * @param string $k_service_category Ключ категории.
+ * @return array
+ */
+function getServiceCategory(string $k_service_category=null)
+{
+  $link = mysqli_connect(HOST, USER, PASS,DB) or die('No connect to Server');
+  mysqli_set_charset($link,'utf8');
+
+  if($k_service_category)
+    $where = 'k_service_category='.$k_service_category;
+  else
+    $where = 'true';
+
+  $query = "
+    select 
+      k_service_category,
+      is_active,
+      s_name,
+      s_description,
+      z_data
+    from 
+      service_category
+    where
+      ".$where.";
+  ";
+
+  $r_query = mysqli_query($link,$query);
+  mysqli_close($link);
+
+  $a_category = [];
+  if($k_service_category)
+  {
+    $a_category = mysqli_fetch_assoc($r_query);
+  }
+  else
+  {
+    while ($row = mysqli_fetch_assoc($r_query))
+      $a_category[] = $row;
+  }
+
+  return $a_category;
 }
 ?>

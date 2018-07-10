@@ -32,6 +32,15 @@ switch($id_page)
   case 'edit_product':
     $view = ADMIN_TEMPLATE.'Product/editProductView.php';
     break;
+  case 'service_category':
+    $view = ADMIN_TEMPLATE.'Service/serviceCategoryView.php';
+    break;
+  case 'add_service_category':
+    $view = ADMIN_TEMPLATE.'Service/addServiceCategoryView.php';
+    break;
+  case 'edit_service_category':
+    $view = ADMIN_TEMPLATE.'Service/editServiceCategoryView.php';
+    break;
   case 'admin':
     $view = ADMIN_TEMPLATE.'Home/homeView.php';
     break;
