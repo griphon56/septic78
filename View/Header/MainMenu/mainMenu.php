@@ -38,7 +38,7 @@ $a_menu = [
   ],
   [
     'link'=>'Наши услуги',
-    'href'=>'index.php?id_page=service',
+    'href'=>$a_service_category[0]['href'],
     'id'=>'service',
     'a_submenu' => $a_service_category
   ],
