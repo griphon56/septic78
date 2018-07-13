@@ -35,10 +35,19 @@ $a_data = getServiceCategory($_REQUEST['k_service_category']);
                     ?>
                     id="is_active" />
                 </li>
-<!--                <li>-->
-<!--                  <label for="img_category">Картинка</label>-->
-<!--                  <input type="file" name="img_category" id="img_category" value=""/>-->
-<!--                </li>-->
+                <li>
+                  <label for="img_category">Картинка</label>
+                  <input
+                    type="file"
+                    name="img_category"
+                    id="img_category"
+                    value="
+                      <?php
+                        $a_config = unserialize($a_data['z_data']);
+                        echo($a_config['img']);
+                      ?>
+                    "/>
+                </li>
               </ul>
             </div>
           </div>

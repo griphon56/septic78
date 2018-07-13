@@ -22,10 +22,10 @@ include('../Admin/View/Service/actionServiceCategory.php');
                   <label for="is_active" class="active-product-checkbox-label">Активный</label>
                   <input type="checkbox" name="is_active" value="1" id="is_active"/>
                 </li>
-<!--                <li>-->
-<!--                  <label for="img_category">Картинка</label>-->
-<!--                  <input type="file" name="img_category" id="img_category" value=""/>-->
-<!--                </li>-->
+                <li>
+                  <label for="img_category">Картинка</label>
+                  <input type="file" name="img_category" id="img_categoryd" value=""/>
+                </li>
               </ul>
             </div>
           </div>
