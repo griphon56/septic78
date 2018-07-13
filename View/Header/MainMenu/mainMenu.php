@@ -12,6 +12,18 @@ foreach ($a_product_category_data as $a_item)
     ];
 }
 
+$a_service_category_data = getServiceCategory();
+
+$a_service_category = [];
+foreach ($a_service_category_data as $a_item)
+{
+  $a_service_category[] = [
+    'link' => $a_item['s_name'],
+    'href'=>'index.php?id_page=service&k_service_category='.$a_item['k_service_category'],
+    'id'=>'service',
+  ];
+}
+
 $a_menu = [
   [
     'link'=>'Главная',
@@ -27,7 +39,8 @@ $a_menu = [
   [
     'link'=>'Наши услуги',
     'href'=>'index.php?id_page=service',
-    'id'=>'service'
+    'id'=>'service',
+    'a_submenu' => $a_service_category
   ],
   [
     'link'=>'О компании',

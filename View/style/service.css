@@ -8,6 +8,18 @@
   right: 0px;
 }
 
+.service-category-desc {
+  padding-bottom: 35px;
+}
+
+.service-category-empty{
+  margin: 50px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #656565;
+  letter-spacing: 20px;
+}
+
 /* Слайдер */
 .slider{
   padding: 0px 1px!important;

@@ -119,11 +119,11 @@ input{
   border-radius: 8px;
 }
 
-input[type=checkbox],input[type=radio] {
+.checkbox-container input[type=checkbox],.radio-container input[type=radio] {
   display: none;
 }
 
-input[type=radio]:checked + .label-input:before {
+.radio-container input[type=radio]:checked + .label-input:before {
   content: "\2022";
   color: #5bb7c2;
   font-size: 30px;
@@ -135,7 +135,7 @@ input[type=radio]:checked + .label-input:before {
   border-radius: 3px;
 }
 
-input[type=checkbox]:checked + .label-input:before {
+.checkbox-container input[type=checkbox]:checked + .label-input:before {
   content: "\2713";
   text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
   font-size: 15px;
