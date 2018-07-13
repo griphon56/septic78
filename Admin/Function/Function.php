@@ -301,7 +301,8 @@ function uploadImage(string $_FILES_offset, string $path_dir)
     die('Ширина изображения не должна превышать 1280 точек.');
 
   // Сгенерируем новое имя файла на основе MD5-хеша
-  $s_name = md5_file($filePath);
+//  $s_name = md5_file($filePath);
+  $s_name = $_FILES[$_FILES_offset]['name'];
 
   // Сгенерируем расширение файла на основе типа картинки
   $extension = image_type_to_extension($image[2]);
@@ -310,12 +311,12 @@ function uploadImage(string $_FILES_offset, string $path_dir)
   $format = str_replace('jpeg', 'jpg', $extension);
 
   // Переместим картинку с новым именем и расширением в папку /pics
-  if (!move_uploaded_file($filePath, $_SERVER['DOCUMENT_ROOT'].'/View/upload_img/'.$path_dir.'/' . $s_name . $format))
+  if (!move_uploaded_file($filePath, $_SERVER['DOCUMENT_ROOT'].'/View/upload_img/'.$path_dir.'/' . $s_name))
   {
     die('При записи изображения на диск произошла ошибка.');
   }
 
-  return $s_name.$format;
+  return $s_name;
 }
 
 /**
