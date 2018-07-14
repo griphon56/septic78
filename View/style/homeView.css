@@ -65,25 +65,14 @@
 
 .item-slider-home-container:hover{
   box-shadow: 0 0 10px 1px #57afb9;
-  height: 370px;
+  transform: scale(1.1);
   position: absolute;
-  top: 0;
   width: 100%;
   z-index: 120;
 }
 
-.item-slider-home-wrapper:hover{
-  padding: 0;
-}
-
 .slider-home-service:hover .slider-home-service-shadow{
   display: block;
-}
-
-.item-slider-home-wrapper{
-  padding: 10px 0;
-  position: relative;
-  transition: .3s;
 }
 
 .item-slider-home-container{

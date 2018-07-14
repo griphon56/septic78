@@ -10,7 +10,7 @@
         if($k==6) break;
         $a_config = unserialize($a_item['z_data']);
         echo('
-          <div class="col-md-2 item-slider-home-wrapper">
+          <div class="col-md-2 p-0">
             <div class="item-slider-home-container">
               <div class="slider-home-service-shadow"></div>
               <img src="'.VIEW.'upload_img/category_service/'.$a_config['img'].'" alt="" class="slider-home-img-bg">
