@@ -40,6 +40,9 @@ switch($id_page)
   case 'product':
     $view = USER_TEMPLATE.'Product/productView.php';
     break;
+  case 'search':
+    $view = USER_TEMPLATE.'Search/searchResultView.php';
+    break;
   default:
     $view = USER_TEMPLATE.'notFound.php';
 }
