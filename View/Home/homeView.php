@@ -1,4 +1,4 @@
-<?php include(USER_TEMPLATE.'Home/homeSliderSkillView.php');?>
+<?php include(USER_TEMPLATE.'Home/homeSkillView.php');?>
 
 <div class="container">
   <div class="row">
