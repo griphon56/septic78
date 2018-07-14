@@ -20,13 +20,15 @@
           echo('
             <div class="row cart-product-item align-items-center">
               <div class="col-md-2">
-                <img src="' . VIEW . 'upload_img/product/' . $a_item['img'] . '" alt="">
+                <div class="cart-product-img-wrap">
+                  <img src="' . VIEW . 'upload_img/product/' . $a_item['img'] . '" alt="">
+                </div>
               </div>
               <div class="col-md-4">
               <h3 class="cart-product-text">' . $a_item['s_name'] . '</h3>
               </div>
               <div class="col-md-3">
-                <div class="quantity">
+                <div class="quantity js-quantity-cart">
                   <input type="number" min="1" max="50" step="1" value="' . $a_item['i_qty'] . '" name="' . $a_item['k_product'] . '">
                 </div>
               </div>

@@ -3,7 +3,7 @@ $(document).ready(function()
   /**
    * Изменение количества товаров в корзине на странице Cart (add).
    */
-  $('.quantity-up').click(function(event)
+  $('.js-quantity-cart .quantity-up').click(function(event)
   {
     var k_product = $(this).closest('.quantity').find('input[type="number"]').attr('name');
     if (k_product)
@@ -29,7 +29,7 @@ $(document).ready(function()
   /**
    * Изменение количества товаров в корзине на странице Cart (del).
    */
-  $('.quantity-down').click(function(event)
+  $('.js-quantity-cart .quantity-down').click(function(event)
   {
     var k_product = $(this).closest('.quantity').find('input[type="number"]').attr('name');
     if (k_product)

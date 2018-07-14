@@ -54,6 +54,12 @@
 .cart-product-item img{
   width: 100%;
 }
+
+.cart-product-img-wrap{
+  height: 160px;
+  overflow: hidden;
+}
+
 .cart-product-item .cart-product-text{
   color: #656565;
   font-size: 20px;
