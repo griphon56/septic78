@@ -20,6 +20,19 @@
   letter-spacing: 20px;
 }
 
+/*Service category*/
+.service-section-title{
+  color: #444;
+  font-size: 20px;
+  margin: 15px 0 0 0;
+}
+
+.service-section-desc{
+  color: #656565;
+  font-size: 16px;
+  padding: 10px 0;
+}
+
 /* Слайдер */
 .slider{
   padding: 0px 1px!important;
