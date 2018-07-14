@@ -12,7 +12,7 @@
 }
 
 .header-top-line .phone img{
-  width: 13px;
+  width: 18px;
 }
 
 .header-top-line .phone ul{
@@ -20,19 +20,12 @@
 }
 
 .header-top-line .text-phone p{
-  padding: 0px 0px 0px 0px;
   display: inline-block;
-  font-size: 19px;
-
+  margin-top: 8px;
 }
-
 
 .header-top-line p{
-  font-size: 19px;
-}
-
-.header-search{
-
+  font-size: 16px;
 }
 
 .header-search .header-logo img{

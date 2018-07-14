@@ -22,10 +22,11 @@
 <div class="container-fluid header-top-line">
   <div class="container">
     <div class="row no-gutters">
-      <div class="col col-md-8 text-phone text">
+      <div class="col col-md-7 text-phone text">
         <p>Продажа и установка автономных канализаций, септиков в Санкт-Петербурге и области</p>
       </div>
-      <div class="col col-md-2 phone text-phone">
+      <div class="col col-md-3 phone text-phone">
+        <img src="<?=VIEW?>img/headerView/old-typical-phone.png" alt="">
         <p>Сделать заказ по телефону:</p>
       </div>
       <div class="col col-md-2 phone">
@@ -51,12 +52,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="search-input">
-          <div class="box-search">
-            <input type="search" id="search" placeholder="Поиск по сайту..." />
-              <img src="<?=VIEW?>img/headerView/magnifying-glass.png" alt="" />
-            </div>
-        </div>
+        <?php include (USER_TEMPLATE.'Search/searchView.php'); ?>
       </div>
       <div class="col-md-2">
         <div class="container-cart" id="cart-header">
