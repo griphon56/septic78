@@ -85,10 +85,10 @@ function editServiceCategory(string $k_service_category)
   $s_desc_category = trim($_POST['desc_category']);
 
   $s_img='';
-//  if($s_name_category)
-//    $s_img = uploadImage('img_category','category_product');
+  if($s_name_category)
+    $s_img = uploadImage('img_category','category_service');
 
-  $z_data = serialize($s_img);
+  $z_data = serialize(['img' => $s_img]);
 
   $query = "
     update

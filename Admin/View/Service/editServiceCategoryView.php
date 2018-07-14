@@ -44,7 +44,8 @@ $a_data = getServiceCategory($_REQUEST['k_service_category']);
                     value="
                       <?php
                         $a_config = unserialize($a_data['z_data']);
-                        echo($a_config['img']);
+                        if($a_config)
+                          echo($a_config['img']);
                       ?>
                     "/>
                 </li>

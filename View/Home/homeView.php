@@ -28,7 +28,7 @@
   </div>
 </div>
 
-<?php include(USER_TEMPLATE.'Home/homeSliderView.php');?>
+<?php include(USER_TEMPLATE.'Home/homeSliderServiceView.php');?>
 
 <div class="container">
   <div class="row">
