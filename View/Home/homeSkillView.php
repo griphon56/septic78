@@ -1,5 +1,5 @@
 <div class="container home-skill-static">
-  <div class="row justify-content-md-center home-skill-static-container">
+  <div class="row justify-content-md-around home-skill-static-container">
     <div class="home-skill-static-item col-md-2">
       <img src="<?=VIEW?>img/homeView/1.png" alt="" class="home-skill-static-img">
       <div class="home-skill-static-h-border"></div>
@@ -41,7 +41,7 @@
       </div>
     </div>
   </div>
-  <div class="row justify-content-md-center home-skill-static-container">
+  <div class="row justify-content-md-around home-skill-static-container">
     <div class="home-skill-static-item col-md-2">
       <img src="<?=VIEW?>img/homeView/6.png" alt="" class="home-skill-static-img">
       <div class="home-skill-static-h-border"></div>
