@@ -1,15 +1,4 @@
 <?php
-/**
- * Дебаг лог.
- *
- * @param array $a_data Массив для вывода.
- */
-function debug_log(array $a_data)
-{
-  echo('<pre>');
-  print_r($a_data);
-  echo('</pre>');
-}
 
 /**
  * Метод получения ID страницы.
@@ -48,14 +37,26 @@ function drawMenu(array $a_menu)
     //sub menu
     if(isset($item['a_submenu']))
     {
-      echo('<ul class="header-submenu">');
+      echo('<div class="header-submenu">');
+      $i_count=0;
       foreach($item['a_submenu'] as $a_item)
       {
-        echo('<li>');
-          echo('<a href=' . $a_item["href"] . '>' . $a_item["link"] . '</a>');
-        echo('</li>');
+        $i_count++;
+        if($i_count==1)
+          echo ('<div class="header-submenu-col"><ul class="header-submenu-item-container">');
+
+            echo('<li>');
+              echo('<a href=' . $a_item["href"] . '>' . $a_item["link"] . '</a>');
+            echo('</li>');
+
+        if($i_count==8)
+        {
+          $i_count=0; 
+          echo ('</ul></div>');
+        }
+
       }
-      echo('</ul>');
+      echo('</div>');
     }
     echo('</li>');
   }
