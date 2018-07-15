@@ -133,12 +133,13 @@
 }
 
 .home-skill-static-h-border{
-  border-left: 1px solid #5bb7c2;
-  border-right: 1px solid #5bb7c2;
+  border-left: 1.5px solid #5bb7c2;
+  border-right: 1.5px solid #5bb7c2;
   height: 0;
+  margin-left: -3%;
   position: absolute;
   top: 55%;
-  width: 85%;
+  width: 90%;
   transition: .5s;
 }
 

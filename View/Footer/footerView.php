@@ -1,7 +1,7 @@
 <div class="container-fluid footer">
   <div class="container">
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-2">
         <div class="footer-item-title">
           <h4>Контакты</h4>
         </div>
@@ -23,36 +23,55 @@
           </li>
         </ul>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-2">
         <div class="footer-item-title">
           <h4>Наши услуги</h4>
         </div>
         <ul class="footer-item">
-          <li><a href="#">Сантехника</a></li>
-          <li><a href="#">Отопление</a></li>
-          <li><a href="#">Бурение</a></li>
-          <li><a href="#">Очистка воды</a></li>
+          <?php
+
+            $a_data_service_category = getServiceCategory();
+
+            foreach ($a_data_service_category as $key => $a_item)
+            {
+              echo ('<li><a href="index.php?id_page=service&k_service_category='.$a_item['k_service_category'].'">'.$a_item['s_name'].'</a></li>');
+            }  
+          ?>
         </ul>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
+        <div class="footer-item-title">
+          <h4>Каталог</h4>
+        </div>
+        <div class="row">
+          <ul class="footer-item col-md-6">
+            <li><a href="#">Септики</a></li>
+            <li><a href="#">Погреба</a></li>
+            <li><a href="#">Бойлеры</a></li>
+            <li><a href="#">Насосные системы</a></li>
+          </ul>
+          <ul class="footer-item col-md-6">
+            <li><a href="#">Септики</a></li>
+            <li><a href="#">Погреба</a></li>
+            <li><a href="#">Бойлеры</a></li>
+            <li><a href="#">Насосные системы</a></li>
+          </ul>
+        </div>
+      </div>  
+      <div class="col-md-2">
         <div class="footer-item-title">
           <h4>О компании</h4>
         </div>
         <ul class="footer-item">
-          <li><a href="#">О компании</a></li>
-          <li><a href="#">Партнерам</a></li>
-          <li><a href="#">Инвесторам</a></li>
+          <li><a href="index.php?id_page=about_company">Наши партнеры</a></li>
         </ul>
-      </div>
-      <div class="col-md-3">
+      </div> 
+      <div class="col-md-2">
         <div class="footer-item-title">
-          <h4>Каталог</h4>
+          <h4>Доставка и оплата</h4>
         </div>
         <ul class="footer-item">
-          <li><a href="#">Септики</a></li>
-          <li><a href="#">Погреба</a></li>
-          <li><a href="#">Бойлеры</a></li>
-          <li><a href="#">Насосные системы</a></li>
+          <li><a href="index.php?id_page=shipping_pay">Выбор и заказ</a></li>
         </ul>
       </div>
     </div>
