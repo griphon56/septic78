@@ -44,18 +44,28 @@
           <h4>Каталог</h4>
         </div>
         <div class="row">
-          <ul class="footer-item col-md-6">
-            <li><a href="#">Септики</a></li>
-            <li><a href="#">Погреба</a></li>
-            <li><a href="#">Бойлеры</a></li>
-            <li><a href="#">Насосные системы</a></li>
-          </ul>
-          <ul class="footer-item col-md-6">
-            <li><a href="#">Септики</a></li>
-            <li><a href="#">Погреба</a></li>
-            <li><a href="#">Бойлеры</a></li>
-            <li><a href="#">Насосные системы</a></li>
-          </ul>
+          <?php
+
+            $a_data_product_category = getProductCategory();
+
+            $i=0;
+            foreach ($a_data_product_category as $key => $a_item)
+            {
+              if($key==16) break;
+
+              $i++;
+              if($i==1)
+                echo('<ul class="footer-item col-md-6">');    
+                
+                echo ('<li><a href="index.php?id_page=catalog&k_product_category='.$a_item['k_product_category'].'">'.$a_item['s_title'].'</a></li>');
+
+              if($i==9)
+              {
+                $i=0;
+                echo('</ul>');  
+              }
+            }  
+          ?>
         </div>
       </div>  
       <div class="col-md-2">
