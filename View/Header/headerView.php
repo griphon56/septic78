@@ -98,21 +98,21 @@
         </p>
       </div>
       <div class="col-md-5">
-        <form action="" class="header-form">
-          <div class="row form-text-submit">
+        <div class="header-form">
+          <div class="row form-text-submit js-header-form">
             <ul>
               <li>
-                <input type="text" placeholder="Имя">
+                <input type="text" name="s_name" placeholder="Имя">
               </li>
               <li>
-                <input type="tel" placeholder="Телефон">
+                <input type="tel" name="s_phone" maxlength="12" placeholder="Телефон">
               </li>
               <li>
-                <input type="submit" class="btn" value="Заказать">
+                <input type="button" onclick="add_order(this);" class="btn header-btn" value="Заказать">
               </li>
             </ul>
           </div>
-        </form> 
+        </div>
       </div>
     </div>
   </div>

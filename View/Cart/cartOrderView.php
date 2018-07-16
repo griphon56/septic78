@@ -15,19 +15,11 @@
         </div>
         <div class="col-md-4">
           <input type="text" class="cart-order-input" placeholder="example@gmail.com" name="s_email">
-          <h4 class="cart-placeholder-input">Отправка информации о заказе</h4>
         </div>
       </div>
       <div class="row">
         <div class="col-md-8">
           <input type="text" placeholder="Адрес доставки" class="cart-order-input" name="s_address">
-          <h4 class="cart-placeholder-input">Рассчитаем стоимость доставки и свяжемся с вами</h4>
-        </div>
-        <div class="col-md-4">
-          <div class="checkbox-container">
-            <input type="checkbox" value="1" name="is_agree" id="is_agree">
-            <label class="cart-order-label label-input" for="is_agree">Согласен с условиями <span>публичной сферы</span></label>
-          </div>
         </div>
       </div>
       <div class="row">

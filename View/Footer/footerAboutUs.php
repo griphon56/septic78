@@ -17,7 +17,7 @@
     <div class="col-md-4">
       <div class="footer-section-item">
         <h3 class="footer-section-title">Написать нам</h3>
-        <p class="footer-section-desc">Получить полную информацию по вопросам сотрудничества с компанией <b>"Septic78.ru"</b> можно в разделе Дилерам или по телефону +79215626782</p>
+        <p class="footer-section-desc">Получить полную информацию по вопросам сотрудничества с компанией <b>"Септик5.рф"</b> можно в разделе Дилерам или по телефону +79215626782</p>
         <form action="#">
           <div class="footer-section-send">
             <input type="text" class="footer-mail" placeholder="Введите свой e-mail"/>

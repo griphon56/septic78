@@ -1,4 +1,5 @@
 <?php
+include('Core/Mail/Mail.php');
 
 /**
  * Метод получения массива "Метода оплаты".
@@ -112,13 +113,5 @@ function getCartHeaderSession()
     'i_total' => $i_total,
     'i_qty' => $i_qty
   ];
-}
-
-/**
- * Метод отправки уведомления заказчику и BO.
- */
-function sendMessageCart()
-{
-  // empty.
 }
 ?>

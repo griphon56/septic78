@@ -33,10 +33,6 @@
   margin: 25px 0;
 }
 
-.search-input{
-
-}
-
 .search-input .box-search{
   border: 1px solid #dcdcdc;
   display: block;
@@ -111,10 +107,6 @@
   width: 25px;
 }
 
-.cart .container-cart-count-product .cart-count-product{
-
-}
-
   /* Форма захвата */
 
 .header-target-form{
@@ -134,18 +126,23 @@
   font-weight: 500;
 }
 
-
 .header-target-form .header-target-form-title{
   margin-bottom: 20px;
   font-size: 36px;
   text-transform: uppercase;
 }
-header-target-form-desc{
-  font-size: 28px;
-}
+
 .header-form{
   background-color: rgba(247, 247, 247, 0.75);
   border-radius: 4px;
+}
+
+.header-form .header-btn{
+  background-color: #5bb7c2;
+  color: #fff;
+  width: 100%;
+  text-transform: uppercase;
+  transition: .3s;
 }
 
 .header-form ul{
