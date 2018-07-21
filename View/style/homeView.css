@@ -54,6 +54,12 @@
   z-index: 110;
 }
 
+.item-slider-home-container>img{
+  top: -90px;
+  display: inline-block;
+  position: absolute;
+}
+
 .item-slider-home-container:hover .slider-home-service-shadow,
 .item-slider-home-container:hover .slider-home-item-text{
   display: none!important;

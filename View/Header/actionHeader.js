@@ -3,8 +3,11 @@ function add_order(o_sender)
   $this = $(o_sender);
 
   var jq_form_container = $this.closest('.js-header-form');
-  var s_name = jq_form_container.find('input[name="s_name"]').val();
-  var s_phone = jq_form_container.find('input[name="s_phone"]').val();
+  var jq_name = jq_form_container.find('input[name="s_name"]');
+  var jq_phone = jq_form_container.find('input[name="s_phone"]');
+
+  var s_name = jq_name.val();
+  var s_phone = jq_phone.val();
 
   if (s_name)
   {
@@ -17,7 +20,8 @@ function add_order(o_sender)
       },
       success: function(data)
       {
-        alert(data);
+        jq_name.val('');
+        jq_phone.val('');
       }
     });
   }

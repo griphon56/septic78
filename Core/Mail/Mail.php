@@ -44,7 +44,7 @@ function sendMail(string $s_mail_to, string $s_template, array $a_data=[])
 
   // Mail header
   $s_headers = "Content-type: text/html; charset=".$s_encoding." \r\n";
-  $s_headers .= "From: ".MAIL_BO."\r\n";
+  $s_headers .= "From: septic5@littlelanding.zzz.com.ua"."\r\n";
   $s_headers .= "MIME-Version: 1.0 \r\n";
   $s_headers .= "Content-Transfer-Encoding: 8bit \r\n";
   $s_headers .= "Date: ".date("r (T)")." \r\n";
@@ -90,9 +90,15 @@ function templateMailCartBO()
 
 function templateMailHeader(array $a_data)
 {
-  $s_subject = 'Заказ';
-  $s_message = 'У вас новый клиент: '.$a_data['s_name']."\r\n".
-               'Сяжитесь с ним по телефону: '.$a_data['s_phone'];
+  $s_phone = preg_replace('![^0-9]+!', '', $a_data['s_phone']);
+
+  $s_subject = 'Заказ от - '.$a_data['s_name'];
+  $s_message = '
+     <div class="container-msg" style="position: relative;display: block;padding: 5px 15px;">'."\r\n".'
+      <h3 class="text-msg" style="font-size: 20px;font-weight: 300;">У вас новый клиент: <span class="text-label" style="background-color: #f4f4f4;padding: 5px;border-radius: 10px;border: 1px solid #ececec;">'.$a_data['s_name'].'</span></h3>'."\r\n".'
+      <h3 class="text-msg" style="font-size: 20px;font-weight: 300;">Сяжитесь с ним по телефону: <span class="text-label" style="background-color: #f4f4f4;padding: 5px;border-radius: 10px;border: 1px solid #ececec;"><a class="link-msg" href="tel: '.$s_phone.'" style="text-decoration: none;">'.$s_phone.'</a></span></h3>'."\r\n".'
+    </div>
+  ';
 
   return [
     's_subject' => $s_subject,
