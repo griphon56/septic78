@@ -13,7 +13,7 @@ function send_dealer()
   {
     $.ajax({
       type: 'POST',
-      url: '/View/Header/actionFooter.php',
+      url: '/View/Footer/actionFooter.php',
       data: {
         s_email: s_email
       },
@@ -27,6 +27,5 @@ function send_dealer()
   else
   {
     jq_input.css('border-color','palevioletred');
-    // alert('Сообщение не отправлено.');
   }
 }
