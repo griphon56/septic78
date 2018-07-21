@@ -50,7 +50,10 @@ $.getScript('../View/Cart/ajaxCart.js');
 // Search
 $.getScript('../View/Search/actionSearch.js');
 
-// Message
+// Message header
 $.getScript('../View/Header/actionHeader.js');
+
+// Message footer
+$.getScript('../View/Footer/actionFooter.js');
 
 // $.getScript('/Admin/View/Product/ajax.js');

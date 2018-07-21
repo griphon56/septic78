@@ -20,8 +20,8 @@
         <p class="footer-section-desc">Получить полную информацию по вопросам сотрудничества с компанией <b>"Септик5.рф"</b> можно в разделе Дилерам или по телефону +79215626782</p>
         <form action="#">
           <div class="footer-section-send">
-            <input type="text" class="footer-mail" placeholder="Введите свой e-mail"/>
-            <a href="#" class="submit-send"><img src="<?=VIEW?>img/footerView/next.png" alt=""></a>
+            <input type="text" class="footer-mail js-footer-mail" placeholder="Введите свой e-mail"/>
+            <a href="#" onclick="send_dealer(); return false;" class="submit-send"><img src="<?=VIEW?>img/footerView/next.png" alt=""></a>
           </div>
         </form>
         <div class="footer-contact-seal row">

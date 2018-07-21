@@ -13,6 +13,15 @@ define('TEMPLATE_CART_CUSTOMER', 3);
 // Шаблон уведомления о покупке(для клиента).
 define('TEMPLATE_HEADER', 4);
 
+// Шаблон информации диллерам для сотрудничества.
+define('TEMPLATE_DEALER', 5);
+
+/**
+ * @param string $s_mail_to Адрес отправки сообщения.
+ * @param string $s_template ID шаблона.
+ * @param array $a_data Массив данных.
+ * @return int|string Ответ о доставке.
+ */
 function sendMail(string $s_mail_to, string $s_template, array $a_data=[])
 {
   $s_encoding = 'utf-8';
@@ -33,6 +42,10 @@ function sendMail(string $s_mail_to, string $s_template, array $a_data=[])
 
     case TEMPLATE_HEADER:
       $a_mail = templateMailHeader($a_data);
+      break;
+
+    case TEMPLATE_DEALER:
+      $a_mail = templateMailDealer();
       break;
 
     default:
@@ -66,6 +79,14 @@ function templateMailBusinessOwner()
   ];
 }
 
+/**
+ * Шаблон писем, находится в корзине, собирается по данным из корзины и отправляется Заказчику.
+ *
+ * @return array Массив со структурой. <ul>
+ * <li><tt>s_subject</tt> Тема письма.</li>
+ * <li><tt>s_message</tt> Содержание письма.</li>
+ * </ul>
+ */
 function templateMailCartCustomer()
 {
   $s_subject = '';
@@ -77,6 +98,33 @@ function templateMailCartCustomer()
   ];
 }
 
+/**
+ * Шаблон писем, находится в футере, информация дилерам по сотрудничеству.
+ *
+ * @return array Массив со структурой. <ul>
+ * <li><tt>s_subject</tt> Тема письма.</li>
+ * <li><tt>s_message</tt> Содержание письма.</li>
+ * </ul>
+ */
+function templateMailDealer()
+{
+  $s_subject = 'Сотрудничетво с Септик5.рф';
+  $s_message = 'Здравствуйте.';
+
+  return [
+    's_subject' => $s_subject,
+    's_message' => $s_message
+  ];
+}
+
+/**
+ * Шаблон писем, находится в корзине, собирается по данным из корзины и отправляется Владельцу.
+ *
+ * @return array Массив со структурой. <ul>
+ * <li><tt>s_subject</tt> Тема письма.</li>
+ * <li><tt>s_message</tt> Содержание письма.</li>
+ * </ul>
+ */
 function templateMailCartBO()
 {
   $s_subject = '';
@@ -88,6 +136,15 @@ function templateMailCartBO()
   ];
 }
 
+/**
+ * Шаблон писем, находится в шапке страницы.
+ *
+ * @param array $a_data Данные для письма.
+ * @return array Массив со структурой. <ul>
+ * <li><tt>s_subject</tt> Тема письма.</li>
+ * <li><tt>s_message</tt> Содержание письма.</li>
+ * </ul>
+ */
 function templateMailHeader(array $a_data)
 {
   $s_phone = preg_replace('![^0-9]+!', '', $a_data['s_phone']);
