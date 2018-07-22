@@ -16,6 +16,9 @@ define('TEMPLATE_CONTACT', 4);
 // Шаблон информации диллерам для сотрудничества.
 define('TEMPLATE_DEALER', 5);
 
+// Шаблон информации диллерам для сотрудничества.
+define('TEMPLATE_MAIL_REQUEST', 6);
+
 /**
  * @param string $s_mail_to Адрес отправки сообщения.
  * @param string $s_template ID шаблона.
@@ -46,6 +49,10 @@ function sendMail(string $s_mail_to, string $s_template, array $a_data=[])
 
     case TEMPLATE_DEALER:
       $a_mail = templateMailDealer();
+      break;
+
+    case TEMPLATE_MAIL_REQUEST:
+      $a_mail = templateMailRequest($a_data);
       break;
 
     default:
@@ -137,7 +144,7 @@ function templateMailCartBO()
 }
 
 /**
- * Шаблон писем, находится в шапке страницы.
+ * Шаблон писем, находится в шапке страницы и на странице Контакты.
  *
  * @param array $a_data Данные для письма.
  * @return array Массив со структурой. <ul>
@@ -151,9 +158,38 @@ function templateMailContact(array $a_data)
 
   $s_subject = 'Заказ от - '.$a_data['s_name'];
   $s_message = '
-     <div class="container-msg" style="position: relative;display: block;padding: 5px 15px;">'."\r\n".'
+    <div class="container-msg" style="position: relative;display: block;padding: 5px 15px;">'."\r\n".'
       <h3 class="text-msg" style="font-size: 20px;font-weight: 300;">У вас новый клиент: <span class="text-label" style="background-color: #f4f4f4;padding: 5px;border-radius: 10px;border: 1px solid #ececec;">'.$a_data['s_name'].'</span></h3>'."\r\n".'
       <h3 class="text-msg" style="font-size: 20px;font-weight: 300;">Сяжитесь с ним по телефону: <span class="text-label" style="background-color: #f4f4f4;padding: 5px;border-radius: 10px;border: 1px solid #ececec;"><a class="link-msg" href="tel: '.$s_phone.'" style="text-decoration: none;">'.$s_phone.'</a></span></h3>'."\r\n".'
+    </div>
+  ';
+
+  return [
+    's_subject' => $s_subject,
+    's_message' => $s_message
+  ];
+}
+
+/**
+ * Шаблон писем.
+ *
+ * @param array $a_data Данные для письма.
+ * @return array Массив со структурой. <ul>
+ * <li><tt>s_subject</tt> Тема письма.</li>
+ * <li><tt>s_message</tt> Содержание письма.</li>
+ * </ul>
+ * @link View/RequestForm/requestFormView.php
+ */
+function templateMailRequest(array $a_data)
+{
+  $s_phone = preg_replace('![^0-9]+!', '', $a_data['s_phone']);
+
+  $s_subject = 'Заявка от - '.$a_data['s_name'];
+  $s_message = '
+    <div class="container-msg" style="position: relative;display: block;padding: 5px 15px;">'."\r\n".'
+      <h3 class="text-msg" style="font-size: 20px;font-weight: 300;">У вас новый клиент: <span class="text-label" style="background-color: #f4f4f4;padding: 5px;border-radius: 10px;border: 1px solid #ececec;">'.$a_data['s_name'].'</span></h3>'."\r\n".'
+      <h3 class="text-msg" style="font-size: 20px;font-weight: 300;">Сяжитесь с ним по телефону: <span class="text-label" style="background-color: #f4f4f4;padding: 5px;border-radius: 10px;border: 1px solid #ececec;"><a class="link-msg" href="tel: '.$s_phone.'" style="text-decoration: none;">'.$s_phone.'</a></span></h3>'."\r\n".'
+      <p>'.$a_data['s_message'].'</p>
     </div>
   ';
 
