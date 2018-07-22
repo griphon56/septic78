@@ -102,7 +102,7 @@
       </div>
       <div class="col-md-5">
         <div class="header-form">
-          <div class="row form-text-submit js-header-form">
+          <div class="row form-text-submit js-mail-form-contact">
             <ul>
               <li>
                 <input type="text" name="s_name" placeholder="Имя">
@@ -111,7 +111,7 @@
                 <input type="tel" name="s_phone" maxlength="15" placeholder="Телефон">
               </li>
               <li>
-                <input type="button" onclick="add_order(this);" class="btn header-btn" value="Заказать">
+                <input type="button" onclick="send_contact(this);" class="btn header-btn" value="Заказать">
               </li>
             </ul>
           </div>

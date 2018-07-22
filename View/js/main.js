@@ -50,8 +50,8 @@ $.getScript('../View/Cart/ajaxCart.js');
 // Search
 $.getScript('../View/Search/actionSearch.js');
 
-// Message header
-$.getScript('../View/Header/actionHeader.js');
+// Message header/ page Contact
+$.getScript('../Core/Mail/action.js');
 
 // Message footer
 $.getScript('../View/Footer/actionFooter.js');

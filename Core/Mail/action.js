@@ -1,8 +1,8 @@
-function add_order(o_sender)
+function send_contact(o_sender)
 {
   $this = $(o_sender);
 
-  var jq_form_container = $this.closest('.js-header-form');
+  var jq_form_container = $this.closest('.js-mail-form-contact');
   var jq_name = jq_form_container.find('input[name="s_name"]');
   var jq_phone = jq_form_container.find('input[name="s_phone"]');
 
@@ -13,8 +13,9 @@ function add_order(o_sender)
   {
     $.ajax({
       type: 'POST',
-      url: '/View/Header/actionHeader.php',
+      url: '/Core/Mail/action.php',
       data: {
+        action_mail: 'contact',
         s_name: s_name,
         s_phone: s_phone
       },

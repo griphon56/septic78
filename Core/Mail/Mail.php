@@ -10,8 +10,8 @@ define('TEMPLATE_CART_BO', 2);
 // Шаблон уведомления о покупке(для клиента).
 define('TEMPLATE_CART_CUSTOMER', 3);
 
-// Шаблон уведомления о покупке(для клиента).
-define('TEMPLATE_HEADER', 4);
+// Шаблон уведомления о намерении купить или задать вопрос.
+define('TEMPLATE_CONTACT', 4);
 
 // Шаблон информации диллерам для сотрудничества.
 define('TEMPLATE_DEALER', 5);
@@ -40,8 +40,8 @@ function sendMail(string $s_mail_to, string $s_template, array $a_data=[])
       $a_mail = templateMailCartCustomer();
       break;
 
-    case TEMPLATE_HEADER:
-      $a_mail = templateMailHeader($a_data);
+    case TEMPLATE_CONTACT:
+      $a_mail = templateMailContact($a_data);
       break;
 
     case TEMPLATE_DEALER:
@@ -145,7 +145,7 @@ function templateMailCartBO()
  * <li><tt>s_message</tt> Содержание письма.</li>
  * </ul>
  */
-function templateMailHeader(array $a_data)
+function templateMailContact(array $a_data)
 {
   $s_phone = preg_replace('![^0-9]+!', '', $a_data['s_phone']);
 
