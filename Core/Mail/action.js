@@ -58,7 +58,6 @@ function send_request(o_sender)
       },
       success: function(data)
       {
-        alert(data);
         jq_name.val('');
         jq_phone.val('');
         jq_message.val('');
