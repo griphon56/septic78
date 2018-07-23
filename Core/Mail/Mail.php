@@ -36,11 +36,11 @@ function sendMail(string $s_mail_to, string $s_template, array $a_data=[])
       break;
 
     case TEMPLATE_CART_BO:
-      $a_mail = templateMailCartBO();
+      $a_mail = templateMailCartBO($a_data);
       break;
 
     case TEMPLATE_CART_CUSTOMER:
-      $a_mail = templateMailCartCustomer();
+      $a_mail = templateMailCartCustomer($a_data);
       break;
 
     case TEMPLATE_CONTACT:
@@ -89,19 +89,20 @@ function templateMailBusinessOwner()
 /**
  * Шаблон писем, находится в корзине, собирается по данным из корзины и отправляется Заказчику.
  *
+ * @param array $a_data
  * @return array Массив со структурой. <ul>
  * <li><tt>s_subject</tt> Тема письма.</li>
  * <li><tt>s_message</tt> Содержание письма.</li>
  * </ul>
  */
-function templateMailCartCustomer()
+function templateMailCartCustomer(array $a_data)
 {
   $s_subject = 'Септик5.рф';
   $s_message = '
     <div style="margin: 10px;">
-      <h1 style="font-size: 25px;text-transform: uppercase;">Заказ <span style="background-color: #baffba;padding: 0 5px;border-radius: 3px;">#'.$a_data['k_order'].'</span></h1>
+      <h1 style="font-size: 25px;text-transform: uppercase;">Заказ <span>#'.$a_data['k_order'].'</span></h1>
       
-      <h2 style="color: #444444;font-size: 21px;font-weight: 300;margin-top: 40px;text-transform: uppercase;">Ваш заказ</h2>
+      <h2 style="color: #444444;font-size: 21px;font-weight: 300;margin-top: 20px;text-transform: uppercase;">Ваш заказ</h2>
       <table class="cart" style="border-spacing: 0;font-size: 18px;text-align: center;width: 100%;">
         <tr>
           <th style="padding: 10px;border-right: 1px solid #f4f4f4;text-transform: uppercase;background-color: #fbfbfb;border-bottom: 1px solid #f4f4f4;">ID</th>
@@ -111,6 +112,7 @@ function templateMailCartCustomer()
         </tr>
   ';
 
+  $i_total = 0;
   $a_cart_order = $a_data['a_cart'];
   foreach ($a_cart_order as $a_item)
   {
@@ -122,10 +124,12 @@ function templateMailCartCustomer()
         <td style="padding: 10px;border-right: none;">' . number_format($a_item['i_price'], 0, '.', ' ') . ' руб.</td>
       </tr>
     ';
+    $i_total+=$a_item['i_price'];
   }
 
   $s_message .= '
       </table>
+      <h3 style="text-align: end;font-size: 20px;text-transform: uppercase;">Всего: <span style="padding: 5px; background-color: #baffba">' . number_format($i_total, 0, '.', ' ') . ' руб.</span></h3>
     </div>
   ';
   return [
@@ -169,8 +173,8 @@ function templateMailCartBO(array $a_data)
   $s_subject = 'Заказ от  - '.$a_data['s_name'];
   $s_message = '
     <div style="margin: 10px;">
-      <h1 style="font-size: 25px;text-transform: uppercase;">Заказ <span style="background-color: #baffba;padding: 0 5px;border-radius: 3px;">#'.$a_data['k_order'].'</span></h1>
-      <h2 style="color: #444444;font-size: 21px;font-weight: 300;margin-top: 40px;text-transform: uppercase;">Клиент</h2>
+      <h1 style="font-size: 25px;text-transform: uppercase;">Заказ <span>#'.$a_data['k_order'].'</span></h1>
+      <h2 style="color: #444444;font-size: 21px;font-weight: 300;margin-top: 20px;text-transform: uppercase;">Клиент</h2>
       <table class="client-info" style="border-spacing: 0;font-size: 18px;text-align: center;width: 100%;">
         <tr>
           <th style="padding: 10px;border-right: 1px solid #f4f4f4;text-transform: uppercase;background-color: #fbfbfb;border-bottom: 1px solid #f4f4f4;">Имя</th>
@@ -188,7 +192,7 @@ function templateMailCartBO(array $a_data)
         </tr>
       </table>
     
-      <h2 style="color: #444444;font-size: 21px;font-weight: 300;margin-top: 40px;text-transform: uppercase;">Товары</h2>
+      <h2 style="color: #444444;font-size: 21px;font-weight: 300;margin-top: 20px;text-transform: uppercase;">Товары</h2>
       <table class="cart" style="border-spacing: 0;font-size: 18px;text-align: center;width: 100%;">
         <tr>
           <th style="padding: 10px;border-right: 1px solid #f4f4f4;text-transform: uppercase;background-color: #fbfbfb;border-bottom: 1px solid #f4f4f4;">ID</th>
@@ -198,6 +202,7 @@ function templateMailCartBO(array $a_data)
         </tr>
   ';
 
+  $i_total = 0;
   $a_cart_order = $a_data['a_cart'];
   foreach ($a_cart_order as $a_item)
   {
@@ -209,10 +214,13 @@ function templateMailCartBO(array $a_data)
         <td style="padding: 10px;border-right: none;">' . number_format($a_item['i_price'], 0, '.', ' ') . ' руб.</td>
       </tr>
     ';
+    $i_total+=$a_item['i_price'];
   }
 
   $s_message .= '
       </table>
+      <h3 style="text-align: end;font-size: 20px;text-transform: uppercase;">Всего: <span style="padding: 5px; background-color: #baffba">' . number_format($i_total, 0, '.', ' ') . ' руб.</span></h3>
+    
     </div>
   ';
 

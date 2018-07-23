@@ -1,7 +1,7 @@
 <?php
-
+include('../../Core/Mail/Mail.php');
+include ('../../Model/Model.php');
 require_once '../../config.php';
-require_once '../../Model/Model.php';
 
 if($_POST)
 {
@@ -145,10 +145,7 @@ function saveOrder()
         ".$s_insert_value."
     ";
     mysqli_query($link, $q_product);
-    echo($q_product);
   }
-
-  mysqli_close($link);
 
   $a_data_mail = [
     'a_cart' => $a_cart,
@@ -158,14 +155,16 @@ function saveOrder()
     's_address' => $s_address,
     's_email' => $s_email,
     's_name' => $s_name,
-    's_phone' => $s_phone,
+    's_phone' => $s_phone
   ];
 
-  unset($_SESSION['cart']);
-  // Отправить уведомление клиенту и BO.
-
+  //  Уведомление клиенту
   sendMail($s_email,TEMPLATE_CART_CUSTOMER,$a_data_mail);
+
+  //  Уведомление заказчику
   sendMail(MAIL_BO,TEMPLATE_CART_BO,$a_data_mail);
 
+  mysqli_close($link);
+  unset($_SESSION['cart']);
 }
 ?>
