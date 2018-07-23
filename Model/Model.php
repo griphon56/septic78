@@ -4,27 +4,39 @@ include('Core/Mail/Mail.php');
 /**
  * Метод получения массива "Метода оплаты".
  *
+ * @param string $k_delivery ID способа оплаты.
  * @return array Массив методов оплаты.
  */
-function getDelivery()
+function getDelivery(string $k_delivery=null)
 {
   $link = mysqli_connect(HOST, USER, PASS,DB) or die('No connect to Server');
   mysqli_set_charset($link,'utf8');
+
+  if(!$k_delivery)
+    $s_where = '';
+  else
+    $s_where = 'where k_delivery='.$k_delivery;
 
   $query = "
     select
       k_delivery,
       s_name
     from 
-      delivery;
+      delivery
+    ".$s_where.";
   ";
 
   $r_query = mysqli_query($link,$query);
   mysqli_close($link);
 
   $a_delivery =  [];
-  while ($row = mysqli_fetch_assoc($r_query))
-    $a_delivery[] = $row;
+  if(!$k_delivery)
+  {
+    while ($row = mysqli_fetch_assoc($r_query))
+      $a_delivery[] = $row;
+  }
+  else
+    $a_delivery = mysqli_fetch_assoc($r_query);
 
   return $a_delivery;
 }

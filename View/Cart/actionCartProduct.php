@@ -107,6 +107,9 @@ function saveOrder()
 
   $a_cart = getCartProduct($_SESSION['cart']);
 
+  if(!$a_cart)
+    return;
+
   $s_name = trim($_POST['s_name']);
   $s_phone = trim($_POST['s_phone']);
   $s_email = trim($_POST['s_email']);
@@ -147,8 +150,22 @@ function saveOrder()
 
   mysqli_close($link);
 
+  $a_data_mail = [
+    'a_cart' => $a_cart,
+    'dt_date' => $dt_date,
+    'k_delivery' => $k_delivery,
+    'k_order' => $k_order,
+    's_address' => $s_address,
+    's_email' => $s_email,
+    's_name' => $s_name,
+    's_phone' => $s_phone,
+  ];
+
   unset($_SESSION['cart']);
   // Отправить уведомление клиенту и BO.
-  sendMessageCart();
+
+  sendMail($s_email,TEMPLATE_CART_CUSTOMER,$a_data_mail);
+  sendMail(MAIL_BO,TEMPLATE_CART_BO,$a_data_mail);
+
 }
 ?>
