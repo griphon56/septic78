@@ -49,7 +49,7 @@ function drawMenu(array $a_menu)
               echo('<a href=' . $a_item["href"] . '>' . $a_item["link"] . '</a>');
             echo('</li>');
 
-        if($i_count==8)
+        if($i_count==6)
         {
           $i_count=0; 
           echo ('</ul></div>');
