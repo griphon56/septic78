@@ -16,6 +16,14 @@
   transition: .3s;
 }
 
+.catalog-marker-container .active-marker{
+  border: 1px solid #57afb9;
+  box-shadow: 0 1px 1px #175f67;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #57afb9;
+}
+
 .catalog-marker-container .catalog-marker-item:hover{
   box-shadow: 0 1px 1px #175f67;
   border: 1px solid #57afb9;
