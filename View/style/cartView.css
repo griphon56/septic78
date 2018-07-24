@@ -61,11 +61,15 @@
   overflow: hidden;
 }
 
-.cart-product-item .cart-product-text{
+.cart-product-item .cart-product-text,.cart-product-item .cart-product-text>a{
   color: #656565;
   font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.cart-product-item .cart-product-text>a{
+  text-decoration: none;
 }
 
 .cart-product-item .cart-product-del{

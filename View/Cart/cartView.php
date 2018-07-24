@@ -21,11 +21,13 @@
             <div class="row cart-product-item align-items-center">
               <div class="col-md-2">
                 <div class="cart-product-img-wrap">
-                  <img src="' . VIEW . 'upload_img/product/' . $a_item['img'] . '" alt="">
+                  <a href="index.php?id_page=product&k_product='.$a_item['k_product'].'">
+                    <img src="' . VIEW . 'upload_img/product/' . $a_item['img'] . '" alt="">
+                  </a>
                 </div>
               </div>
               <div class="col-md-4">
-              <h3 class="cart-product-text">' . $a_item['s_name'] . '</h3>
+              <h3 class="cart-product-text"><a href="index.php?id_page=product&k_product='.$a_item['k_product'].'">' . $a_item['s_name'] . '</a></h3>
               </div>
               <div class="col-md-3">
                 <div class="quantity js-quantity-cart">
