@@ -94,7 +94,7 @@
       }
       else
       {
-        echo('<h3 class="empty-block">Характеристики отсутствуют</h3>');
+        echo('<h3 class="empty-text">Характеристики отсутствуют</h3>');
       }
     ?>
   </div>
