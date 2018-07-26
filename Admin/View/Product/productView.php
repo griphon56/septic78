@@ -19,18 +19,6 @@
     $a_sort_data = [];
     foreach ($a_data as $a_item)
     {
-      if(!isset($a_sort_data[$a_item['name_category']]))
-      {
-        $a_sort_data[$a_item['name_category']][] = [
-          'i_discount' => $a_item['i_discount'],
-          'i_price' => $a_item['i_price'],
-          'is_active' => $a_item['is_active'],
-          'k_product' => $a_item['k_product'],
-          'k_product_category' => $a_item['k_product_category'],
-          'name_category' => $a_item['name_category'],
-          's_name' => $a_item['s_name']
-        ];
-      }
       $a_sort_data[$a_item['name_category']][] = [
         'i_discount' => $a_item['i_discount'],
         'i_price' => $a_item['i_price'],
