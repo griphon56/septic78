@@ -56,4 +56,5 @@ $.getScript('../Core/Mail/action.js');
 // Message footer
 $.getScript('../View/Footer/actionFooter.js');
 
-// $.getScript('/Admin/View/Product/ajax.js');
+// Edit product.
+$.getScript('/Admin/View/Product/ajax.js');

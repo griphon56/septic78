@@ -79,72 +79,96 @@
                   <label for="img_product">Картинка</label>
                   <input type="file" name="img_product" id="img_product" value=""/>
                 </li>
-                <li>
-                  <div class="container include-with-product">
-                    <div class="row">
-                      <label for="">Можно подключить:</label>
-                    </div>
-                    <div class="row">
-                      <div class="col">
-                        <img src="<?=VIEW?>img/productView/shower.png" alt="">
-                        <input type="text" value="<?=$a_config['i_shower']?>" name="i_shower" id="i_shower"/>
-                      </div>
-                      <div class="col">
-                        <img src="<?=VIEW?>img/productView/sink.png" alt="">
-                        <input type="text" value="<?=$a_config['i_sink']?>" name="i_sink" id="i_sink"/>
-                      </div>
-                      <div class="col">
-                        <img src="<?=VIEW?>img/productView/toilet.png" alt="">
-                        <input type="text" value="<?=$a_config['i_toilet']?>" name="i_toilet" id="i_toilet"/>
-                      </div>
-                      <div class="col">
-                        <img src="<?=VIEW?>img/productView/bathtub.png" alt="">
-                        <input type="text" value="<?=$a_config['i_bathtub']?>" name="i_bathtub" id="i_bathtub"/>
-                      </div>
-                      <div class="col">
-                        <img src="<?=VIEW?>img/productView/laundry.png" alt="">
-                        <input type="text" value="<?=$a_config['i_laundry']?>" name="i_laundry" id="i_laundry"/>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <label for="z_users">Количество пользователей</label>
-                  <input type="text" name="z_users" value="<?=$a_feature['z_users']?>" placeholder="1" id="z_users"/>
-                </li>
-                <li>
-                  <label for="z_length">Длина</label>
-                  <input type="text" name="z_length" value="<?=$a_feature['z_length']?>" placeholder="100 мм" id="z_length"/>
-                </li>
-                <li>
-                  <label for="z_width">Ширина</label>
-                  <input type="text" name="z_width" value="<?=$a_feature['z_width']?>" placeholder="100 мм" id="z_width"/>
-                </li>
-                <li>
-                  <label for="z_height">Высота</label>
-                  <input type="text" name="z_height" value="<?=$a_feature['z_height']?>" placeholder="200 мм" id="z_height"/>
-                </li>
-                <li>
-                  <label for="z_weight">Вес</label>
-                  <input type="text" name="z_weight" value="<?=$a_feature['z_weight']?>" placeholder="10 кг" id="z_weight"/>
-                </li>
-                <li>
-                  <label for="z_box_up">Врезка до</label>
-                  <input type="text" name="z_box_up" value="<?=$a_feature['z_box_up']?>" placeholder="85 см" id="z_box_up"/>
-                </li>
-                <li>
-                  <label for="z_salvage">Залповый сброс(л)</label>
-                  <input type="text" name="z_salvage" value="<?=$a_feature['z_salvage']?>" placeholder="100" id="z_salvage"/>
-                </li>
-                <li>
-                  <label for="z_process_volume">Объём переработки(м3/сут)</label>
-                  <input type="text" name="z_process_volume" value="<?=$a_feature['z_process_volume']?>" placeholder="0.8" id="z_process_volume"/>
-                </li>
-                <li>
-                  <label for="z_energy">Потребляемая эл. энергия(кВт/сут)</label>
-                  <input type="text" name="z_energy" value="<?=$a_feature['z_energy']?>" placeholder="1.5" id="z_energy"/>
-                </li>
+                <?php
+//                  if($_REQUEST['id_product']==PAGE_PRODUCT_SEPTIC)
+//                  {
+                    echo('
+                      <li>
+                        <div class="container include-with-product">
+                          <div class="row">
+                            <label for="">Можно подключить:</label>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <img src="' . VIEW.'img/productView/shower.png" alt="">
+                              <input type="text" value="' . $a_config['i_shower'] . '" name="i_shower" id="i_shower"/>
+                            </div>
+                            <div class="col">
+                              <img src="' . VIEW.'img/productView/sink.png" alt="">
+                              <input type="text" value="' . $a_config['i_sink'] . '" name="i_sink" id="i_sink"/>
+                            </div>
+                            <div class="col">
+                              <img src="' . VIEW.'img/productView/toilet.png" alt="">
+                              <input type="text" value="' . $a_config['i_toilet'] . '" name="i_toilet" id="i_toilet"/>
+                            </div>
+                            <div class="col">
+                              <img src="' . VIEW.'img/productView/bathtub.png" alt="">
+                              <input type="text" value="' . $a_config['i_bathtub'] . '" name="i_bathtub" id="i_bathtub"/>
+                            </div>
+                            <div class="col">
+                              <img src="' . VIEW.'img/productView/laundry.png" alt="">
+                              <input type="text" value="' . $a_config['i_laundry'] . '" name="i_laundry" id="i_laundry"/>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    ');
+//                  }
+                ?>
               </ul>
+
+              <h3 class="section-item">Таблица</h3>
+              <ul id="js-add-product-item" class="add-product-item">
+                <?php
+                if($a_feature)
+                {
+                  foreach ($a_feature as $key => $a_item)
+                  {
+                    echo('
+                      <li class="js-add-product-item-box">
+                        <div class="row">
+                          <div class="col-md-5">
+                            <input type="text" name="z_item_offset" placeholder="Название поля" value="'.$a_item['z_item_offset'].'">
+                          </div>
+                          <div class="col-md-6">
+                            <input type="text" name="z_item_val" placeholder="Значение" value="'.$a_item['z_item_val'].'">
+                          </div>
+                          <div class="col-md-1">
+                            <span class="btn-product-new-item-del" onclick="del_table_item(this);">X</span>
+                          </div>
+                        </div>
+                      </li>
+                    ');
+                  }
+                }
+                else
+                {
+                  echo('
+                    <li class="js-add-product-item-box">
+                      <div class="row">
+                        <div class="col-md-5">
+                          <input type="text" name="z_item_offset" placeholder="Название поля" value="">
+                        </div>
+                        <div class="col-md-6">
+                          <input type="text" name="z_item_val" placeholder="Значение" value="">
+                        </div>
+                        <div class="col-md-1">
+                          <span class="btn-product-new-item-del" onclick="del_table_item(this);">X</span>
+                        </div>
+                      </div>
+                    </li>
+                  ');
+                }
+                ?>
+              </ul>
+              <input type="text" name="count_item" value="0" hidden>
+              <a
+                href="#"
+                id="js-product-new-item"
+                class="btn btn-light js-product-new-item btn-product-new-item"
+              >
+                ДОБАВИТЬ ЯЧЕЙКУ
+              </a>
             </div>
           </div>
           <div class="row">
@@ -152,7 +176,12 @@
               <a href="index.php?id_page=product" class="btn btn-info">Отмена</a>
             </div>
             <div class="col-md-3">
-              <input type="submit" value="edit_product" name="action_form" class="edit-product-submit float-right btn btn-success">
+              <input
+                type="submit"
+                value="edit_product"
+                name="action_form"
+                class="edit-product-submit js-product-submit-table float-right btn btn-success"
+              >
             </div>
           </div>
         </div>

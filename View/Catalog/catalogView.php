@@ -7,7 +7,7 @@
   if(isset($a_product[0]['name_category']))
     include(USER_TEMPLATE.'Catalog/catalogCategoryProductView.php');
   else
-    echo('<h2 style="text-align: center;">В категории нет товаров.</h2>');
+    echo('<h3 class="empty-text">В категории нет товаров</h3>');
 
   include(USER_TEMPLATE.'Catalog/catalogCategoryDescriptionView.php');
 ?>

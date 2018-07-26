@@ -5,8 +5,11 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-md-12">
-      <a href="index.php?id_page=add_product" class="btn btn-info">Добавить новый товар</a>
+    <div class="col-md-3">
+      <a href="index.php?id_page=add_product&id_product=1" class="btn btn-info">Добавить новый Септик</a>
+    </div>
+    <div class="col-md-3">
+      <a href="index.php?id_page=add_product&id_product=2" class="btn btn-info">Добавить новый Погреб</a>
     </div>
   </div>
 
@@ -29,5 +32,3 @@
     ?>
   </table>
 </div>
-
-<script src="/Admin/View/Product/ajax.js"></script>

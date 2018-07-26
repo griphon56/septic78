@@ -14,6 +14,9 @@
   <script src="<?=VIEW?>js/bootstrap.min.js"></script>
   <script src="<?=VIEW?>js/jquery.swipebox.js"></script>
 
+  <link rel="icon" href="<?=VIEW?>img/headerView/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="<?=VIEW?>img/headerView/favicon.png" type="image/x-icon">
+
 </head>
 <body>
   <div class="wrapper">

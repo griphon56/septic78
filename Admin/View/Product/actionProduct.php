@@ -26,38 +26,40 @@ function addProduct()
   $link = mysqli_connect(HOST, USER, PASS, DB);
   mysqli_set_charset($link, 'utf8');
 
-  $s_name = trim($_POST['name_product']);
-  $k_product_category = trim($_POST['id_category']);
+  $a_data = $_POST;
+
+  $s_name = trim($a_data['name_product']);
+  $k_product_category = trim($a_data['id_category']);
 
   $img_product = '';
   if($s_name)
     $img_product = uploadImage('img_product','product');
 
-  $i_price = trim($_POST['i_cost']);
-  $i_discount = trim($_POST['i_discount']);
-  $is_active = isset($_POST['is_active']) ? 1 : 0;
-  $is_stock = isset($_POST['is_stock']) ? 1 : 0;
+  $i_price = trim($a_data['i_cost']);
+  $i_discount = trim($a_data['i_discount']);
+  $is_active = isset($a_data['is_active']) ? 1 : 0;
+  $is_stock = isset($a_data['is_stock']) ? 1 : 0;
+
+  $a_feature = [];
+  for($i_count = 0; $i_count < $a_data['count_item']; $i_count++)
+  {
+    $a_feature[] = [
+      'z_item_offset' => trim($a_data['z_item_offset_'.$i_count]),
+      'z_item_val' => trim($a_data['z_item_val_'.$i_count])
+    ];
+  }
 
   $a_config = [
     'a_config' => [
-      'i_bathtub' => trim($_POST['i_bathtub']),
-      'i_laundry' => trim($_POST['i_laundry']),
-      'i_sink' => trim($_POST['i_sink']),
-      'i_shower' => trim($_POST['i_shower']),
-      'i_toilet' => trim($_POST['i_toilet'])
+      'i_bathtub' => trim($a_data['i_bathtub'] ?? 0),
+      'i_laundry' => trim($a_data['i_laundry'] ?? 0),
+      'i_sink' => trim($a_data['i_sink'] ?? 0),
+      'i_shower' => trim($a_data['i_shower'] ?? 0),
+      'i_toilet' => trim($a_data['i_toilet'] ?? 0)
     ],
-    'a_feature' => [
-      'z_box_up' => trim($_POST['z_box_up']),
-      'z_energy' => trim($_POST['z_energy']),
-      'z_height' => trim($_POST['z_height']),
-      'z_length' => trim($_POST['z_length']),
-      'z_process_volume' => trim($_POST['z_process_volume']),
-      'z_salvage' => trim($_POST['z_salvage']),
-      'z_users' => trim($_POST['z_users']),
-      'z_weight' => trim($_POST['z_weight']),
-      'z_width' => trim($_POST['z_width'])
-    ]
+    'a_feature' => $a_feature
   ];
+
   $z_data = serialize($a_config);
 
   $query = "
@@ -104,37 +106,38 @@ function editProduct(string $k_product)
   $link = mysqli_connect(HOST, USER, PASS, DB);
   mysqli_set_charset($link, 'utf8');
 
-  $s_name = trim($_POST['name_product']);
-  $k_product_category = trim($_POST['id_category']);
+  $a_data = $_POST;
+
+  $s_name = trim($a_data['name_product']);
+  $k_product_category = trim($a_data['id_category']);
 
   $img_product = '';
   if($s_name)
     $img_product = uploadImage('img_product','product');
 
-  $i_price = trim($_POST['i_cost']);
-  $i_discount = trim($_POST['i_discount']);
-  $is_active = isset($_POST['is_active']) ? 1 : 0;
-  $is_stock = isset($_POST['is_stock']) ? 1 : 0;
+  $i_price = trim($a_data['i_cost']);
+  $i_discount = trim($a_data['i_discount']);
+  $is_active = isset($a_data['is_active']) ? 1 : 0;
+  $is_stock = isset($a_data['is_stock']) ? 1 : 0;
+
+  $a_feature = [];
+  for($i_count = 0; $i_count < $a_data['count_item']; $i_count++)
+  {
+    $a_feature[] = [
+      'z_item_offset' => trim($a_data['z_item_offset_'.$i_count]),
+      'z_item_val' => trim($a_data['z_item_val_'.$i_count])
+    ];
+  }
 
   $a_config = [
     'a_config' => [
-      'i_bathtub' => trim($_POST['i_bathtub']),
-      'i_laundry' => trim($_POST['i_laundry']),
-      'i_sink' => trim($_POST['i_sink']),
-      'i_shower' => trim($_POST['i_shower']),
-      'i_toilet' => trim($_POST['i_toilet'])
+      'i_bathtub' => trim($a_data['i_bathtub'] ?? 0),
+      'i_laundry' => trim($a_data['i_laundry'] ?? 0),
+      'i_sink' => trim($a_data['i_sink'] ?? 0),
+      'i_shower' => trim($a_data['i_shower'] ?? 0),
+      'i_toilet' => trim($a_data['i_toilet'] ?? 0)
     ],
-    'a_feature' => [
-      'z_box_up' => trim($_POST['z_box_up']),
-      'z_energy' => trim($_POST['z_energy']),
-      'z_height' => trim($_POST['z_height']),
-      'z_length' => trim($_POST['z_length']),
-      'z_process_volume' => trim($_POST['z_process_volume']),
-      'z_salvage' => trim($_POST['z_salvage']),
-      'z_users' => trim($_POST['z_users']),
-      'z_weight' => trim($_POST['z_weight']),
-      'z_width' => trim($_POST['z_width'])
-    ]
+    'a_feature' => $a_feature
   ];
   $z_data = serialize($a_config);
 

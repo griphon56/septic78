@@ -186,3 +186,26 @@
 .product-feature{
   margin-bottom: 30px;
 }
+
+/*Admin page*/
+.btn-product-new-item{
+  margin: 25px 0;
+  width: 100%;
+}
+
+.btn-product-new-item-del{
+  border-radius: 50%;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #444;
+  cursor: pointer;
+  padding: 3px 7px;
+  position: relative;
+  top: 5px;
+  transition: .3s;
+}
+
+.btn-product-new-item-del:hover{
+  background-color: #ef6767;
+  color: #f4f4f4;
+}

@@ -77,44 +77,26 @@
     </div>
   </div>
   <div class="row col">
-    <table class="product-feature table table-bordered table-hover">
-      <tr>
-        <td>Количество пользователей</td>
-        <td><?=$a_feature['z_users']?></td>
-      </tr>
-      <tr>
-        <td>Длина</td>
-        <td><?=$a_feature['z_length']?></td>
-      </tr>
-      <tr>
-        <td>Ширина</td>
-        <td><?=$a_feature['z_width']?></td>
-      </tr>
-      <tr>
-        <td>Высота</td>
-        <td><?=$a_feature['z_height']?></td>
-      </tr>
-      <tr>
-        <td>Вес</td>
-        <td><?=$a_feature['z_weight']?></td>
-      </tr>
-      <tr>
-        <td>Врезка до</td>
-        <td><?=$a_feature['z_box_up']?></td>
-      </tr>
-      <tr>
-        <td>Залповый сброс(л)</td>
-        <td><?=$a_feature['z_salvage']?></td>
-      </tr>
-      <tr>
-        <td>Объем переработки(м3/сут)</td>
-        <td><?=$a_feature['z_process_volume']?></td>
-      </tr>
-      <tr>
-        <td>Потребляемая эл. энергия(кВт/сут)</td>
-        <td><?=$a_feature['z_energy']?></td>
-      </tr>
-    </table>
+    <?php
+      if($a_feature)
+      {
+        echo('<table class="product-feature table table-bordered table-hover">');
+        foreach ($a_feature as $a_item)
+        {
+          echo('
+            <tr>
+              <td>'.$a_item['z_item_offset'].'</td>
+              <td>'.$a_item['z_item_val'].'</td>
+            </tr>
+          ');
+        }
+        echo('</table>');
+      }
+      else
+      {
+        echo('<h3 class="empty-block">Характеристики отсутствуют</h3>');
+      }
+    ?>
   </div>
 </div>
 
