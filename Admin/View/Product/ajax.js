@@ -75,6 +75,20 @@ $(document).ready(function()
       jq_value.attr('name','z_item_val_'+k);
     });
   });
+
+  $("#admin-right-menu").on("click","a", function (event)
+  {
+    event.preventDefault();
+
+    //забираем идентификатор бока с атрибута href
+    var id  = $(this).attr('href');
+
+    //узнаем высоту от начала страницы до блока на который ссылается якорь
+    var top = $(id).offset().top;
+
+    //анимируем переход на расстояние - top за 1500 мс
+    $('body,html').animate({scrollTop: top}, 800);
+  });
 });
 
 /**

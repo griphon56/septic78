@@ -209,3 +209,18 @@
   background-color: #ef6767;
   color: #f4f4f4;
 }
+
+/*Правое меню*/
+.admin-product-right-menu-container{
+  display: block;
+  position: fixed;
+  top: 11%;
+  right: 30px;
+}
+
+.admin-product-right-menu-container li a{
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}

@@ -85,6 +85,7 @@ function getProduct(string $k_product_category=null)
       product.is_stock,
       product.k_product,
       product_category.s_title as name_category,
+      product_category.k_product_category,
       product.s_name,
       product.z_data
     from 
@@ -94,6 +95,9 @@ function getProduct(string $k_product_category=null)
     where
       product.is_active=1 and
       ".$where."
+    order by 
+      product_category.s_title asc,
+      product.s_name asc
     limit 48;
   ";
 
@@ -143,7 +147,8 @@ function getProductHitSales(string $k_product_category=null)
       product.is_active=1 and
       product.is_stock=1 and
       ".$where."
-    order by product.s_name asc
+    order by
+     product.s_name asc
     limit 12;
   ";
 
@@ -185,7 +190,8 @@ function getProductCategory(string $k_product_category=null)
       product_category
     where
       ".$where."
-    order by s_title asc;
+    order by
+     s_title asc;
   ";
 
   $r_query = mysqli_query($link,$query);
@@ -354,7 +360,8 @@ function getServiceCategory(string $k_service_category=null)
       service_category
     where
       ".$where."
-    order by s_name asc;
+    order by
+     s_name asc;
   ";
 
   $r_query = mysqli_query($link,$query);
@@ -411,7 +418,8 @@ function getAllService(string $k_service_category=null, bool $is_active=null)
         service_category.k_service_category=service.k_service_category
     where
       ".$where."
-    order by service.s_name asc;
+    order by
+     service.s_name asc;
   ";
 
   $r_query = mysqli_query($link,$query);
