@@ -6,6 +6,17 @@
 
   $a_config = $z_data['a_config'];
   $a_feature = $z_data['a_feature'];
+
+// Костыль
+  $is_empty = 1;
+  $i = 0;
+  foreach ($a_config as $a_item)
+  {
+    if(!$a_item)
+      $i++;
+    if($i==5)
+      $is_empty = 0;
+  }
 ?>
 
 <div class="container">
@@ -18,58 +29,68 @@
 <div class="hr-blue"></div>
 
 <div class="container product-single-container">
-  <div class="row">
-    <table class="product-config">
-      <tr>
-        <td class="w-50 align-top">
+  <div class="row align-items-end">
+    <div class="col-md-6 product-config">
+      <div class="container">
+        <div class="row">
           <div class="container include-with-product">
-            <div class="row">
-              <label class="include-with-product-label" for="">Можно подключить:</label>
-            </div>
-            <div class="row">
-              <?php
-               foreach ($a_config as $s_key => $a_item)
-               {
-                 if($a_item)
-                 {
-                   echo('<div class="col include-with-product-img">');
-                   echo('<img src="'.VIEW.'img/productView/'.substr($s_key,2).'.png" alt="">');
-                   echo('<p class="include-with-product-count">X'.$a_item.'</p>');
-                   echo('</div>');
-                 }
-               }
-              ?>
-            </div>
+            <?php
+              if($is_empty)
+              {
+                echo('
+                  <div class="row">
+                    <label class="include-with-product-label" for="">Можно подключить:</label>
+                  </div>
+                  <div class="row">
+                ');
+
+                foreach ($a_config as $s_key => $a_item)
+                {
+                  if($a_item)
+                  {
+                    echo('<div class="col include-with-product-img">');
+                    echo('<img src="'.VIEW.'img/productView/'.substr($s_key,2).'.png" alt="">');
+                    echo('<p class="include-with-product-count">X'.$a_item.'</p>');
+                    echo('</div>');
+                  }
+                }
+                echo('</div>');
+              }
+            ?>
           </div>
-        </td>
-        <td rowspan="2" class="w-50">
-          <div class="product-single-img">
-            <img src="<?=VIEW.'upload_img/product/'.$a_product['img']?>" alt="">
+        </div>
+        <div class="row">
+        <div class="container">
+          <div class="row col">
+            <p class="product-single-price">Стоимость:
+              <span class="js-price-active"><?=number_format($a_product['i_price'], 0, '.', ' ')?></span><span> руб.</span>
+            </p>
           </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="container">
-            <div class="row col">
-              <p class="product-single-price">Стоимость:
-                <span class="js-price-active"><?=number_format($a_product['i_price'], 0, '.', ' ')?></span><span> руб.</span>
-              </p>
+          <div class="row">
+            <div class="col-md-8">
+              <a href="#" onclick="add_to_cart_single(this); return false;" name="<?=$a_product['k_product']?>" class="btn btn-info product-single-btn">Заказать</a>
             </div>
-            <div class="row">
-              <div class="col-md-8">
-                <a href="#" onclick="add_to_cart_single(this); return false;" name="<?=$a_product['k_product']?>" class="btn btn-info product-single-btn">Заказать</a>
-              </div>
-              <div class="col-md-4">
-                <div class="quantity">
-                  <input type="number" min="1" max="9" step="1" value="1" name="qty_product">
-                </div>
+            <div class="col-md-4">
+              <div class="quantity">
+                <input type="number" min="1" max="9" step="1" value="1" name="qty_product">
               </div>
             </div>
           </div>
-        </td>
-      </tr>
-    </table>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-6 product-config">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="product-single-img">
+              <img src="<?=VIEW.'upload_img/product/'.$a_product['img']?>" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="row">
     <div class="col">
