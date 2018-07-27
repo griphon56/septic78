@@ -10,12 +10,12 @@ if($_POST)
   }
 }
 
-function updateProduct()
+function updateProduct1()
 {
   echo('<h2 class="empty-text">Молодец)</h2>');
 }
 
-function updateProduct1()
+function updateProduct()
 {
   $link = mysqli_connect(HOST, USER, PASS, DB);
   mysqli_set_charset($link, 'utf8');
@@ -42,5 +42,7 @@ function updateProduct1()
 
   mysqli_query($link, $query);
   mysqli_close($link);
+
+  echo('<h2 class="empty-text">Обновил</h2>');
 }
 ?>
