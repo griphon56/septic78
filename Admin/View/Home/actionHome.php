@@ -12,6 +12,11 @@ if($_POST)
 
 function updateProduct()
 {
+  echo('<h2 class="empty-text">Молодец)</h2>');
+}
+
+function updateProduct1()
+{
   $link = mysqli_connect(HOST, USER, PASS, DB);
   mysqli_set_charset($link, 'utf8');
 
@@ -27,7 +32,6 @@ function updateProduct()
     'id_product' => 1
   ];
   $z_data = serialize($a_config);
-  echo($z_data);
 
   $query = "
     update
