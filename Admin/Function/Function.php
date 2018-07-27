@@ -301,8 +301,8 @@ function uploadImage(string $_FILES_offset, string $path_dir)
 
   // Зададим ограничения для картинок
   $limitBytes  = 1024 * 1024 * 5;
-  $limitWidth  = 1980;
-  $limitHeight = 1980;
+  $limitWidth  = 2600;
+  $limitHeight = 2600;
 
   // Проверим нужные параметры
   if (filesize($filePath) > $limitBytes)

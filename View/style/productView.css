@@ -136,7 +136,8 @@
 }
 
 .product-single-container .include-with-product{
-  margin-bottom: 160px;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .product-config .include-with-product .include-with-product-label{
@@ -158,13 +159,11 @@
 
 .product-config .product-single-img{
   border: 2px solid #58b9c4;
+  height: 400px;
   margin-right: 15px;
-}
-
-.product-config .product-single-img img{
-  height: 500px;
-  margin: 0 auto;
-  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .product-config .product-single-price{

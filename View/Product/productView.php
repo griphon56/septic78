@@ -39,7 +39,7 @@
                 {
                   if($a_item)
                   {
-                    echo('<div class="col include-with-product-img">');
+                    echo('<div class="col-md-2 include-with-product-img">');
                     echo('<img src="'.VIEW.'img/productView/'.substr($s_key,2).'.png" alt="">');
                     echo('<p class="include-with-product-count">X'.$a_item.'</p>');
                     echo('</div>');
@@ -75,8 +75,10 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <div class="product-single-img">
-              <img src="<?=VIEW.'upload_img/product/'.$a_product['img']?>" alt="">
+            <div
+              class="product-single-img"
+              style="background-image: url('<?=VIEW.'upload_img/product/'.$a_product['img']?>');"
+            >
             </div>
           </div>
         </div>
