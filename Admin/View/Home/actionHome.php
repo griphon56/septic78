@@ -10,6 +10,11 @@ if($_POST)
   }
 }
 
+function updateProduct1()
+{
+  echo('<h2 class="empty-text">Молодец)</h2>');
+}
+
 function updateProduct()
 {
   $link = mysqli_connect(HOST, USER, PASS, DB);
@@ -23,10 +28,10 @@ function updateProduct()
       'i_shower' => 0,
       'i_toilet' => 0
     ],
-    'a_feature' => []
+    'a_feature' => [],
+    'id_product' => 1
   ];
   $z_data = serialize($a_config);
-  echo($z_data);
 
   $query = "
     update
@@ -37,5 +42,7 @@ function updateProduct()
 
   mysqli_query($link, $query);
   mysqli_close($link);
+
+  echo('<h2 class="empty-text">Обновил</h2>');
 }
 ?>

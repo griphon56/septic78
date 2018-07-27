@@ -27,6 +27,7 @@ function addProduct()
   mysqli_set_charset($link, 'utf8');
 
   $a_data = $_POST;
+  $a_data['id_product'] = trim($_REQUEST['id_product']);
 
   $s_name = trim($a_data['name_product']);
   $k_product_category = trim($a_data['id_category']);
@@ -57,7 +58,8 @@ function addProduct()
       'i_shower' => trim($a_data['i_shower'] ?? 0),
       'i_toilet' => trim($a_data['i_toilet'] ?? 0)
     ],
-    'a_feature' => $a_feature
+    'a_feature' => $a_feature,
+    'id_product' => $a_data['id_product']
   ];
 
   $z_data = serialize($a_config);
@@ -107,6 +109,7 @@ function editProduct(string $k_product)
   mysqli_set_charset($link, 'utf8');
 
   $a_data = $_POST;
+  $a_data['id_product'] = trim($_REQUEST['id_product']);
 
   $s_name = trim($a_data['name_product']);
   $k_product_category = trim($a_data['id_category']);
@@ -137,7 +140,8 @@ function editProduct(string $k_product)
       'i_shower' => trim($a_data['i_shower'] ?? 0),
       'i_toilet' => trim($a_data['i_toilet'] ?? 0)
     ],
-    'a_feature' => $a_feature
+    'a_feature' => $a_feature,
+    'id_product' => $a_data['id_product']
   ];
   $z_data = serialize($a_config);
 
