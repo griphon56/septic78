@@ -7,16 +7,7 @@
   $a_config = $z_data['a_config'];
   $a_feature = $z_data['a_feature'];
 
-// Костыль
-  $is_empty = 1;
-  $i = 0;
-  foreach ($a_config as $a_item)
-  {
-    if(!$a_item)
-      $i++;
-    if($i==5)
-      $is_empty = 0;
-  }
+  $id_product = $z_data['id_product'] ?? 0;
 ?>
 
 <div class="container">
@@ -35,7 +26,7 @@
         <div class="row">
           <div class="container include-with-product">
             <?php
-              if($is_empty)
+              if($id_product==PAGE_PRODUCT_SEPTIC)
               {
                 echo('
                   <div class="row">

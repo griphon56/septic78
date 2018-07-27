@@ -28,11 +28,11 @@
                   </select>
                 </li>
                 <li>
-                  <label for="i_cost">Стоимость товара</label>
+                  <label for="i_cost">Текущая стоимость товара</label>
                   <input type="text" name="i_cost" value="0" id="i_cost"/>
                 </li>
                 <li>
-                  <label for="i_discount">Стоимость по скидке (если есть)</label>
+                  <label for="i_discount">Стоимость без скидки (то что зачеркнуто)</label>
                   <input type="text" name="i_discount" value="0" id="i_discount"/>
                 </li>
                 <li>

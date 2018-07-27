@@ -7,6 +7,8 @@
 
   $a_config = $z_data['a_config'];
   $a_feature = $z_data['a_feature'];
+
+  $id_product = $z_data['id_product'] ?? 0;
 ?>
 <div class="container">
   <div class="row add-product-container">
@@ -42,11 +44,11 @@
                   </select>
                 </li>
                 <li>
-                  <label for="i_cost">Стоимость товара</label>
+                  <label for="i_cost">Текущая стоимость товара</label>
                   <input type="text" name="i_cost" value="<?=$a_product[0]['i_price'];?>" id="i_cost"/>
                 </li>
                 <li>
-                  <label for="i_discount">Стоимость по скидке (если есть)</label>
+                  <label for="i_discount">Стоимость без скидке (то что зачеркнуто)</label>
                   <input type="text" name="i_discount" value="<?=$a_product[0]['i_discount'];?>" id="i_discount"/>
                 </li>
                 <li>
@@ -80,8 +82,8 @@
                   <input type="file" name="img_product" id="img_product" value=""/>
                 </li>
                 <?php
-//                  if($_REQUEST['id_product']==PAGE_PRODUCT_SEPTIC)
-//                  {
+                  if($id_product==PAGE_PRODUCT_SEPTIC)
+                  {
                     echo('
                       <li>
                         <div class="container include-with-product">
@@ -113,7 +115,7 @@
                         </div>
                       </li>
                     ');
-//                  }
+                  }
                 ?>
               </ul>
 

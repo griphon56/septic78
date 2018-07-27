@@ -23,7 +23,8 @@ function updateProduct()
       'i_shower' => 0,
       'i_toilet' => 0
     ],
-    'a_feature' => []
+    'a_feature' => [],
+    'id_product' => 1
   ];
   $z_data = serialize($a_config);
   echo($z_data);
