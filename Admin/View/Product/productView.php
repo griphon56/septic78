@@ -14,7 +14,7 @@
   </div>
 
     <?php
-    $a_data = getProduct();
+    $a_data = getAllProduct();
 
     $a_sort_data = [];
     foreach ($a_data as $a_item)

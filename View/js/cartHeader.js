@@ -122,3 +122,15 @@ function add_to_cart_single(o_sender)
   // Уведомление о добавлении товара.
   $('.notif').fadeIn().fadeOut(1000);
 }
+
+/**
+ * Метод открытия меню (моб. версия)
+ */
+function menu_open(o_sender)
+{
+  $this = $(o_sender);
+
+  $this.toggleClass('m-menu-open');
+
+  $('.js-main-menu').toggleClass('m-main-menu');
+}

@@ -25,14 +25,14 @@
 <div class="container-fluid header-top-line">
   <div class="container">
     <div class="row no-gutters">
-      <div class="col col-md-7 text-phone text">
+      <div class="col col-md-7 col-sm-4 text-phone text">
         <p>Продажа и установка автономных канализаций, септиков в Санкт-Петербурге и области</p>
       </div>
-      <div class="col col-md-3 phone text-phone">
+      <div class="col col-md-3 col-sm-5 phone text-phone">
         <img src="<?=VIEW?>img/headerView/old-typical-phone.png" alt="">
         <p>Сделать заказ по телефону:</p>
       </div>
-      <div class="col col-md-2 phone">
+      <div class="col col-md-2 col-sm-3 phone">
         <ul>
           <li>
             <p>+7 (821) 413-92-98</p>
@@ -49,15 +49,23 @@
 <div class="container-fluid header-search header-cart">
   <div class="container">
     <div class="row no-gutters align-items-center">
-      <div class="col-md-6">
+      <div class="m-header-menu col-3">
+        <div class="m-menu-icon js-m-menu-icon" onclick="menu_open(this);">
+          <div class="icon-item-1"></div>
+          <div class="icon-item-2"></div>
+          <div class="icon-item-3"></div>
+        </div>
+
+      </div>
+      <div class="col-5 col-md-6 col-sm-5">
         <div class="header-logo">
           <a href="index.php?id_page=home"><img src="<?=VIEW?>img/headerView/3.png" alt=""></a>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-2 col-md-4 col-sm-5">
         <?php include (USER_TEMPLATE.'Search/searchView.php'); ?>
       </div>
-      <div class="col-md-2">
+      <div class="col-2 col-md-2 col-sm-2">
         <div class="container-cart" id="cart-header">
           <a class="cart-container-box" href="index.php?id_page=cart">
             <div
@@ -88,7 +96,7 @@
 <div class="container-fluid header-target-form">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-7">
+      <div class="col-md-7 col-sm-5 m-header-target-form-title">
         <h3 class="header-target-form-title">Нужна канализация?</h3>
         <p class="header-target-form-desc">
           Септик5.рф - городской комфорт
@@ -100,7 +108,7 @@
           для вашего кошелька
         </p>
       </div>
-      <div class="col-md-5">
+      <div class="col col-md-5 col-sm-7">
         <div class="header-form">
           <div class="row form-text-submit js-mail-form-contact">
             <ul>

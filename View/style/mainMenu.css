@@ -67,3 +67,33 @@
 .header-submenu-col{
   display: table-cell;
 }
+
+/*mobile menu*/
+.m-main-menu{
+  display: block!important;
+  position: absolute;
+  z-index: 10;
+  padding-left: 0;
+  background-color: transparent;
+}
+
+.m-main-menu>.container{
+  position: relative;
+}
+
+.m-main-menu ul{
+  background-color: #f4f4f4;
+  position: inherit;
+}
+
+.m-main-menu ul li{
+  display: inline;
+}
+
+.m-main-menu .header-submenu{
+  top: 0;
+}
+
+.m-main-menu ul li a:hover + .header-submenu{
+  display: none;
+}

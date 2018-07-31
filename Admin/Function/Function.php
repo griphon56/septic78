@@ -53,7 +53,8 @@ function getAllProduct(string $k_product=null, string $k_product_category=null, 
   mysqli_close($link);
 
   $a_product = [];
-  while($row = mysqli_fetch_assoc($r_query)){
+  while($row = mysqli_fetch_assoc($r_query))
+  {
     $a_product[] = $row;
   }
 
@@ -105,7 +106,8 @@ function getProduct(string $k_product_category=null)
   mysqli_close($link);
 
   $a_product = [];
-  while($row = mysqli_fetch_assoc($r_query)){
+  while($row = mysqli_fetch_assoc($r_query))
+  {
     $a_product[] = $row;
   }
 
