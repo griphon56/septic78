@@ -42,7 +42,7 @@
 </div>
 
 <div class="shipping-pay-form-bg">
-  <img class="img-bg shippimg-img-item" src="<?=VIEW?>img/shippingPaymentView/water-2.png" alt="">
+  <img class="img-bg shipping-img-item" src="<?=VIEW?>img/shippingPaymentView/water-2.png" alt="">
   <div class="container-fluid">
     <div class=" container">
       <div class="row col">
@@ -74,7 +74,7 @@
           <p class="advantages-text">Быстрый монтаж</p>
         </div>
       </div>
-      <div class="col-md-2 shippimg-img-item">
+      <div class="col-md-2 shipping-img-item">
         <div class="advantages">
           <img src="<?=VIEW?>img/shippingPaymentView/settings-1.png" alt="icon" class="advantages-img">
           <p class="advantages-text">Услуги по обслужованию и модернизации оборудования</p>
