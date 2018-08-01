@@ -1,0 +1,12 @@
+/* @media */
+
+@media screen and (max-width: 768px) {
+  .section-item {
+    font-size: 22px;
+  }
+
+  .section-header{
+    font-size: 26px;
+    margin: 50px 0 10px 0;
+  }
+}

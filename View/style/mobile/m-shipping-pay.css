@@ -1,7 +1,15 @@
 /* @media */
 
 @media screen and (max-width: 768px) {
-	.shipping-img-item {
-		display: none;
-	}
+  .m-shipping-img-item {
+    display: none;
+  }
+
+  .advantages-text{
+    font-size: 16px;
+  }
+
+  .section-item-text p,.section-item-text ul li{
+    font-size: 15px;
+  }
 }
