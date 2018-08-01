@@ -7,9 +7,9 @@
    </div>
     <form action="#" id="contact-form" class="form-text-submit js-mail-form-contact">
       <div class="row">
-        <div class="col-md-4"><input type="text" name="s_name" placeholder="Имя"></div>
-        <div class="col-md-4"><input type="text" name="s_phone" maxlength="15" placeholder="Телефон"></div>
-        <div class="col-md-4"><input type="submit" onclick="send_contact(this);return false;" value="Отправить" class="btn"></div>
+        <div class="col-md-4 m-view"><input type="text" name="s_name" placeholder="Имя"></div>
+        <div class="col-md-4 m-view"><input type="text" name="s_phone" maxlength="15" placeholder="Телефон"></div>
+        <div class="col-md-4 m-view"><input type="submit" onclick="send_contact(this);return false;" value="Отправить" class="btn"></div>
       </div>
     </form>
     <div class="row">

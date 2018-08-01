@@ -1,0 +1,20 @@
+/* @media */
+
+@media screen and (max-width: 768px) {
+  .m-contact-item {
+    display: none;
+  }
+
+  .contact {
+    background-position: 0px 300px;
+  }
+
+  .m-view {
+  	padding-bottom: 10px;
+  }
+
+  .contact-form-title{
+    margin: 50px 0 25px 0;
+    font-size: 22px;
+  }
+}

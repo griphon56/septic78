@@ -69,7 +69,7 @@
 
 
 <div class="container">
-  <div class="row">
+  <div class="row m-contact-item">
     <div class="col-md-12 section-desc">
       <p>Получить полную инхормацию по вопросам сотрудничества с компанией "Септик5.рф" можно в разделе диллерам или по телефону +792156267882</p>
     </div>
