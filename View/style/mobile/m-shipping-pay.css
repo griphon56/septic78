@@ -1,0 +1,15 @@
+/* @media */
+
+@media screen and (max-width: 768px) {
+	.shippimg-img-item {
+		display: none;
+	}
+}
+
+/* Применяется при уменьшении*/
+@media screen and (max-width: 540px) {
+}
+
+/* Применяется при увеличении*/
+@media screen and (min-width: 540px) {
+}
