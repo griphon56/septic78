@@ -2,8 +2,8 @@
 
 @media screen and (max-width: 768px){
   /*blue line-box */
-  .header-top-line p{
-    font-size: 12px;
+  .header-top-line {
+    display: none;
   }
 
   /*logo*/
@@ -14,91 +14,6 @@
   .header-search .header-logo img{
     width: 100%;
     margin: 0;
-  }
-
-  /*cart*/
-  .container-cart {
-    width: 145px;
-  }
-
-  /*mobile menu*/
-  .m-header-menu{
-    display: block;
-  }
-
-  .m-menu-icon{
-    cursor: pointer;
-    display: inline-block;
-    margin-top: 10px;
-  }
-
-  .m-menu-icon .icon-item-1,
-  .m-menu-icon .icon-item-2,
-  .m-menu-icon .icon-item-3{
-    background-color: #5bb7c2;
-    height: 3px;
-    margin: 6px 0;
-    transition: .4s;
-    width: 35px;
-  }
-
-  .m-menu-open .icon-item-1{
-    -webkit-transform: rotate(-45deg) translate(-5px, 5px);
-    transform: rotate(-45deg) translate(-5px, 5px);
-  }
-
-  .m-menu-open .icon-item-2{
-    opacity: 0;
-  }
-
-  .m-menu-open .icon-item-3{
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-  }
-  /*standart menu*/
-  .main-menu{
-    display: none;
-  }
-
-  /*form target*/
-  .header-target-form{
-    padding: 5px;
-  }
-
-  .header-target-form .header-target-form-title{
-    font-size: 25px;
-  }
-
-  .header-target-form .header-target-form-desc{
-    font-size: 13px;
-  }
-}
-
-/* Применяется при уменьшении*/
-@media screen and (max-width: 540px) {
-  /*blue line-box */
-  .header-top-line {
-    display: none;
-  }
-
-  /* search */
-  .header-search{
-    padding: 10px 15px;
-  }
-
-  .search-input .box-search{
-    border: none;
-    width: 100%;
-  }
-
-  .search-input .box-search input{
-    width: 0%;
-  }
-
-  .search-input .box-search img{
-    width: 15px;
-    position: relative;
-    bottom: 3px;
   }
 
   /*cart*/
@@ -127,6 +42,72 @@
     width: 15px;
   }
 
+  /*mobile menu*/
+  .m-header-menu{
+    display: block;
+  }
+
+  .main-menu .m-menu-icon-arrow{
+    display: inline-block;
+  }
+
+  /*standart menu*/
+  .main-menu{
+    display: none;
+  }
+
+  /*form target*/
+  .header-target-form{
+    padding: 5px;
+  }
+
+  .header-target-form .header-target-form-title{
+    font-size: 25px;
+  }
+
+  .header-target-form .header-target-form-desc{
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  /*blue line-box */
+  .header-top-line {
+    display: block;
+  }
+
+  /*mobile menu*/
+  .m-header-menu{
+    display: none;
+  }
+
+  .main-menu .m-menu-icon-arrow{
+     display: none;
+   }
+}
+
+/* Применяется при уменьшении*/
+@media screen and (max-width: 540px) {
+  /* search */
+  .header-search{
+    padding: 10px 15px;
+  }
+
+  .search-input .box-search{
+    border: none;
+    width: 100%;
+  }
+
+  .search-input .box-search input{
+    width: 0;
+  }
+
+  .search-input .box-search img{
+    width: 15px;
+    position: relative;
+    bottom: 3px;
+  }
+
   /*form target*/
   .header-target-form{
     padding: 30px;
@@ -139,13 +120,5 @@
 
 /* Применяется при увеличении*/
 @media screen and (min-width: 540px) {
-  /*blue line-box */
-  .header-top-line {
-    display: block;
-  }
 
-  /*menu*/
-  .m-header-menu{
-    display: none;
-  }
 }

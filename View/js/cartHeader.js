@@ -131,6 +131,29 @@ function menu_open(o_sender)
   $this = $(o_sender);
 
   $this.toggleClass('m-menu-open');
-
+  $('.js-m-menu-icon').removeClass('m-menu-back');
   $('.js-main-menu').toggleClass('m-main-menu');
+
+  $('.header-submenu').css('display','none');
 }
+
+$(document).ready(function()
+{
+  var jq_mobile_icon = $('.js-m-menu-icon');
+
+  /**
+   * Проверяю изменение размера экрана.
+   */
+  $(window).bind("resize", function ()
+  {
+    jq_mobile_icon.removeClass('m-menu-open');
+    jq_mobile_icon.removeClass('m-menu-back');
+    $('.js-main-menu').removeClass('m-main-menu');
+  });
+
+  $('.m-menu-icon-arrow').closest('a').click(function ()
+  {
+    $(this).siblings('.header-submenu').css('display','block');
+    jq_mobile_icon.addClass('m-menu-back');
+  })
+});

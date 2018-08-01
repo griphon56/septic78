@@ -32,13 +32,13 @@ $a_menu = [
   ],
   [
     'link'=>'Каталог',
-    'href'=>$a_product_category[0]['href'],
+    'href'=>'#',
     'id'=>'catalog',
     'a_submenu' => $a_product_category
   ],
   [
     'link'=>'Наши услуги',
-    'href'=>$a_service_category[0]['href'],
+    'href'=>'#',
     'id'=>'service',
     'a_submenu' => $a_service_category
   ],

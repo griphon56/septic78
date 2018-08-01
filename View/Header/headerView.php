@@ -49,7 +49,7 @@
 <div class="container-fluid header-search header-cart">
   <div class="container">
     <div class="row no-gutters align-items-center">
-      <div class="m-header-menu col-3">
+      <div class="m-header-menu col-3 col-sm-1">
         <div class="m-menu-icon js-m-menu-icon" onclick="menu_open(this);">
           <div class="icon-item-1"></div>
           <div class="icon-item-2"></div>
@@ -65,7 +65,7 @@
       <div class="col-2 col-md-4 col-sm-5">
         <?php include (USER_TEMPLATE.'Search/searchView.php'); ?>
       </div>
-      <div class="col-2 col-md-2 col-sm-2">
+      <div class="col-2 col-md-2 col-sm-1">
         <div class="container-cart" id="cart-header">
           <a class="cart-container-box" href="index.php?id_page=cart">
             <div

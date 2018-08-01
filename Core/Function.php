@@ -29,10 +29,22 @@ function drawMenu(array $a_menu)
   {
     echo('<li>');
 
-    if($item['id']==$id_page)
-      echo('<a class="active-menu" href='.$item["href"].'>'.$item["link"].'</a>');
+    if($item['id']==$id_page&&isset($item['a_submenu']))
+      echo('
+        <a class="active-menu" href='.$item["href"].'>
+          <span>'.$item["link"].'</span>
+          <img src="'.VIEW.'img/headerView/right-arrow.png" class="m-menu-icon-arrow">
+        </a>
+      ');
+    elseif(isset($item['a_submenu']))
+      echo('
+        <a href='.$item["href"].'>
+          <span>'.$item["link"].'</span>
+          <img src="'.VIEW.'img/headerView/right-arrow.png" class="m-menu-icon-arrow">
+        </a>
+      ');
     else
-      echo('<a href='.$item["href"].'>'.$item["link"].'</a>');
+      echo('<a href='.$item["href"].'><span>'.$item["link"].'</span></a>');
 
     //sub menu
     if(isset($item['a_submenu']))
@@ -46,7 +58,7 @@ function drawMenu(array $a_menu)
           echo ('<div class="header-submenu-col"><ul class="header-submenu-item-container">');
 
             echo('<li>');
-              echo('<a href=' . $a_item["href"] . '>' . $a_item["link"] . '</a>');
+              echo('<a href=' . $a_item["href"] . '><span>' . $a_item["link"] . '</span></a>');
             echo('</li>');
 
         if($i_count==6)

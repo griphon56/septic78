@@ -16,11 +16,12 @@
 }
 
 .main-menu ul li a, .header-submenu li a{
-  display: block;
-  padding: 20px 14px;
-  text-transform: uppercase;
   color: #656565;
+  display: block;
   font-weight: 600;
+  padding: 20px 14px;
+  position: relative;
+  text-transform: uppercase;
   transition: .5s;
 }
 
@@ -88,6 +89,13 @@
 
 .m-main-menu ul li{
   display: inline;
+  position: inherit;
+}
+
+.m-main-menu .m-menu-icon-arrow{
+  position: absolute;
+  right: 10px;
+  width: 20px;
 }
 
 .m-main-menu .header-submenu{
@@ -96,4 +104,56 @@
 
 .m-main-menu ul li a:hover + .header-submenu{
   display: none;
+}
+
+.m-main-menu ul li a, .m-main-menu .header-submenu li a{
+  transition: 0s;
+}
+
+/*Иконка крестика в мобильной версии*/
+.m-menu-icon{
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.m-menu-icon .icon-item-1,
+.m-menu-icon .icon-item-2,
+.m-menu-icon .icon-item-3{
+  background-color: #5bb7c2;
+  height: 3px;
+  margin: 6px 0;
+  transition: .4s;
+  width: 35px;
+}
+
+.m-menu-open .icon-item-1{
+  -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.m-menu-open .icon-item-2{
+  opacity: 0;
+}
+
+.m-menu-open .icon-item-3{
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*Иконка стрелочки в мобильной версии*/
+.m-menu-back .icon-item-1{
+  -webkit-transform: rotate(-45deg) translate(-2px, 0px);
+  transform: rotate(-45deg) translate(-2px, 0px);
+  width: 20px;
+}
+
+.m-menu-back .icon-item-2{
+  opacity: 1;
+}
+
+.m-menu-back .icon-item-3{
+  -webkit-transform: rotate(45deg) translate(-2px, -0px);
+  transform: rotate(45deg) translate(-2px, 0px);
+  width: 20px;
 }
