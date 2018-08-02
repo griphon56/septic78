@@ -115,7 +115,7 @@
 .m-menu-icon{
   cursor: pointer;
   display: inline-block;
-  margin-top: 10px;
+  margin: 15px 0;
 }
 
 .m-menu-icon .icon-item-1,

@@ -18,5 +18,6 @@ $(document).ready(function()
   $('#m-search-open-icon').click(function()
   {
     $('.search-input').toggleClass('m-search-open-input');
+    $('.header-logo').toggle();
   });
 });

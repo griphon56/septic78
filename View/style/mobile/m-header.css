@@ -7,10 +7,6 @@
   }
 
   /*logo*/
-  .header-search .header-logo{
-    padding: 10px 0;
-  }
-
   .header-search .header-logo img{
     width: 100%;
     margin: 0;
@@ -96,6 +92,11 @@
   /* search */
   .header-search{
     padding: 10px 15px;
+  }
+
+  /*icon menu mobile*/
+  .m-menu-icon{
+    margin: 0;
   }
 
   .search-input .box-search{
