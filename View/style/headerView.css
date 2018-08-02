@@ -1,7 +1,3 @@
-#header{
-
-}
-
 .header-top-line{
   background-color: #5bb7c2;
   color: #f4f4f4;
@@ -84,7 +80,6 @@
 }
 
 /* Корзина в шапке*/
-
 .container-cart .cart-container-box{
   color: #444;
   text-decoration: none;
@@ -176,7 +171,6 @@
   width: 100%;
   padding: 30px;
 }
-
 
 .header-form ul li{
   padding: 10px 0;

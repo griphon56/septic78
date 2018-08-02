@@ -158,3 +158,17 @@
   transform: rotate(45deg) translate(-2px, 0px);
   width: 20px;
 }
+
+/*Scroll*/
+.header-submenu::-webkit-scrollbar {
+  width: 7px;
+}
+
+.header-submenu::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+.header-submenu::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}

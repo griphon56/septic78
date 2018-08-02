@@ -57,6 +57,14 @@
     display: none;
   }
 
+  .header-submenu{
+    overflow-y: scroll;
+  }
+
+  .header-submenu-col{
+    display: block;
+  }
+
   /*form target*/
   .header-target-form{
     padding: 5px;

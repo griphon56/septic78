@@ -129,10 +129,17 @@ function add_to_cart_single(o_sender)
 function menu_open(o_sender)
 {
   $this = $(o_sender);
+  var jq_main_menu_container = $('.js-main-menu');
 
   $this.toggleClass('m-menu-open');
-  $('.js-m-menu-icon').removeClass('m-menu-back');
-  $('.js-main-menu').toggleClass('m-main-menu');
+  jq_main_menu_container.toggleClass('m-main-menu');
+
+  if($('.m-menu-back').length)
+  {
+    $this.removeClass('m-menu-back');
+    $this.addClass('m-menu-open');
+    jq_main_menu_container.addClass('m-main-menu');
+  }
 
   $('.header-submenu').css('display','none');
 }
@@ -159,5 +166,5 @@ $(document).ready(function()
   {
     $(this).siblings('.header-submenu').css('display','block');
     jq_mobile_icon.addClass('m-menu-back');
-  })
+  });
 });
