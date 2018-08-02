@@ -1,4 +1,4 @@
- <div class="container-fluid main-menu">
+ <div class="container-fluid main-menu js-main-menu">
   <div class="container">
     <div class="row">
      <?php

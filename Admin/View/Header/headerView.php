@@ -21,4 +21,12 @@
 <body>
   <div class="wrapper">
 
+    <div class="m-header-menu col-3 col-sm-1">
+      <div class="m-menu-icon js-m-menu-icon" onclick="menu_open(this);">
+        <div class="icon-item-1"></div>
+        <div class="icon-item-2"></div>
+        <div class="icon-item-3"></div>
+      </div>
+    </div>
+
   <?php include ('MainMenu/mainMenuView.php');?>

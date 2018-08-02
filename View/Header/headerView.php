@@ -55,7 +55,6 @@
           <div class="icon-item-2"></div>
           <div class="icon-item-3"></div>
         </div>
-
       </div>
       <div class="col-5 col-md-6 col-sm-5">
         <div class="header-logo">
