@@ -7,6 +7,7 @@
 <div class="search-input">
   <div class="box-search">
     <input type="search" id="s_search" placeholder="Поиск по товарам..." value="<?=$s_search?>" />
-    <img src="<?=VIEW?>img/headerView/magnifying-glass.png" id="search" alt="" />
+    <img src="<?=VIEW?>img/headerView/magnifying-glass.png" id="search-icon" alt="" />
+    <img src="<?=VIEW?>img/headerView/magnifying-glass.png" id="m-search-open-icon" alt="" />
   </div>
 </div>

@@ -149,8 +149,12 @@ $(document).ready(function()
     jq_mobile_icon.removeClass('m-menu-open');
     jq_mobile_icon.removeClass('m-menu-back');
     $('.js-main-menu').removeClass('m-main-menu');
+    $('.search-input').removeClass('m-search-open-input');
   });
 
+  /**
+   * Метод, отображения под меню.
+   */
   $('.m-menu-icon-arrow').closest('a').click(function ()
   {
     $(this).siblings('.header-submenu').css('display','block');

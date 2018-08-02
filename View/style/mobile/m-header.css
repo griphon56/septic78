@@ -17,6 +17,11 @@
   }
 
   /*cart*/
+  .container-cart{
+    width: auto;
+    float: right;
+  }
+
   .container-cart .cart div p{
     display: none;
   }
@@ -95,17 +100,19 @@
 
   .search-input .box-search{
     border: none;
-    width: 100%;
+    left: 25px;
   }
 
   .search-input .box-search input{
     width: 0;
   }
 
-  .search-input .box-search img{
-    width: 15px;
-    position: relative;
-    bottom: 3px;
+  .search-input .box-search #search-icon{
+    display: none;
+  }
+
+  .search-input .box-search #m-search-open-icon{
+     display: block;
   }
 
   /*form target*/

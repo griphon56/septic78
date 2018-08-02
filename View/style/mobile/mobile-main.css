@@ -1,10 +1,14 @@
 /* Стили для Header*/
 @import url("m-header.css");
+
 /* Стили для Footer*/
 @import url("m-footer.css");
+
 /* Стили для ShippingPay*/
 @import url("m-shipping-pay.css");
+
 /* Стили для StyleDefault*/
 @import url("m-style-default.css");
+
 /* Стили для Contact*/
 @import url("m-contact.css");
