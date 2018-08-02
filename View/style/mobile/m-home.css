@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px){
+  /* home skill block*/
+  .home-skill-static-desc p{
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .home-skill-static-desc h4{
+    font-size: 16px;
+  }
+
+  .home-skill-static-item:hover .home-skill-static-h-border{
+    top: 0;
+    height: 0;
+  }
+
+  /* home service*/
+  .item-slider-home-container {
+    height: 200px;
+  }
+
+  .slider-home-service .slider-home-item-text {
+    padding: 30px 0;
+    top: 23%;
+  }
+
+  .slider-home-service .slider-home-title,
+  .slider-home-service .slider-home-button {
+    font-size: 15px;
+    padding: 0px;
+  }
+}

@@ -1,6 +1,10 @@
-/* @media */
-
 @media screen and (max-width: 768px) {
+	/* footer about us*/
+	#footerAbout{
+		display: none;
+	}
+
+	/* footer */
 	.m-footer-item {
 		display: none;
 	}

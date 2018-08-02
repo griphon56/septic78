@@ -10,5 +10,11 @@
 /* Стили для StyleDefault*/
 @import url("m-style-default.css");
 
+/* Стили для Главной стр.*/
+@import url("m-home.css");
+
 /* Стили для Contact*/
 @import url("m-contact.css");
+
+/** Стиль Калькулятора стоимости канализации */
+@import url("m-form-calculation-cost.css");

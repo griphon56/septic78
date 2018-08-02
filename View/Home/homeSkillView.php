@@ -1,6 +1,6 @@
 <div class="container home-skill-static">
-  <div class="row justify-content-md-around home-skill-static-container">
-    <div class="home-skill-static-item col-md-2">
+  <div class="row justify-content-md-around justify-content-center home-skill-static-container">
+    <div class="home-skill-static-item col-4 col-sm-4 col-md-2">
       <img src="<?=VIEW?>img/homeView/1.png" alt="" class="home-skill-static-img">
       <div class="home-skill-static-h-border"></div>
       <div class="home-skill-static-desc">
@@ -8,7 +8,7 @@
         <p>по монтажу оборудования</p>
       </div>
     </div>
-    <div class="home-skill-static-item col-md-2">
+    <div class="home-skill-static-item col-4 col-sm-4 col-md-2">
       <img src="<?=VIEW?>img/homeView/2.png" alt="" class="home-skill-static-img">
       <div class="home-skill-static-h-border"></div>
       <div class="home-skill-static-desc">
@@ -16,7 +16,7 @@
         <p>монтажоров</p>
       </div>
     </div>
-    <div class="home-skill-static-item col-md-2">
+    <div class="home-skill-static-item col-4 col-sm-4 col-md-2">
       <img src="<?=VIEW?>img/homeView/3.png" alt="" class="home-skill-static-img">
       <div class="home-skill-static-h-border"></div>
       <div class="home-skill-static-desc">
@@ -24,7 +24,7 @@
         <p>выполненных заказов</p>
       </div>
     </div>
-    <div class="home-skill-static-item col-md-2">
+    <div class="home-skill-static-item col-4 col-sm-4 col-md-2">
       <img src="<?=VIEW?>img/homeView/4.png" alt="" class="home-skill-static-img">
       <div class="home-skill-static-h-border"></div>
       <div class="home-skill-static-desc">
@@ -32,7 +32,7 @@
         <p>все комплектующие</p>
       </div>
     </div>
-    <div class="home-skill-static-item col-md-2">
+    <div class="home-skill-static-item col-4 col-sm-4 col-md-2">
       <img src="<?=VIEW?>img/homeView/5.png" alt="" class="home-skill-static-img">
       <div class="home-skill-static-h-border"></div>
       <div class="home-skill-static-desc">
@@ -41,8 +41,8 @@
       </div>
     </div>
   </div>
-  <div class="row justify-content-md-around home-skill-static-container">
-    <div class="home-skill-static-item col-md-2">
+  <div class="row justify-content-md-around justify-content-center home-skill-static-container">
+    <div class="home-skill-static-item col-4 col-sm-4 col-md-2">
       <img src="<?=VIEW?>img/homeView/6.png" alt="" class="home-skill-static-img">
       <div class="home-skill-static-h-border"></div>
       <div class="home-skill-static-desc">
@@ -50,7 +50,7 @@
         <p>с 1994г.</p>
       </div>
     </div>
-    <div class="home-skill-static-item col-md-2">
+    <div class="home-skill-static-item col-4 col-sm-4 col-md-2">
       <img src="<?=VIEW?>img/homeView/7.png" alt="" class="home-skill-static-img">
       <div class="home-skill-static-h-border"></div>
       <div class="home-skill-static-desc">
@@ -58,7 +58,7 @@
         <p>вариант канализации</p>
       </div>
     </div>
-    <div class="home-skill-static-item col-md-2">
+    <div class="home-skill-static-item col-4 col-sm-4 col-md-2">
       <img src="<?=VIEW?>img/homeView/8.png" alt="" class="home-skill-static-img">
       <div class="home-skill-static-h-border"></div>
       <div class="home-skill-static-desc">
@@ -66,7 +66,7 @@
         <p>сертифицирована</p>
       </div>
     </div>
-    <div class="home-skill-static-item col-md-2">
+    <div class="home-skill-static-item col-4 col-sm-4 col-md-2">
       <img src="<?=VIEW?>img/homeView/9.png" alt="" class="home-skill-static-img">
       <div class="home-skill-static-h-border"></div>
       <div class="home-skill-static-desc">
@@ -74,7 +74,7 @@
         <p>производителей</p>
       </div>
     </div>
-    <div class="home-skill-static-item col-md-2">
+    <div class="home-skill-static-item col-4 col-sm-4 col-md-2">
       <img src="<?=VIEW?>img/homeView/10.png" alt="" class="home-skill-static-img">
       <div class="home-skill-static-h-border"></div>
       <div class="home-skill-static-desc">
