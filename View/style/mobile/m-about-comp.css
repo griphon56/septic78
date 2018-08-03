@@ -1,0 +1,21 @@
+/* @media */
+
+@media screen and (max-width: 768px) {
+  .m-about-img {
+      width: 100%;
+  }
+
+  .m-about-bg-img {
+    background-size: 150%;
+  }
+
+  .m-about-sertific-img {
+    margin-bottom: 10px;
+  }
+
+  .m-position-img {
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

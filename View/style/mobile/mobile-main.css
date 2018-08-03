@@ -16,5 +16,11 @@
 /* Стили для Contact*/
 @import url("m-contact.css");
 
+/* Стили для Service*/
+@import url("m-service.css");
+
+/* Стили для AboutCompany*/
+@import url("m-about-comp.css");
+
 /** Стиль Калькулятора стоимости канализации */
 @import url("m-form-calculation-cost.css");
