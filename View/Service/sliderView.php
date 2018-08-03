@@ -18,8 +18,8 @@
             $s_align = 'justify-content-start';
 
           echo('<div class="carousel-item ' . $s_active . '">
-          <div class="slide-item">
-            <img class="img-fluid" src="' . VIEW . 'upload_img/service/' . $a_item['img'] . '" alt="">
+          <div class="slide-item m-slide-item">
+            <img src="' . VIEW . 'upload_img/service/' . $a_item['img'] . '" alt="">
             <div class="container">
               <div class="row  ' . $s_align . '">
                 <div class="col-md-5 slide-item-desc">

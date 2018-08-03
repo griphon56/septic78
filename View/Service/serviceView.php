@@ -19,12 +19,12 @@
 
 <?php include('sliderView.php');?>
 
-<div class="service-form-bg">
-  <img class="img-bg" src="<?=VIEW?>img/serviceView/water3.png" alt="">
+<div class="service-form-bg m-service-form-bg">
+  <img class="img-bg m-img-bg" src="<?=VIEW?>img/serviceView/water3.png" alt="">
   <div class="container service">
     <div class="row">
         <div class="col-md-12">
-          <h3 class="section-item">Узнать подробности у специалиста</h3>
+          <h3 class="section-item m-service-item">Узнать подробности у специалиста</h3>
         </div>
     </div>
   </div>

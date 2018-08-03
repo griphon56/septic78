@@ -2,11 +2,11 @@
 
 @media screen and (max-width: 768px) {
   .section-item {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .section-header{
-    font-size: 26px;
+    font-size: 24px;
     margin: 50px 0 10px 0;
   }
 }
