@@ -130,14 +130,17 @@ function menu_open(o_sender)
 {
   $this = $(o_sender);
   var jq_main_menu_container = $('.js-main-menu');
+  var jq_wrapper = $('.wrapper');
 
   $this.toggleClass('m-menu-open');
   jq_main_menu_container.toggleClass('m-main-menu');
+  jq_wrapper.toggleClass('fixed-wrapper');
 
   if($('.m-menu-back').length)
   {
     $this.removeClass('m-menu-back');
     $this.addClass('m-menu-open');
+    jq_wrapper.addClass('fixed-wrapper');
     jq_main_menu_container.addClass('m-main-menu');
   }
 
