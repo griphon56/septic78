@@ -130,7 +130,7 @@ function menu_open(o_sender)
 {
   $this = $(o_sender);
   var jq_main_menu_container = $('.js-main-menu');
-  var jq_wrapper = $('.wrapper');
+  var jq_wrapper = $('body');
 
   $this.toggleClass('m-menu-open');
   jq_main_menu_container.toggleClass('m-main-menu');
