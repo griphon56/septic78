@@ -1,5 +1,5 @@
 @media screen and (max-width: 768px) {
-	/* footer about us*/
+/* footer about us*/
 	#footerAbout{
 		display: none;
 	}
@@ -7,5 +7,17 @@
 	/* footer */
 	.m-footer-item {
 		display: none;
+	}
+
+	.m-footer-text-padding {
+		padding: 18px;
+	}
+
+	.m-footer {
+    padding: 15px 0;
+	}
+
+	.footer-item img {
+    width: 13px;
 	}
 }

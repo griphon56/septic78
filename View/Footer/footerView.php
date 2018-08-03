@@ -1,7 +1,7 @@
-<div class="container-fluid footer">
+<div class="container-fluid footer m-footer">
   <div class="container">
     <div class="row">
-      <div class="col-md-2 col-4 col-sm-4">
+      <div class="col-md-2 col-4 col-sm-4 m-footer-text-padding">
         <div class="footer-item-title">
           <h4>Контакты</h4>
         </div>
@@ -68,7 +68,7 @@
           ?>
         </div>
       </div>  
-      <div class="col-md-2 col-4 col-sm-4">
+      <div class="col-md-2 col-4 col-sm-4 m-footer-text-padding">
         <div class="footer-item-title">
           <h4>О компании</h4>
         </div>
