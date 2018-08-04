@@ -1,7 +1,7 @@
 <div class="container-fluid footer m-footer">
   <div class="container">
     <div class="row">
-      <div class="col-md-2 col-6 col-sm-4ы">
+      <div class="col-md-2 col-6 col-sm-4">
         <div class="footer-item-title">
           <h4>Контакты</h4>
         </div>
@@ -92,10 +92,10 @@
 <div class="container-fluid copyright">
   <div class="container">
     <div class="row justify-content-between align-items-center">
-      <div class="col-md-3">
+      <div class="col-md-3 col-6 col-sm-6">
         <p class="copyright-title">&copy; Web Studio "Little Landing", 2018</p>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 col-6 col-sm-6">
         <ul class="copyright-social">
           <li><a href="#"><img src="<?=VIEW?>img/footerView/facebook-logo-button.png" alt=""></a></li>
           <li><a href="#"><img src="<?=VIEW?>img/footerView/instagram.png" alt=""></a></li>
