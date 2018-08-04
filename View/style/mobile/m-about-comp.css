@@ -1,8 +1,12 @@
 /* @media */
 
 @media screen and (max-width: 768px) {
+  .m-about-item {
+    display: none;
+  }
+
   .m-about-img {
-      width: 100%;
+    width: 100%;
   }
 
   .m-about-bg-img {
@@ -14,8 +18,7 @@
   }
 
   .m-position-img {
-    height: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 550px;
+    margin: 0 auto;
   }
 }

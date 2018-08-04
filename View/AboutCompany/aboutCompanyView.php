@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 m-about-item">
         <img src="<?=VIEW?>img/aboutView/water.png" alt="icon" class="about-img m-about-img">
       </div>
     </div>
