@@ -39,7 +39,7 @@
                 {
                   if($a_item)
                   {
-                    echo('<div class="col-4 col-md-4 col-sm-4 include-with-product-img">');
+                    echo('<div class="col-4 col-md-2 col-sm-4 include-with-product-img">');
                     echo('<img src="'.VIEW.'img/productView/'.substr($s_key,2).'.png" alt="">');
                     echo('<p class="include-with-product-count">X-'.$a_item.'</p>');
                     echo('</div>');
