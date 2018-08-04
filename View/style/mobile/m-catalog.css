@@ -3,6 +3,13 @@
     font-size: 14px;
   }
 
+  .catalog-marker-container {
+    padding: 40px 0 40px 20px;
+  }
+
+  .catalog-category-desc-container .catalog-category-desc-title {
+    width: 80%;
+  }
   .catalog-category-desc-container{
     margin-top: 20px;
     padding: 5px;
