@@ -22,4 +22,12 @@
     right: -280px;
     bottom: -90px;
   }
+
+  .m-carousel-control-next-icon {
+    margin-right: 10px;
+  }
+
+  .m-carousel-control-prev-icon {
+    margin-left: 10px;
+  }
 }

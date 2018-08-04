@@ -42,10 +42,10 @@
     </div>
 
     <a class="carousel-control-prev" href="#carousel" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
+      <span class="carousel-control-prev-icon  m-carousel-control-prev-icon"></span>
     </a>
     <a class="carousel-control-next" href="#carousel" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
+      <span class="carousel-control-next-icon  m-carousel-control-next-icon"></span>
     </a>
   </div>
 </div>
