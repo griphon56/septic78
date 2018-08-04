@@ -3,10 +3,12 @@
   .home-skill-static-desc p{
     font-size: 13px;
     margin-bottom: 10px;
+    line-height: 15px;
   }
 
   .home-skill-static-desc h4{
     font-size: 16px;
+    margin-bottom: 4px;
   }
 
   .home-skill-static-item:hover .home-skill-static-h-border{
@@ -27,6 +29,44 @@
   .slider-home-service .slider-home-title,
   .slider-home-service .slider-home-button {
     font-size: 15px;
-    padding: 0px;
+    padding: 0;
+  }
+
+  .slider-home-service-shadow{
+   display: none;
+  }
+
+  .item-slider-home-container:hover .slider-home-item-text{
+    display: none!important;
+  }
+
+  .item-slider-home-container:hover .slider-display-button{
+    display: block!important;
+  }
+
+  .item-slider-home-container:hover{
+    box-shadow: none;
+    transform: scale(1);
+  }
+
+  .slider-home-service .slider-home-item-text .slider-home-button {
+    padding: 5px 0;
+  }
+
+  /* home brand */
+  .m-home-brand{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  /* home skill block*/
+  .home-skill-static-desc p{
+    font-size: 11px;
+  }
+
+  .home-skill-static-desc h4{
+    font-size: 13px;
+    line-height: 17px;
   }
 }

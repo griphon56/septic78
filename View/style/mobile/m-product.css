@@ -1,0 +1,29 @@
+@media screen and (max-width: 768px){
+  .m-product-list{
+    margin: 5px 0;
+  }
+
+  .m-product-control{
+    display: inline-block;
+  }
+
+  /* Product hit sales*/
+  .carousel-control-next, .carousel-control-prev {
+    width: 9%!important;
+  }
+
+  .slider-product-control-prev, .slider-product-control-next {
+    left: 80%!important;
+  }
+}
+
+@media screen and (max-width: 540px){
+  /* Product hit sales*/
+  .carousel-control-next, .carousel-control-prev {
+    width: 45px!important;
+  }
+
+  .slider-product-control-prev, .slider-product-control-next {
+    left: 65%!important;
+  }
+}

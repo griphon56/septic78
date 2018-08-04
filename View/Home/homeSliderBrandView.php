@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container m-home-brand">
   <div class="autoplay-slick-slider row align-items-center">
     <div class="col slide-brand-item">
       <img src="<?=VIEW?>img/homeView/ros.png" alt="" class="slide-brand-img">

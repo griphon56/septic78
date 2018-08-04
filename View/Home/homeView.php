@@ -38,7 +38,7 @@
 
 <?php include(USER_TEMPLATE.'Home/homeSliderServiceView.php');?>
 
-<div class="container">
+<div class="container m-home-brand">
   <div class="row">
     <div class="col">
       <h2 class="section-item">Производители</h2>

@@ -19,6 +19,9 @@
 /* Стили для Service*/
 @import url("m-service.css");
 
+/* Стили для Product*/
+@import url("m-product.css");
+
 /* Стили для AboutCompany*/
 @import url("m-about-comp.css");
 
