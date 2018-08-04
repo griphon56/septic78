@@ -51,7 +51,7 @@
             $i=0;
             foreach ($a_data_product_category as $key => $a_item)
             {
-              if($key==16) break;
+              if($key==6) break;
 
               $i++;
               if($i==1)
@@ -59,7 +59,7 @@
                 
                 echo ('<li><a href="index.php?id_page=catalog&k_product_category='.$a_item['k_product_category'].'">'.$a_item['s_title'].'</a></li>');
 
-              if($i==9)
+              if($i==6)
               {
                 $i=0;
                 echo('</ul>');  
