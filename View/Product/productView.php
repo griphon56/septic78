@@ -20,8 +20,8 @@
 <div class="hr-blue"></div>
 
 <div class="container product-single-container">
-  <div class="row align-items-end">
-    <div class="col-md-6 product-config">
+  <div class="row align-items-end m-table">
+    <div class="col-md-6 product-config m-table-footer">
       <div class="container">
         <div class="row">
           <div class="container include-with-product">
@@ -39,9 +39,9 @@
                 {
                   if($a_item)
                   {
-                    echo('<div class="col-md-2 include-with-product-img">');
+                    echo('<div class="col-4 col-md-4 col-sm-4 include-with-product-img">');
                     echo('<img src="'.VIEW.'img/productView/'.substr($s_key,2).'.png" alt="">');
-                    echo('<p class="include-with-product-count">X'.$a_item.'</p>');
+                    echo('<p class="include-with-product-count">X-'.$a_item.'</p>');
                     echo('</div>');
                   }
                 }
@@ -58,10 +58,10 @@
             </p>
           </div>
           <div class="row">
-            <div class="col-md-8">
+            <div class="col-8 col-sm-8 col-md-8">
               <a href="#" onclick="add_to_cart_single(this); return false;" name="<?=$a_product['k_product']?>" class="btn btn-info product-single-btn">Заказать</a>
             </div>
-            <div class="col-md-4">
+            <div class="col-4 col-sm-4 col-md-4">
               <div class="quantity">
                 <input type="number" min="1" max="9" step="1" value="1" name="qty_product">
               </div>
@@ -71,7 +71,7 @@
       </div>
       </div>
     </div>
-    <div class="col-md-6 product-config">
+    <div class="col-md-6 product-config m-table-header">
       <div class="container">
         <div class="row">
           <div class="col">

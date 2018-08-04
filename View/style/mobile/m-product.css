@@ -19,6 +19,30 @@
   .slider-product-control-prev, .slider-product-control-next {
     left: 80%!important;
   }
+
+  .m-table{
+    display: table;
+  }
+
+  .m-table-header{
+    display: table-header-group;
+  }
+
+  .m-table-footer{
+    display: table-footer-group;
+  }
+
+  .product-config .product-single-price {
+    margin: 0 0 40px 0;
+  }
+
+  .product-single-container .product-config {
+    margin-top: 10px;
+  }
+
+  .product-config .product-single-img {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 540px){
