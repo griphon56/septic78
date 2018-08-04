@@ -1,7 +1,7 @@
 <div class="container-fluid footer m-footer">
   <div class="container">
     <div class="row">
-      <div class="col-md-2 col-4 col-sm-4 m-footer-text-padding">
+      <div class="col-md-2 col-6 col-sm-4ы">
         <div class="footer-item-title">
           <h4>Контакты</h4>
         </div>
@@ -23,7 +23,7 @@
           </li>
         </ul>
       </div>
-      <div class="col-md-2 m-footer-item">
+      <div class="col-md-2 col-6 m-footer-item">
         <div class="footer-item-title">
           <h4>Наши услуги</h4>
         </div>
@@ -39,7 +39,7 @@
           ?>
         </ul>
       </div>
-      <div class="col-md-4 m-footer-item">
+      <div class="col-md-4 col-6">
         <div class="footer-item-title">
           <h4>Каталог</h4>
         </div>
@@ -68,7 +68,7 @@
           ?>
         </div>
       </div>  
-      <div class="col-md-2 col-4 col-sm-4 m-footer-text-padding">
+      <div class="col-md-2 col-6 col-sm-4 m-footer-text-padding">
         <div class="footer-item-title">
           <h4>О компании</h4>
         </div>
@@ -76,7 +76,7 @@
           <li><a href="index.php?id_page=about_company">Наши партнеры</a></li>
         </ul>
       </div> 
-      <div class="col-md-2 col-4 col-sm-4">
+      <div class="col-md-2 col-6 col-sm-4">
         <div class="footer-item-title">
           <h4>Доставка и оплата</h4>
         </div>
