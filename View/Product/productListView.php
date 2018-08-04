@@ -126,12 +126,12 @@
     </div>
 
     <div class="hr-blue m-0 m-hr-blue"></div>
-    <a class="carousel-control-prev slider-product-control-prev m-product-control" href="#product-list" data-slide="prev">
+    <a class="m-2 carousel-control-prev slider-product-control-prev m-product-control" href="#product-list" data-slide="prev">
       <span class="slider-product-control-prev-icon">
         <img class="icon-arrow" src="<?=VIEW?>img/productView/left-arrow.png" alt="">
       </span>
     </a>
-    <a class="carousel-control-next slider-product-control-next m-product-control" href="#product-list" data-slide="next">
+    <a class="m-2 carousel-control-next slider-product-control-next m-product-control" href="#product-list" data-slide="next">
       <span class="slider-product-control-next-icon">
         <img class="icon-arrow" src="<?=VIEW?>img/productView/right-arrow.png" alt="">
       </span>

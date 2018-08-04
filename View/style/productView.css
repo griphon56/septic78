@@ -131,11 +131,11 @@
 }
 
 .m-hr-blue{
-  display: block;
+  display: none;
 }
 
 .m-product-control{
-  display: inline-block;
+  display: none;
 }
 
 /*Страница информации о продукте*/

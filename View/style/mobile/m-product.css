@@ -3,6 +3,10 @@
     margin: 5px 0;
   }
 
+  .m-hr-blue{
+    display: block;
+  }
+
   .m-product-control{
     display: inline-block;
   }

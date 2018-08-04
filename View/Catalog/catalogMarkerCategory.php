@@ -12,10 +12,11 @@
           else
             $s_active = '';
 
-          echo('<a 
-                class="catalog-marker-item '.$s_active.'"
-                href="index.php?id_page=catalog&k_product_category='.$a_item['k_product_category'].'"
-                >'.$a_item['s_title'].'</a>'
+          echo('
+            <a 
+              class="catalog-marker-item '.$s_active.'"
+              href="index.php?id_page=catalog&k_product_category='.$a_item['k_product_category'].'"
+            >'.$a_item['s_title'].'</a>'
           );
         }
       ?>

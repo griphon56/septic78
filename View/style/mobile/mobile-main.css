@@ -22,6 +22,9 @@
 /* Стили для Product*/
 @import url("m-product.css");
 
+/* Стили для страницы Каталог*/
+@import url("m-catalog.css");
+
 /* Стили для AboutCompany*/
 @import url("m-about-comp.css");
 

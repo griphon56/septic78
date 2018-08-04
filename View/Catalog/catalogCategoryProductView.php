@@ -71,7 +71,7 @@
           $j_count=1;
           echo('<div class="row product-list-row">');
         }
-        echo('<div class="col-md-3">');
+        echo('<div class="col-md-3 col-sm-6 m-product-list">');
         echo('<div class="product-item">');
         echo('<ul>');
         echo('<li class="product-item-img"><a href="index.php?id_page=product&k_product='.$a_item['k_product'].'"><img src="'.VIEW.'upload_img/product/'.$a_item['img'].'" alt=""></a></li>');
@@ -117,6 +117,18 @@
       ?>
     </div>
   </div>
+
+  <div class="hr-blue m-0 m-hr-blue"></div>
+  <a class="carousel-control-prev slider-product-control-prev m-product-control" href="#product-list" data-slide="prev">
+    <span class="slider-product-control-prev-icon">
+      <img class="icon-arrow" src="<?=VIEW?>img/productView/left-arrow.png" alt="">
+    </span>
+  </a>
+  <a class="carousel-control-next slider-product-control-next m-product-control" href="#product-list" data-slide="next">
+    <span class="slider-product-control-next-icon">
+      <img class="icon-arrow" src="<?=VIEW?>img/productView/right-arrow.png" alt="">
+    </span>
+  </a>
 </div>
 </div>
 </div>
