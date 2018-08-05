@@ -1,8 +1,4 @@
 @media screen and (max-width: 980px){
-  .m-product-qty{
-    float: right;
-  }
-
   .m-product-qty .quantity-button.quantity-down {
     right: 46px;
     top: 7px;
