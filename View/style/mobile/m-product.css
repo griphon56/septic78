@@ -54,4 +54,43 @@
   .slider-product-control-prev, .slider-product-control-next {
     left: 65%!important;
   }
+
+  .product-config .include-with-product .include-with-product-label {
+    font-size: 16px;
+    margin: 0 0 10px 15px;
+  }
+
+  .product-config .include-with-product .include-with-product-count {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .product-config .product-single-price {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .product-config .product-single-btn {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .m-product-qty{
+    float: right;
+  }
+
+  .m-product-qty input{
+    padding: 5px 10px
+  }
+
+  .m-product-qty .quantity-button.quantity-up{
+    top: 3px;
+    left: -5px;
+  }
+
+  .m-product-qty .quantity-button.quantity-down{
+    right: 22px;
+    top: 2px;
+  }
+
 }
