@@ -61,7 +61,7 @@
             <div class="col-8 col-sm-8 col-md-8">
               <a href="#" onclick="add_to_cart_single(this); return false;" name="<?=$a_product['k_product']?>" class="btn btn-info product-single-btn">Заказать</a>
             </div>
-            <div class="col-4 col-sm-4 col-md-4">
+            <div class="col-4 col-sm-4 col-md-4 p-0">
               <div class="quantity m-product-qty">
                 <input type="number" min="1" max="9" step="1" value="1" name="qty_product">
               </div>

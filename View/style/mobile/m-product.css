@@ -1,3 +1,15 @@
+@media screen and (max-width: 980px){
+  .m-product-qty{
+    float: right;
+  }
+
+  .m-product-qty .quantity-button.quantity-down {
+    right: 46px;
+    top: 7px;
+  }
+
+}
+
 @media screen and (max-width: 768px){
   .m-product-list{
     margin: 5px 0;
@@ -22,6 +34,7 @@
 
   .m-table{
     display: table;
+    margin: 0 auto;
   }
 
   .m-table-header{
@@ -73,10 +86,6 @@
   .product-config .product-single-btn {
     padding: 10px;
     font-size: 16px;
-  }
-
-  .m-product-qty{
-    float: right;
   }
 
   .m-product-qty input{
