@@ -18,23 +18,23 @@
           $i_total += $a_item['i_price'];
           $i += 1;
           echo('
-            <div class="row cart-product-item align-items-center">
-              <div class="col-md-2">
+            <div class="row cart-product-item align-items-center m-cart-box">
+              <div class="col-md-2 m-cart-table-img">
                 <div class="cart-product-img-wrap">
                   <a href="index.php?id_page=product&k_product='.$a_item['k_product'].'">
                     <img src="' . VIEW . 'upload_img/product/' . $a_item['img'] . '" alt="">
                   </a>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 m-cart-table-title">
               <h3 class="cart-product-text"><a href="index.php?id_page=product&k_product='.$a_item['k_product'].'">' . $a_item['s_name'] . '</a></h3>
               </div>
-              <div class="col-md-3">
+              <div class="col-md-3 m-cart-table-qty">
                 <div class="quantity js-quantity-cart">
                   <input type="number" min="1" max="50" step="1" value="' . $a_item['i_qty'] . '" name="' . $a_item['k_product'] . '">
                 </div>
               </div>
-              <div class="col-md-3 js_cart_product_total' . $a_item['k_product'] . '">
+              <div class="col-md-3 m-cart-table-total js_cart_product_total' . $a_item['k_product'] . '">
                 <h3 class="cart-product-text">' . number_format($a_item['i_price'], 0, '.', ' ') . ' руб.</h3>
               </div>
               <a href="#" onclick="del_product_cart(this); return false;" name="' . $a_item['k_product'] . '" class="cart-product-del">

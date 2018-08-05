@@ -8,10 +8,10 @@
       </div>
       <div class="row">
         <div class="col-md-4">
-          <input type="text" class="cart-order-input" placeholder="Имя" name="s_name">
+          <input type="text" class="cart-order-input m-cart-input-text" placeholder="Имя" name="s_name">
         </div>
         <div class="col-md-4">
-          <input type="text" class="cart-order-input" placeholder="Телефон" maxlength="13" name="s_phone">
+          <input type="text" class="cart-order-input m-cart-input-text" placeholder="Телефон" maxlength="13" name="s_phone">
         </div>
         <div class="col-md-4">
           <input type="text" class="cart-order-input" placeholder="example@gmail.com" name="s_email">

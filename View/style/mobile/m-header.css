@@ -95,7 +95,6 @@
    }
 }
 
-/* Применяется при уменьшении*/
 @media screen and (max-width: 540px) {
   /* search */
   .header-search{
