@@ -144,7 +144,7 @@ function menu_open(o_sender)
     jq_main_menu_container.addClass('m-main-menu');
   }
 
-  $('.header-submenu').css('display','none');
+  $('.header-submenu').css('display', 'none');
 }
 
 $(document).ready(function()
@@ -165,9 +165,12 @@ $(document).ready(function()
   /**
    * Метод, отображения под меню.
    */
-  $('.m-menu-icon-arrow').closest('a').click(function ()
+  if($(window).width()<=768)
   {
-    $(this).siblings('.header-submenu').css('display','block');
-    jq_mobile_icon.addClass('m-menu-back');
-  });
+    $('.m-menu-icon-arrow').closest('a').click(function ()
+    {
+      $(this).siblings('.header-submenu').css('display', 'block');
+      jq_mobile_icon.addClass('m-menu-back');
+    });
+  }
 });
