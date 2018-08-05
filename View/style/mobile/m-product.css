@@ -56,6 +56,10 @@
   .product-config .product-single-img {
     margin-bottom: 20px;
   }
+
+  .product-single-container .include-with-product {
+    margin-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 540px){
@@ -81,6 +85,10 @@
   .product-config .product-single-price {
     font-size: 16px;
     margin-bottom: 20px;
+  }
+
+  .product-config .product-single-price span {
+    font-size: 17px;
   }
 
   .product-config .product-single-btn {
