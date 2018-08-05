@@ -44,6 +44,12 @@
     font-size: 18px;
     line-height: 1.5;
   }
+
+  .m-cart-total {
+    font-size: 18px;
+    margin: 20px 0 30px 0;
+    padding: 15px 20px;
+  }
 }
 
 @media screen and (max-width: 540px) {
@@ -61,9 +67,9 @@
   }
 
   .m-cart-table-title{
-    width: 55%;
-    padding-right: 5px;
-    margin-top: 8px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-left: -13px;
   }
 
   .m-cart-table-qty{

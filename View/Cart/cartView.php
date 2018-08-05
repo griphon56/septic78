@@ -58,7 +58,7 @@
   <div class="row">
     <div class="col-md-8"></div>
     <div class="col-md-4" id="cart-total">
-      <p class="cart-total">
+      <p class="cart-total m-cart-total">
         Итого <?php echo(number_format($i_total, 0, '.', ' ')); ?> руб.
       </p>
     </div>
