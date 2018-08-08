@@ -42,6 +42,7 @@
 .slider-display-button{
   background-color: #57afb9!important;
   display: none!important;
+  z-index: 120;
 }
 
 .slider-home-service-shadow{
@@ -95,7 +96,7 @@
 
 .slider-home-service .slider-home-item-text .slider-home-button{
   display: block;
-  padding: 20px 0;
+  padding: 22px 0;
   text-decoration: none;
 }
 
@@ -108,6 +109,10 @@
   position: absolute;
   top: 35%;
   width: 87%;
+}
+
+.slider-home-service .slider-home-button{
+  padding: 0;
 }
 
 .slider-home-service .slider-home-title, .slider-home-service .slider-home-button{
