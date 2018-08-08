@@ -6,7 +6,7 @@
   </div>
   <div class="row">
     <div class="col-md-12">
-      <a href="index.php?id_page=add_service_category" class="btn btn-info">Добавить категорию</a>
+      <a href="add_service_category" class="btn btn-info">Добавить категорию</a>
     </div>
   </div>
 
@@ -20,7 +20,7 @@
 
       echo('<tr><td>'.$a_item['s_name'].'</td>');
       echo('<td>'.$s_active.'</td>');
-      echo('<td><a href="index.php?id_page=edit_service_category&k_service_category='.$a_item['k_service_category'].'" class="btn btn-info">Изменить</a></td>');
+      echo('<td><a href="edit_service_category&k_service_category='.$a_item['k_service_category'].'" class="btn btn-info">Изменить</a></td>');
       echo('<td><button type="submit" onclick="del_category(this);" class="btn btn-danger" name="'.$a_item['k_service_category'].'">Удалить</button></td></tr>');
     }
     ?>

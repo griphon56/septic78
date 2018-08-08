@@ -44,7 +44,7 @@ include('../Admin/View/Service/actionService.php');
           </div>
           <div class="row">
             <div class="col-md-3">
-              <a href="index.php?id_page=service" class="btn btn-info">Отмена</a>
+              <a href="service" class="btn btn-info">Отмена</a>
             </div>
             <div class="col-md-3">
               <input type="submit" value="add_service" name="action_form_service" class="add-service-submit float-right btn btn-success">

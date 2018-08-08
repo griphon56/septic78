@@ -34,7 +34,7 @@
 
             foreach ($a_data_service_category as $key => $a_item)
             {
-              echo ('<li><a href="index.php?id_page=service&k_service_category='.$a_item['k_service_category'].'">'.$a_item['s_name'].'</a></li>');
+              echo ('<li><a href="service&k_service_category='.$a_item['k_service_category'].'">'.$a_item['s_name'].'</a></li>');
             }  
           ?>
         </ul>
@@ -57,7 +57,7 @@
               if($i==1)
                 echo('<ul class="footer-item col-md-6">');    
                 
-                echo ('<li><a href="index.php?id_page=catalog&k_product_category='.$a_item['k_product_category'].'">'.$a_item['s_title'].'</a></li>');
+                echo ('<li><a href="catalog&k_product_category='.$a_item['k_product_category'].'">'.$a_item['s_title'].'</a></li>');
 
               if($i==6)
               {
@@ -73,7 +73,7 @@
           <h4>О компании</h4>
         </div>
         <ul class="footer-item">
-          <li><a href="index.php?id_page=about_company">Наши партнеры</a></li>
+          <li><a href="about_company">Наши партнеры</a></li>
         </ul>
       </div> 
       <div class="col-md-2 col-6 col-sm-4">
@@ -81,7 +81,7 @@
           <h4>Доставка и оплата</h4>
         </div>
         <ul class="footer-item">
-          <li><a href="index.php?id_page=shipping_pay">Выбор и заказ</a></li>
+          <li><a href="shipping_pay">Выбор и заказ</a></li>
         </ul>
       </div>
     </div>

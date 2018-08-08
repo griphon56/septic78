@@ -6,10 +6,10 @@
   </div>
   <div class="row">
     <div class="col-md-3">
-      <a href="index.php?id_page=add_product&id_product=1" class="btn btn-info">Добавить новый Септик</a>
+      <a href="add_product&id_product=1" class="btn btn-info">Добавить новый Септик</a>
     </div>
     <div class="col-md-3">
-      <a href="index.php?id_page=add_product&id_product=2" class="btn btn-info">Добавить новый Погреб</a>
+      <a href="add_product&id_product=2" class="btn btn-info">Добавить новый Погреб</a>
     </div>
   </div>
 
@@ -49,7 +49,7 @@
         echo('<td>' . number_format($k_item['i_price'], 0, '.', ' ') . ' руб' . '</td>');
         echo('<td>' . number_format($k_item['i_discount'], 0, '.', ' ') . ' руб' . '</td>');
         echo('<td>' . $s_active . '</td>');
-        echo('<td><a href="index.php?id_page=edit_product&id_product=' . $k_item['id_product'] . '&k_product=' . $k_item['k_product'] . '" class="btn btn-info">Изменить</a></td>');
+        echo('<td><a href="edit_product&id_product=' . $k_item['id_product'] . '&k_product=' . $k_item['k_product'] . '" class="btn btn-info">Изменить</a></td>');
         echo('<td><button type="submit" onclick="del_product(this);" class="btn btn-danger" name="' . $k_item['k_product'] . '">Удалить</button></td></tr>');
       }
       echo('</table>');

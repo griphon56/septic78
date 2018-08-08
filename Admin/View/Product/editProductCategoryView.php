@@ -1,6 +1,7 @@
 <?php
   include('../Admin/View/Product/actionProductCategory.php');
-  $a_data = getProductCategory($_REQUEST['k_product_category']);
+  $a_data = getProductCategory($_GET['k_product_category']);
+  var_dump($_GET);
 ?>
 <div class="container">
   <div class="row add-product-container">
@@ -44,7 +45,7 @@
           </div>
           <div class="row">
             <div class="col-md-3">
-              <a href="index.php?id_page=product_category" class="btn btn-info">Отмена</a>
+              <a href="product_category" class="btn btn-info">Отмена</a>
             </div>
             <div class="col-md-3">
               <input type="submit" value="edit_category" name="action_form" class="edit-product-category-submit float-right btn btn-success">

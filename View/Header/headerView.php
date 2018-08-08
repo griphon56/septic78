@@ -60,7 +60,7 @@
       </div>
       <div class="col-5 col-md-6 col-sm-5">
         <div class="header-logo">
-          <a href="index.php?id_page=home"><img src="<?=VIEW?>img/headerView/3.png" alt=""></a>
+          <a href="home"><img src="<?=VIEW?>img/headerView/3.png" alt=""></a>
         </div>
       </div>
       <div class="col-2 col-md-4 col-sm-5">
@@ -68,7 +68,7 @@
       </div>
       <div class="col-2 col-md-2 col-sm-1">
         <div class="container-cart" id="cart-header">
-          <a class="cart-container-box" href="index.php?id_page=cart">
+          <a class="cart-container-box" href="cart">
             <div
               class="js-container-cart-count-product container-cart-count-product"
               <?php if($a_cart_data['i_qty']) echo('style="display:block;"');?>

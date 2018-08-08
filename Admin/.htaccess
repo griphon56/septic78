@@ -1,0 +1,29 @@
+AddDefaultCharset utf-8
+#ErrorDocument 403 /forbidden.php
+
+# Запрет входа
+#deny from all
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^home/?$ Admin/index.php?id_page=home [L]
+
+RewriteRule ^product_category/?$ /Admin/index.php?id_page=product_category [L]
+RewriteRule ^add_product_category/?$ /Admin/index.php?id_page=add_product_category [L]
+RewriteRule ^edit_product_category(.*)$ /Admin/index.php?id_page=edit_product_category&k_product_category=$1 [L]
+
+RewriteRule ^service_category/?$ Admin/index.php?id_page=service_category [L]
+RewriteRule ^add_service_category/?$ Admin/index.php?id_page=add_service_category [L]
+RewriteRule ^edit_service_category(.*)$ Admin/index.php?id_page=edit_service_category&k_service_category=$1 [L]
+
+RewriteRule ^product/?$ Admin/index.php?id_page=product [L]
+RewriteRule ^add_product(.*)$ Admin/index.php?id_page=add_product&id_product=$1 [L]
+RewriteRule ^edit_product(.*)$ Admin/index.php?id_page=edit_product&id_product=$1&k_product=$1 [L]
+
+RewriteRule ^service/?$ Admin/index.php?id_page=service [L]
+RewriteRule ^add_service/?$ Admin/index.php?id_page=add_service [L]
+RewriteRule ^edit_service(.*)$ Admin/index.php?id_page=edit_service&k_service=$1 [L]

@@ -112,7 +112,7 @@
           </div>
           <div class="row">
             <div class="col-md-3">
-              <a href="index.php?id_page=product" class="btn btn-info">Отмена</a>
+              <a href="product" class="btn btn-info">Отмена</a>
             </div>
             <div class="col-md-3">
               <input

@@ -44,7 +44,7 @@ switch($id_page)
     $view = USER_TEMPLATE.'Search/searchResultView.php';
     break;
   default:
-    $view = USER_TEMPLATE.'notFound.php';
+    $view = USER_TEMPLATE.'ErrorPage/notFound.php';
 }
 
 // Подключение View

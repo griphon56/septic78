@@ -1,1 +1,20 @@
-DirectoryIndex index.php
+AddDefaultCharset utf-8
+#ErrorDocument 404 /notFound.php
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^admin/?$ Admin
+RewriteRule ^home/?$ /index.php?id_page=home
+RewriteRule ^about_company/?$ /index.php?id_page=about_company
+RewriteRule ^shipping_pay/?$ /index.php?id_page=shipping_pay
+RewriteRule ^contact/?$ /index.php?id_page=contact
+RewriteRule ^cart/?$ /index.php?id_page=cart
+
+RewriteRule ^catalog(.*)$ /index.php?id_page=catalog&k_product_category=$1 [L]
+RewriteRule ^service(.*)$ /index.php?id_page=service&k_service_category=$1 [L]
+RewriteRule ^product(.*)$ /index.php?id_page=product&k_product==$1 [L]
+RewriteRule ^search(.*)$ /index.php?id_page=search&s_search==$1 [L]

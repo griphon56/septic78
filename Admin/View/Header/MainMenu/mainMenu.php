@@ -2,27 +2,27 @@
 $a_menu = [
   [
     'link' => 'Главная',
-    'href' => 'index.php?id_page=admin',
-    'id' => 'admin'
+    'href' => 'home',
+    'id' => 'home'
   ],
   [
     'link' => 'Категории продуктов',
-    'href' => 'index.php?id_page=product_category',
+    'href' => 'product_category',
     'id' => 'product_category'
   ],
   [
     'link' => 'Продукты',
-    'href' => 'index.php?id_page=product',
+    'href' => 'product',
     'id' => 'product'
   ],
   [
     'link' => 'Категории услуг',
-    'href' => 'index.php?id_page=service_category',
+    'href' => 'service_category',
     'id' => 'service_category'
   ],
   [
     'link' => 'Услуги',
-    'href' => 'index.php?id_page=service',
+    'href' => 'service',
     'id' => 'service'
   ]
 ];

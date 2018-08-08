@@ -10,7 +10,7 @@ include_once '../Admin/Function/Function.php';
 $id_page = getPageId();
 
 if(empty($id_page))
-  $id_page = 'admin';
+  $id_page = 'home';
 
 switch($id_page)
 {
@@ -50,7 +50,7 @@ switch($id_page)
   case 'edit_service':
     $view = ADMIN_TEMPLATE.'Service/editServiceView.php';
     break;
-  case 'admin':
+  case 'home':
     $view = ADMIN_TEMPLATE.'Home/homeView.php';
     break;
   default:

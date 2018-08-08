@@ -74,9 +74,9 @@
         echo('<div class="col-md-3 col-sm-6 m-product-list">');
         echo('<div class="product-item">');
         echo('<ul>');
-        echo('<li class="product-item-img"><a href="index.php?id_page=product&k_product='.$a_item['k_product'].'"><img src="'.VIEW.'upload_img/product/'.$a_item['img'].'" alt=""></a></li>');
+        echo('<li class="product-item-img"><a href="product&k_product='.$a_item['k_product'].'"><img src="'.VIEW.'upload_img/product/'.$a_item['img'].'" alt=""></a></li>');
         echo('<li class="product-item-title">');
-        echo('<h4><a href="index.php?id_page=product&k_product='.$a_item['k_product'].'">'.$a_item['s_name'].'</a></h4>');
+        echo('<h4><a href="product&k_product='.$a_item['k_product'].'">'.$a_item['s_name'].'</a></h4>');
         echo('</li>');
         echo('<li class="product-item-box">');
         echo('<div class="container">');

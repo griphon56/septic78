@@ -18,7 +18,7 @@
                 <h4 class="slider-home-title">'.$a_item['s_name'].'</h4>
               </div>
               <div class="slider-home-item-text slider-display-button">
-                <a href="index.php?id_page=service&k_service_category='.$a_item['k_service_category'].'" class="slider-home-button">Подробнее</a>
+                <a href="service&k_service_category='.$a_item['k_service_category'].'" class="slider-home-button">Подробнее</a>
               </div>
             </div>
           </div>

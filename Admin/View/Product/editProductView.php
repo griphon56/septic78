@@ -1,7 +1,7 @@
 <?php
   include('../Admin/View/Product/actionProduct.php');
 
-  $a_product = getAllProduct($_REQUEST['k_product']);
+  $a_product = getAllProduct($_GET['k_product']);
 
   $z_data = unserialize($a_product[0]['z_data']);
 
@@ -175,7 +175,7 @@
           </div>
           <div class="row">
             <div class="col-md-3">
-              <a href="index.php?id_page=product" class="btn btn-info">Отмена</a>
+              <a href="product" class="btn btn-info">Отмена</a>
             </div>
             <div class="col-md-3">
               <input

@@ -19,8 +19,8 @@ $(document).ready(function()
         success: function(data)
         {
           $("#cart-header").load("index.php #cart-header > *");
-          $(".js_cart_product_total"+k_product).load("index.php?id_page=cart .js_cart_product_total"+k_product+" > *");
-          $("#cart-total").load("index.php?id_page=cart #cart-total > *");
+          $(".js_cart_product_total"+k_product).load("cart .js_cart_product_total"+k_product+" > *");
+          $("#cart-total").load("cart #cart-total > *");
         }
       });
     }
@@ -44,8 +44,8 @@ $(document).ready(function()
         success: function(data)
         {
           $("#cart-header").load("index.php #cart-header > *");
-          $(".js_cart_product_total"+k_product).load("index.php?id_page=cart .js_cart_product_total"+k_product+" > *");
-          $("#cart-total").load("index.php?id_page=cart #cart-total > *");
+          $(".js_cart_product_total"+k_product).load("cart .js_cart_product_total"+k_product+" > *");
+          $("#cart-total").load("cart #cart-total > *");
         }
       });
     }
@@ -75,7 +75,7 @@ function del_product_cart(o_sender)
       success: function(data)
       {
         $this.closest('.cart-product-item').remove();
-        $("#cart-total").load("index.php?id_page=cart #cart-total > *");
+        $("#cart-total").load("cart #cart-total > *");
         $("#cart-header").load("index.php #cart-header > *");
       }
     });
@@ -131,8 +131,8 @@ function save_order(o_sender)
       },
       success: function(data)
       {
-        $("#cart-order-clearance").load("index.php?id_page=cart #cart-order-clearance > *");
-        $("#cart-product-container").load("index.php?id_page=cart #cart-product-container > *");
+        $("#cart-order-clearance").load("cart #cart-order-clearance > *");
+        $("#cart-product-container").load("cart #cart-product-container > *");
         $("#cart-header").load("index.php #cart-header > *");
       }
     });

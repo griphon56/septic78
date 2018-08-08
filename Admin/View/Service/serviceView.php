@@ -6,7 +6,7 @@
   </div>
   <div class="row">
     <div class="col-md-12">
-      <a href="index.php?id_page=add_service" class="btn btn-info">Добавить услугу</a>
+      <a href="add_service" class="btn btn-info">Добавить услугу</a>
     </div>
   </div>
 
@@ -39,7 +39,7 @@
         echo('<tr><td>' . $k_item['s_name'] . '</td>');
         echo('<td>' . $k_item['name_category'] . '</td>');
         echo('<td>' . $s_active . '</td>');
-        echo('<td><a href="index.php?id_page=edit_service&k_service=' . $k_item['k_service'] . '" class="btn btn-info">Изменить</a></td>');
+        echo('<td><a href="edit_service&k_service=' . $k_item['k_service'] . '" class="btn btn-info">Изменить</a></td>');
         echo('<td><button type="submit" onclick="del_service(this);" class="btn btn-danger" name="' . $k_item['k_service'] . '">Удалить</button></td></tr>');
       }
     }

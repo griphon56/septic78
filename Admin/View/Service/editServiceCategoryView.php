@@ -1,6 +1,6 @@
 <?php
-include('../Admin/View/Service/actionServiceCategory.php');
-$a_data = getServiceCategory($_REQUEST['k_service_category']);
+  include('../Admin/View/Service/actionServiceCategory.php');
+  $a_data = getServiceCategory($_REQUEST['k_service_category']);
 ?>
 <div class="container">
   <div class="row add-product-container">
@@ -54,7 +54,7 @@ $a_data = getServiceCategory($_REQUEST['k_service_category']);
           </div>
           <div class="row">
             <div class="col-md-3">
-              <a href="index.php?id_page=service_category" class="btn btn-info">Отмена</a>
+              <a href="service_category" class="btn btn-info">Отмена</a>
             </div>
             <div class="col-md-3">
               <input type="submit" value="edit_category" name="action_form_service" class="edit-service-category-submit float-right btn btn-success">

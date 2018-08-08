@@ -70,12 +70,12 @@
             <div class="product-item">
               <ul>
               <li class="product-item-img">
-                <a href="index.php?id_page=product&k_product='.$a_item['k_product'].'">
+                <a href="product&k_product='.$a_item['k_product'].'">
                   <img src="'.VIEW.'upload_img/product/'.$a_item['img'].'" alt="">
                 </a>
               </li>
               <li class="product-item-title">
-                <h4><a href="index.php?id_page=product&k_product='.$a_item['k_product'].'">'.$a_item['s_name'].'</a></h4>
+                <h4><a href="product&k_product='.$a_item['k_product'].'">'.$a_item['s_name'].'</a></h4>
               </li>
               <li class="product-item-box">
                 <div class="container">
