@@ -41,9 +41,10 @@
 
 .search-input .box-search input,.m-search-open-input .box-search input{
   border: none;
-  font-size: 12px;
-  padding-left: 10px;
   color: #444;
+  font-size: 12px;
+  padding: 0 20px 0 10px;
+  width: 100%;
 }
 
 .search-input .box-search #search-icon{
