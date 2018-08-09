@@ -74,11 +74,11 @@
 }
 
 .carousel-control-next-icon {
-  background-image: url(../img/serviceView/double-right.png);
+  background-image: url(../../img/serviceView/double-right.png);
   padding: 20px;
 }
 
 .carousel-control-prev-icon {
-  background-image: url(../img/serviceView/double-left.png);
+  background-image: url(../../img/serviceView/double-left.png);
   padding: 20px;
 }

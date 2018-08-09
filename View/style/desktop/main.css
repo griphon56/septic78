@@ -73,4 +73,4 @@
 @import url("cartView.css");
 
 /* Стили для мобильной версии */
-@import url("mobile/mobile-main.css");
+@import url("../mobile/mobile-main.css");

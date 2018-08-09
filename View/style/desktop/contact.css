@@ -1,5 +1,5 @@
 .contact {
-  background-image: url(../img/contactView/water-treatment_large.png);
+  background-image: url(../../img/contactView/water-treatment_large.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0px 100px;
@@ -7,7 +7,7 @@
 
 .contact-form{
   margin: 10px 0;
-  background-image: url(../img/contactView/bg_form.png);
+  background-image: url(../../img/contactView/bg_form.png);
 }
 
 .contact-form-title{
@@ -42,7 +42,7 @@
 }
 
 .document-bg-img{
-  background-image: url(../img/contactView/Voda-posle-edyi.png);
+  background-image: url(../../img/contactView/Voda-posle-edyi.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
