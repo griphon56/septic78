@@ -5,7 +5,7 @@
 @import url("animate.css");
 
 /** Беру сетку и карусель */
-@import url("bootstrap.grid.css");
+@import url("bootstrap-grid.min.css");
 @import url("bootstrap.min.css");
 
 /**
