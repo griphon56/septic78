@@ -15,7 +15,7 @@
             <p>+7 (821) 413-92-98</p>
           </li>
           <li>
-            <p>  +8 (800) 200-68-57</p>
+            <p>+8 (800) 200-68-57</p>
           </li>
           <li>
             <img src="<?=VIEW?>img/footerView/close-envelope.png" alt="">
