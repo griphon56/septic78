@@ -71,7 +71,7 @@
   display: block!important;
 }
 
-.item-slider-home-container>img{
+.item-slider-home-container .slider-home-img-bg{
   height: 100%;
   display: inline-block;
   position: absolute;

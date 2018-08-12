@@ -12,19 +12,20 @@
         echo('
           <div class="col-6 col-sm-4 col-md-2 p-0">
             <div class="item-slider-home-container">
-              <div class="slider-home-service-shadow"></div>
-              <img src="'.VIEW.'upload_img/category_service/'.$a_config['img'].'" alt="" class="slider-home-img-bg">
-              <div class="slider-home-item-text">
-                <h4 class="slider-home-title">'.$a_item['s_name'].'</h4>
-              </div>
-              <div class="slider-home-item-text slider-display-button">
-                <a
-                 class="m-slider-home-button slider-home-button"
-                 href="service&k_service_category='.$a_item['k_service_category'].'" 
+              <a href="service&k_service_category='.$a_item['k_service_category'].'">
+                <div class="slider-home-service-shadow"></div>
+                <img
+                  class="slider-home-img-bg"
+                  src="'.VIEW.'upload_img/category_service/'.$a_config['img'].'" 
+                  alt=""
                 >
-                 Подробнее
-                </a>
-              </div>
+                <div class="slider-home-item-text">
+                  <h4 class="slider-home-title">'.$a_item['s_name'].'</h4>
+                </div>
+                <div class="slider-home-item-text slider-display-button">
+                  <h4 class="m-slider-home-button slider-home-button">Подробнее</h4>
+                </div>
+              </a>
             </div>
           </div>
         ');

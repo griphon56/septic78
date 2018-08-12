@@ -21,7 +21,7 @@
     height: 200px;
   }
 
-  .item-slider-home-container>img{
+  .item-slider-home-container .slider-home-img-bg{
     left: 0;
   }
 
