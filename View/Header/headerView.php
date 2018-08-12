@@ -22,7 +22,8 @@
   <div class="container">
     <div class="row no-gutters">
       <div class="col col-md-7 col-sm-4 text-phone text">
-        <p>Продажа и установка автономных канализаций, септиков в Санкт-Петербурге и области</p>
+        <p>Продажа и установка автономных канализаций, септиков, дренажных систем, систем отопление, бернеие скважин, монтаж электрики,
+          монтаж газгольдера и монтаж автономной канализации в Санкт-Петербурге и области</p>
       </div>
       <div class="col col-md-3 col-sm-5 phone text-phone">
         <img src="<?=VIEW?>img/headerView/old-typical-phone.png" alt="">
@@ -114,7 +115,7 @@
                 <input type="tel" name="s_phone" maxlength="15" placeholder="Телефон">
               </li>
               <li>
-                <input type="button" onclick="send_contact(this);" class="btn header-btn" value="Заказать">
+                <input type="button" onclick="send_contact(this);" class="btn header-btn" value="Заказать бесплатную консультацию">
               </li>
             </ul>
           </div>

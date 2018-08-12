@@ -13,14 +13,14 @@
       <div class="home-skill-static-h-border"></div>
       <div class="home-skill-static-desc">
         <h4>Собственный штат</h4>
-        <p>монтажоров</p>
+        <p>монтажников и инжинеров</p>
       </div>
     </div>
     <div class="home-skill-static-item col-4 col-sm-4 col-md-2">
       <img src="<?=VIEW?>img/homeView/3.png" alt="" class="home-skill-static-img">
       <div class="home-skill-static-h-border"></div>
       <div class="home-skill-static-desc">
-        <h4>Более 1500</h4>
+        <h4>Более 2000</h4>
         <p>выполненных заказов</p>
       </div>
     </div>
@@ -29,7 +29,7 @@
       <div class="home-skill-static-h-border"></div>
       <div class="home-skill-static-desc">
         <h4>Всегда в наличии</h4>
-        <p>все комплектующие</p>
+        <p>все комплектующие и оборудование</p>
       </div>
     </div>
     <div class="home-skill-static-item col-4 col-sm-4 col-md-2">
@@ -37,7 +37,7 @@
       <div class="home-skill-static-h-border"></div>
       <div class="home-skill-static-desc">
         <h4>Сдача объектов</h4>
-        <p>строго в сроки</p>
+        <p>строго в сроки, монтаж от 6 часов</p>
       </div>
     </div>
   </div>
@@ -47,7 +47,7 @@
       <div class="home-skill-static-h-border"></div>
       <div class="home-skill-static-desc">
         <h4>Работаем</h4>
-        <p>с 1994г.</p>
+        <p>по всей России</p>
       </div>
     </div>
     <div class="home-skill-static-item col-4 col-sm-4 col-md-2">
@@ -71,7 +71,7 @@
       <div class="home-skill-static-h-border"></div>
       <div class="home-skill-static-desc">
         <h4>Цены</h4>
-        <p>производителей</p>
+        <p>ниже чем на заводе</p>
       </div>
     </div>
     <div class="home-skill-static-item col-4 col-sm-4 col-md-2">
