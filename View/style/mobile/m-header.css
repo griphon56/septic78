@@ -67,6 +67,7 @@
 
   /*form target*/
   .header-target-form{
+    background-position-y: 0;
     padding: 5px;
   }
 

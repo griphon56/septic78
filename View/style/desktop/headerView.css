@@ -3,25 +3,21 @@
   color: #f4f4f4;
 }
 
-.header-top-line .text p{
-  margin-top: 4px;
-}
-
 .header-top-line .phone img{
   width: 18px;
 }
 
 .header-top-line .phone ul{
-  margin: 8px 0 8px 0;
+  margin: 8px 0;
 }
 
 .header-top-line .text-phone p{
   display: inline-block;
-  margin-top: 8px;
+  margin: 8px 0;
 }
 
 .header-top-line p{
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .header-search .header-logo img{
@@ -133,9 +129,9 @@
   /* Форма захвата */
 
 .header-target-form{
-  background-image: url(../../img/headerView/bg.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-y: -100px;
   padding: 150px;
 }
 

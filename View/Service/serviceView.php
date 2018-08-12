@@ -1,5 +1,5 @@
 <?php
-  $a_service_category = getServiceCategory($_REQUEST['k_service_category']);
+  $a_service_category = getServiceCategory($_GET['k_service_category']);
 ?>
 <div class="container service">
   <div class="row">

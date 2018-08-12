@@ -72,10 +72,10 @@
 }
 
 .item-slider-home-container>img{
-  width: 100%;
   height: 100%;
   display: inline-block;
   position: absolute;
+  left: -160px;
 }
 
 .item-slider-home-container:hover{

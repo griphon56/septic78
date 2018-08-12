@@ -22,12 +22,13 @@
   <div class="container">
     <div class="row no-gutters">
       <div class="col col-md-7 col-sm-4 text-phone text">
-        <p>Продажа и установка автономных канализаций, септиков, дренажных систем, систем отопление, бернеие скважин, монтаж электрики,
+        <p>Продажа и установка автономных канализаций, септиков, дренажных систем,
+          систем отопление, бернеие скважин, монтаж электрики,
           монтаж газгольдера и монтаж автономной канализации в Санкт-Петербурге и области</p>
       </div>
       <div class="col col-md-3 col-sm-5 phone text-phone">
         <img src="<?=VIEW?>img/headerView/old-typical-phone.png" alt="">
-        <p>Сделать заказ по телефону:</p>
+        <p>Заказать бесплатную консультацию:</p>
       </div>
       <div class="col col-md-2 col-sm-3 phone">
         <ul>
@@ -86,41 +87,8 @@
 </div>
 
 
-<?php include ('MainMenu/mainMenuView.php'); ?>
+<?php
+  include ('MainMenu/mainMenuView.php');
 
-
-<div class="container-fluid header-target-form">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-7 col-sm-5 m-header-target-form-title">
-        <h3 class="header-target-form-title">Нужна канализация?</h3>
-        <p class="header-target-form-desc">
-          Септик5.рф - городской комфорт
-        </p>
-        <p class="header-target-form-desc">
-          в загородном доме с выгодой
-        </p>
-        <p class="header-target-form-desc">
-          для вашего кошелька
-        </p>
-      </div>
-      <div class="col col-md-5 col-sm-7">
-        <div class="header-form">
-          <div class="row form-text-submit js-mail-form-contact">
-            <ul>
-              <li>
-                <input type="text" name="s_name" placeholder="Имя">
-              </li>
-              <li>
-                <input type="tel" name="s_phone" maxlength="15" placeholder="Телефон">
-              </li>
-              <li>
-                <input type="button" onclick="send_contact(this);" class="btn header-btn" value="Заказать бесплатную консультацию">
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  include ('headerFormTargetView.php');
+?>

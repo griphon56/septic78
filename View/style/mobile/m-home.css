@@ -21,6 +21,10 @@
     height: 200px;
   }
 
+  .item-slider-home-container>img{
+    left: 0;
+  }
+
   .slider-home-service .slider-home-item-text {
     padding: 30px 0;
     top: 23%;
