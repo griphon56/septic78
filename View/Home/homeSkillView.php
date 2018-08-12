@@ -13,7 +13,7 @@
       <div class="home-skill-static-h-border"></div>
       <div class="home-skill-static-desc">
         <h4>Собственный штат</h4>
-        <p>монтажников и инжинеров</p>
+        <p>монтажников и инженеров</p>
       </div>
     </div>
     <div class="home-skill-static-item col-4 col-sm-4 col-md-2">

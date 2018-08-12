@@ -154,8 +154,9 @@
 }
 
 .home-skill-static-img{
-  width: 50%;
+  height: 50%;
   padding-bottom: 20px;
+  width: 50%;
 }
 
 .home-skill-static-desc p{
