@@ -26,7 +26,9 @@
     echo('
       <div 
         class="container-fluid header-target-form"
-        style="background-image: url('.VIEW.'img/headerView/bg.png);"
+        style="
+          background-image: url('.VIEW.'img/headerView/bg.png);
+          background-position-y: 0;"
       >
     ');
     echo('
