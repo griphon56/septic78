@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <h2 class="section-item">Хит продаж</h2>
+      <h2 class="section-item">Лидеры продаж погреба</h2>
     </div>
   </div>
 </div>

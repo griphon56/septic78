@@ -80,6 +80,15 @@
   display: block;
 }
 
+.bootstrap-slider-product-hit-sales .product-item{
+  position: relative;
+}
+
+.product-item-status-img{
+  position: absolute;
+  width: 75px;
+}
+
 /* Слайдер */
 .bootstrap-slider-product-hit-sales{
   position: relative;

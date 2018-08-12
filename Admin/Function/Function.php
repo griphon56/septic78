@@ -5,6 +5,15 @@ define('PAGE_PRODUCT_SEPTIC',1);
 // Страница добавления/редактирования погребов.
 define('PAGE_PRODUCT_CELLAR',2);
 
+// Категория погребов тополь-эко ПП.
+define('CATEGORY_CELLAR_TOPOL',46);
+
+// Категория погребов келлари.
+define('CATEGORY_CELLAR_KELLARI',47);
+
+// Категория погребов тингард.
+define('CATEGORY_CELLAR_TINGARD',48);
+
 /**
  * Метод для получения продуктов.
  *
@@ -117,16 +126,19 @@ function getProduct(string $k_product_category=null)
 /**
  * Метод получения продуктов хитов продаж.
  *
- * @param string|null $k_product_category <tt>Ключ категории товара</tt>, для вывода всех товаров одной категории.
+ * @param array|null $a_product_category <tt>Массив ключей категорий товара</tt>, для вывода всех товаров одной категории.
  * @return array <tt>Массив продуктов</tt>
  */
-function getProductHitSales(string $k_product_category=null)
+function getProductHitSales(array $a_product_category=null)
 {
   $link = mysqli_connect(HOST, USER, PASS,DB) or die('No connect to Server');
   mysqli_set_charset($link,'utf8');
 
-  if($k_product_category)
-    $where = 'product.k_product_category='.$k_product_category;
+  if($a_product_category)
+  {
+    $s_product_category = implode(',',$a_product_category);
+    $where = 'product.k_product_category in(' . $s_product_category.')';
+  }
   else
     $where = 'true';
 
@@ -147,10 +159,9 @@ function getProductHitSales(string $k_product_category=null)
         product_category.k_product_category=product.k_product_category
     where
       product.is_active=1 and
-      product.is_stock=1 and
       ".$where."
     order by
-     product.s_name asc
+      product.s_name asc
     limit 12;
   ";
 
