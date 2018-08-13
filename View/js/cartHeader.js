@@ -94,6 +94,7 @@ $(document).ready(function()
   {
     jq_mobile_icon.removeClass('m-menu-open');
     jq_mobile_icon.removeClass('m-menu-back');
+    $('.header-logo').css('display', 'block');
     $('.js-main-menu').removeClass('m-main-menu');
     $('.search-input').removeClass('m-search-open-input');
   });

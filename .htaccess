@@ -17,7 +17,6 @@ RewriteRule ^home/?$ /index.php?id_page=home [L]
 RewriteRule ^about_company/?$ /index.php?id_page=about_company [L]
 RewriteRule ^shipping_pay/?$ /index.php?id_page=shipping_pay [L]
 RewriteRule ^contact/?$ /index.php?id_page=contact [L]
-RewriteRule ^cart/?$ /index.php?id_page=cart [L]
 
 RewriteRule .* - [E=HTTP_IF_MODIFIED_SINCE:%{HTTP:If-Modified-Since}]
 RewriteRule .* - [E=HTTP_IF_NONE_MATCH:%{HTTP:If-None-Match}]

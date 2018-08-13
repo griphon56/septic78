@@ -58,28 +58,8 @@
           <a href="home"><img src="<?=VIEW?>img/headerView/3.png" alt=""></a>
         </div>
       </div>
-      <div class="col-2 col-md-4 col-sm-5">
+      <div class="col-4 col-md-6 col-sm-6">
         <?php include (USER_TEMPLATE.'Search/searchView.php'); ?>
-      </div>
-      <div class="col-2 col-md-2 col-sm-1">
-        <div class="container-cart" id="cart-header">
-          <a class="cart-container-box" href="cart">
-            <div
-              class="js-container-cart-count-product container-cart-count-product"
-              <?php if($a_cart_data['i_qty']) echo('style="display:block;"');?>
-            >
-              <div class="cart-count-product">
-                <span class="js-cart-count-product"><?=$a_cart_data['i_qty']?></span>
-              </div>
-            </div>
-            <div class="cart">
-              <div>
-                <img src="<?=VIEW?>img/headerView/shopping-purse-icon.png" alt="">
-                <p>Корзина <span id=header-cost><?=number_format($a_cart_data['i_total'], 0, '.', ' ');?></span> руб.</p>
-              </div>
-            </div>
-          </a>
-        </div>
       </div>
     </div>
   </div>

@@ -19,9 +19,6 @@ switch($id_page)
   case 'about_company':
     $view = USER_TEMPLATE.'AboutCompany/aboutCompanyView.php';
     break;
-  case 'cart':
-    $view = USER_TEMPLATE.'Cart/cartView.php';
-    break;
   case 'catalog':
     $view = USER_TEMPLATE.'Catalog/catalogView.php';
     break;
