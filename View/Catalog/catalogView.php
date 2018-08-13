@@ -9,6 +9,8 @@
   else
     echo('<h3 class="empty-text">В категории нет товаров</h3>');
 
+  include(USER_TEMPLATE.'Cart/cartOrderView.php');
+
   include(USER_TEMPLATE.'Catalog/catalogCategoryDescriptionView.php');
 ?>
 

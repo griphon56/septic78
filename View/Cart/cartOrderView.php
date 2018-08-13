@@ -1,6 +1,11 @@
-<div class="container-fluid cart-order-clearance" id="cart-order-clearance">
+<div
+  class="container-fluid cart-order-clearance js-cart-order-clearance"
+  id="cart-order-clearance"
+>
+  <img class="btn-form-order-close" src="<?=VIEW ?>img/cartView/clear-button.png" alt="">
+  <div class="close-order-form" onclick="close_order_form();"></div>
   <form action="" method="post" class="form-text-submit">
-    <div class="container">
+    <div class="container cart-order-clearance-box">
       <div class="row">
         <div class="col">
           <h3 class="section-header-h3">Оформление заказа</h3>
@@ -35,8 +40,8 @@
             foreach ($a_delivery as $a_item)
             {
               echo (' 
-                  <input type="radio" id="delivery_'.$a_item['k_delivery'].'" value="'.$a_item['k_delivery'].'" name="delivery">
-                  <label class="cart-order-label label-input" for="delivery_'.$a_item['k_delivery'].'">'.$a_item['s_name'].'</label>
+                <input type="radio" id="delivery_'.$a_item['k_delivery'].'" value="'.$a_item['k_delivery'].'" name="delivery">
+                <label class="cart-order-label label-input" for="delivery_'.$a_item['k_delivery'].'">'.$a_item['s_name'].'</label>
               ');
             }
           ?>

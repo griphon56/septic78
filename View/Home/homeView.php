@@ -1,4 +1,8 @@
-<?php include ('View/Home/homeModel.php'); ?>
+<?php
+  include ('View/Home/homeModel.php');
+
+  include(USER_TEMPLATE.'Cart/cartOrderView.php');
+?>
 
 <div class="container">
   <div class="row">

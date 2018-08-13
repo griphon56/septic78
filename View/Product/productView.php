@@ -131,6 +131,8 @@
 </div>
 
 
+<?php include(USER_TEMPLATE.'Cart/cartOrderView.php');?>
+
 <div class="container m-home-brand">
   <div class="row">
     <div class="col">

@@ -14,7 +14,6 @@
 <div class="wrapper">
 
 <?php
-  include(USER_TEMPLATE.'Notification/notificationView.php');
   $a_cart_data = getCartHeaderSession();
 ?>
 

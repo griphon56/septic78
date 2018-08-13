@@ -64,5 +64,3 @@
     </div>
   </div>
 </div>
-
-<?php include(USER_TEMPLATE.'Cart/cartOrderView.php')?>

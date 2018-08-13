@@ -20,6 +20,10 @@ if($_POST)
       delCartProductSingle($_POST['k_product']);
       break;
 
+    case 'clear':
+      unset($_SESSION['cart']);
+      break;
+
     case 'save_order':
       saveOrder();
       break;

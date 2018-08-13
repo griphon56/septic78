@@ -1,89 +1,20 @@
-$(document).ready(function()
-{
-  /**
-   * Изменение количества товаров в корзине на странице Cart (add).
-   */
-  $('.js-quantity-cart .quantity-up').click(function(event)
-  {
-    var k_product = $(this).closest('.quantity').find('input[type="number"]').attr('name');
-    if (k_product)
-    {
-      $.ajax({
-        type: 'POST',
-        url: '/View/Cart/actionCartProduct.php',
-        data: {
-          action_cart: 'add',
-          i_qty: 1,
-          k_product: k_product
-        },
-        success: function(data)
-        {
-          $("#cart-header").load("index.php #cart-header > *");
-          $(".js_cart_product_total"+k_product).load("cart .js_cart_product_total"+k_product+" > *");
-          $("#cart-total").load("cart #cart-total > *");
-        }
-      });
-    }
-  });
-
-  /**
-   * Изменение количества товаров в корзине на странице Cart (del).
-   */
-  $('.js-quantity-cart .quantity-down').click(function(event)
-  {
-    var k_product = $(this).closest('.quantity').find('input[type="number"]').attr('name');
-    if (k_product)
-    {
-      $.ajax({
-        type: 'POST',
-        url: '/View/Cart/actionCartProduct.php',
-        data: {
-          action_cart: 'del_single',
-          k_product: k_product
-        },
-        success: function(data)
-        {
-          $("#cart-header").load("index.php #cart-header > *");
-          $(".js_cart_product_total"+k_product).load("cart .js_cart_product_total"+k_product+" > *");
-          $("#cart-total").load("cart #cart-total > *");
-        }
-      });
-    }
-  });
-});
-
 /**
- * Метод удаления товара из корзины.
- *
- * @param o_sender
+ * Метод закрытия формы заказа.
  */
-function del_product_cart(o_sender)
+function close_order_form()
 {
-  $this = $(o_sender);
-
-  var k_product = $this.attr('name');
-
-  if (k_product)
-  {
-    $.ajax({
-      type: 'POST',
-      url: '/View/Cart/actionCartProduct.php',
-      data: {
-        action_cart: 'del',
-        k_product: k_product
-      },
-      success: function(data)
-      {
-        $this.closest('.cart-product-item').remove();
-        $("#cart-total").load("cart #cart-total > *");
-        $("#cart-header").load("index.php #cart-header > *");
-      }
-    });
-  }
-  else
-  {
-    alert('Товар не удален.');
-  }
+  $.ajax({
+    type: 'POST',
+    url: '/View/Cart/actionCartProduct.php',
+    data: {
+      action_cart: 'clear'
+    },
+    success: function(data)
+    {
+      // $('body').removeClass('fixed-wrapper');
+      $('.js-cart-order-clearance').css('display','none');
+    }
+  });
 }
 
 /**
@@ -131,9 +62,7 @@ function save_order(o_sender)
       },
       success: function(data)
       {
-        $("#cart-order-clearance").load("cart #cart-order-clearance > *");
-        $("#cart-product-container").load("cart #cart-product-container > *");
-        $("#cart-header").load("index.php #cart-header > *");
+        // empty
       }
     });
   }
