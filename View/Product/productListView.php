@@ -1,6 +1,11 @@
 <?php
-  $a_product = getProduct();
+  $a_product = getProductLeaderSalesCellar([
+    CATEGORY_CELLAR_KELLARI,
+    CATEGORY_CELLAR_TINGARD,
+    CATEGORY_CELLAR_TOPOL
+  ]);
 ?>
+
 <div class="container-fluid bootstrap-slider-product-hit-sales">
 
   <div
@@ -65,9 +70,12 @@
           echo('<div class="row product-list-row">');
         }
 
+        $s_img = $a_item['is_stock'] ? 'Aktsia.png' : 'Khit.png';
+
         echo('
           <div class="col-md-3 col-sm-6 m-product-list">
             <div class="product-item">
+              <img class="product-item-status-img" src="'.VIEW.'img/productView/'.$s_img.'" alt="">
               <ul>
               <li class="product-item-img">
                 <a href="product&k_product='.$a_item['k_product'].'">

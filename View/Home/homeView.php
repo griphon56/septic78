@@ -1,7 +1,9 @@
+<?php include ('View/Home/homeModel.php'); ?>
+
 <div class="container">
   <div class="row">
     <div class="col">
-      <h2 class="section-item">Лидеры продаж погреба</h2>
+      <h2 class="section-item">Лидеры продаж септики</h2>
     </div>
   </div>
 </div>
@@ -11,7 +13,7 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <h2 class="section-item">Наши товары</h2>
+      <h2 class="section-item">Лидеры продаж погребы</h2>
     </div>
   </div>
 </div>

@@ -1,9 +1,11 @@
 <?php
-  $a_product = getProductHitSales([
-    CATEGORY_CELLAR_KELLARI,
-    CATEGORY_CELLAR_TINGARD,
-    CATEGORY_CELLAR_TOPOL
-  ]);
+  $a_product = getProductLeaderSalesSeptic(
+    [
+      CATEGORY_CELLAR_KELLARI,
+      CATEGORY_CELLAR_TINGARD,
+      CATEGORY_CELLAR_TOPOL
+    ],true
+  );
 ?>
 <div class="container-fluid bootstrap-slider-product-hit-sales">
   <div
