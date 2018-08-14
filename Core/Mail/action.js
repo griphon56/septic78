@@ -23,6 +23,8 @@ function send_contact(o_sender)
       {
         jq_name.val('');
         jq_phone.val('');
+        // Уведомление об отправки сообщения.
+        $('.notif').fadeIn().fadeOut(1000);
       }
     });
   }
@@ -61,6 +63,8 @@ function send_request(o_sender)
         jq_name.val('');
         jq_phone.val('');
         jq_message.val('');
+        // Уведомление об отправки сообщения.
+        $('.notif').fadeIn().fadeOut(1000);
       }
     });
   }

@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-12">
           <input type="text" placeholder="Адрес доставки" class="cart-order-input" name="s_address">
         </div>
       </div>

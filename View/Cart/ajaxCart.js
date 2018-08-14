@@ -62,7 +62,10 @@ function save_order(o_sender)
       },
       success: function(data)
       {
-        // empty
+        // $('body').removeClass('fixed-wrapper');
+        $('.js-cart-order-clearance').css('display','none');
+        // Уведомление об отправки сообщения.
+        $('.notif').fadeIn().fadeOut(1500);
       }
     });
   }

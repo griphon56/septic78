@@ -1,8 +1,8 @@
 .notif {
-  width: 300px;
+  width: 350px;
   position: fixed;
   margin: 30px 40%;
-  padding: 14px 20px;
+  padding: 14px 25px;
   text-align: center;
   border-radius: 50px;
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
