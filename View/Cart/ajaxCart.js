@@ -49,6 +49,7 @@ function save_order(o_sender)
   else
   {
     jq_email.css('border-color','palevioletred');
+    jq_email.css('border-width','2px');
     return;
   }
 
@@ -57,6 +58,7 @@ function save_order(o_sender)
   else
   {
     jq_phone.css('border-color','palevioletred');
+    jq_phone.css('border-width','2px');
     return;
   }
 
@@ -65,6 +67,7 @@ function save_order(o_sender)
   else
   {
     jq_name.css('border-color','palevioletred');
+    jq_name.css('border-width','2px');
     return;
   }
 
@@ -73,6 +76,7 @@ function save_order(o_sender)
   else
   {
     jq_address.css('border-color','palevioletred');
+    jq_address.css('border-width','2px');
     return;
   }
 
