@@ -2,6 +2,11 @@ AddDefaultCharset utf-8
 ErrorDocument 404 /View/ErrorPage/notFound.php
 ErrorDocument 403 /View/ErrorPage/forbidden.php
 
+<Files .htaccess>
+  Order Allow,Deny
+  Deny from all
+</Files>
+
 RewriteEngine On
 RewriteBase /
 RewriteRule ^index\.php$ - [L]
