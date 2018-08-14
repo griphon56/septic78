@@ -28,21 +28,51 @@ function save_order(o_sender)
 
   var jq_container = $('.cart-order-clearance');
   var jq_email = jq_container.find('input[name="s_email"]');
+  var jq_name = jq_container.find('input[name="s_name"]');
+  var jq_phone = jq_container.find('input[name="s_phone"]');
+  var jq_address = jq_container.find('input[name="s_address"]');
 
-  var s_name = jq_container.find('input[name="s_name"]').val();
-  var s_phone = jq_container.find('input[name="s_phone"]').val();
+  var s_name = jq_name.val();
+  var s_phone = jq_phone.val();
   var s_email = jq_email.val();
-  var s_address = jq_container.find('input[name="s_address"]').val();
+  var s_address = jq_address.val();
+
   var is_agree = 0;
   if(jq_container.find('input[name="is_agree"]').is(':checked'))
     is_agree = 1;
+
   var k_delivery = jq_container.find('input[name="delivery"]:checked').val();
 
+  // Проверка полей
   if (validateEmail(s_email))
     jq_email.css('border-color','#cccbcb');
   else
   {
     jq_email.css('border-color','palevioletred');
+    return;
+  }
+
+  if (s_phone.length)
+    jq_phone.css('border-color','#cccbcb');
+  else
+  {
+    jq_phone.css('border-color','palevioletred');
+    return;
+  }
+
+  if (s_name.length)
+    jq_name.css('border-color','#cccbcb');
+  else
+  {
+    jq_name.css('border-color','palevioletred');
+    return;
+  }
+
+  if (s_address.length)
+    jq_address.css('border-color','#cccbcb');
+  else
+  {
+    jq_address.css('border-color','palevioletred');
     return;
   }
 
@@ -68,9 +98,5 @@ function save_order(o_sender)
         $('.notif').fadeIn().fadeOut(1500);
       }
     });
-  }
-  else
-  {
-    alert('Не все данные заполнены.');
   }
 }
