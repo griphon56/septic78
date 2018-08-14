@@ -1,5 +1,6 @@
 AddDefaultCharset utf-8
-#ErrorDocument 404 /notFound.php
+ErrorDocument 404 /View/ErrorPage/notFound.php
+ErrorDocument 403 /View/ErrorPage/forbidden.php
 
 RewriteEngine On
 RewriteBase /

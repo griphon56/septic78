@@ -1,8 +1,7 @@
 AddDefaultCharset utf-8
-#ErrorDocument 403 /forbidden.php
 
 # Запрет входа
-#deny from all
+deny from all
 
 RewriteEngine On
 RewriteBase /
