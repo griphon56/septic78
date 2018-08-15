@@ -1,3 +1,15 @@
+<?php
+  include('formCalculationCostModel.php');
+
+  $a_category_form = getCategoryFormCalc([
+    CATEGORY_SEPTIC_ASTRA,
+    CATEGORY_SEPTIC_BIODEKA,
+    CATEGORY_SEPTIC_ROSTOK,
+    CATEGORY_SEPTIC_EUROBION,
+    CATEGORY_SEPTIC_TOPAS,
+    CATEGORY_SEPTIC_KOLOVESI
+  ]);
+?>
 <div class="calc-cost-container">
   <div class="container-fluid">
     <form id="calc-cost-form" action="/" method="post">
@@ -22,8 +34,12 @@
               <li>
                 <h4 class="calc-cost-text">Производитель</h4>
                 <select name="calc-cost-generator" id="calc-cost-generator" class="calc-cost-generator">
-                  <option value="sepAstra">Септик Астра</option>
-                  <option value="sepRostok">Септик Росток</option>
+                  <?php
+                    foreach($a_category_form as $a_item)
+                    {
+                      echo('<option value="'.$a_item['k_product_category'].'">'.$a_item['s_title'].'</option>');
+                    }
+                  ?>
                 </select>
               </li>
             </ul>

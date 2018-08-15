@@ -1,12 +1,5 @@
 <?php
-// Категория погребов тополь-эко ПП.
-define('CATEGORY_CELLAR_TOPOL',46);
-
-// Категория погребов келлари.
-define('CATEGORY_CELLAR_KELLARI',47);
-
-// Категория погребов тингард.
-define('CATEGORY_CELLAR_TINGARD',48);
+  include('View/Product/productAbstaract.php');
 
 /**
  * Метод получения продуктов хитов продаж.

@@ -36,7 +36,7 @@ $(document).ready(function() {
 });
 
 // Плагин расчета стоимости сепиков.
-$.getScript('../View/js/formCalculationCost.js');
+$.getScript('../View/FormCalculationCost/formCalculationCost.js');
 
 // Плагин корзины в шапке сайта.
 $.getScript('../View/js/cartHeader.js');
