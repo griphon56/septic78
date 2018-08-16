@@ -42,6 +42,10 @@
   cursor: pointer;
 }
 
+.active-calc-cost{
+  display: block!important;
+}
+
 .calc-cost-box .calc-cost-text{
   color: #525252;
   display: inline-block;
@@ -94,8 +98,15 @@
   background-color: #38858e;
 }
 
-.calc-cost-box-table{
+.calc-cost-box>.calc-cost-box-table{
+  display: none;
   width: 100%;
+}
+
+.calc-cost-phone{
+  display: none;
+  line-height:1.5;
+  margin-top:10%;
 }
 
 .calc-cost-box-table .calc-cost-box-img-title{
@@ -106,9 +117,7 @@
 }
 
 .calc-cost-box-table .calc-cost-box-img-title img{
-  position: absolute;
-  bottom: -55px;
-  left: -80px;
+  width: 90%;
 }
 
 .calc-cost-box-table .calc-cost-icon-desc{

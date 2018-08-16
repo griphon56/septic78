@@ -19,7 +19,7 @@
             <h3 class="section-header-h3">Расчет стоимости автономной канализации</h3>
           </div>
         </div>
-        <div class="row">
+        <div class="row js-calc-cost-container">
           <div class="col-md-4 calc-cost-box">
             <ul>
               <li class="calc-cost-relative">
@@ -35,7 +35,7 @@
                 <h4 class="calc-cost-text">Производитель</h4>
                 <select name="calc-cost-generator" id="calc-cost-generator" class="calc-cost-generator">
                   <?php
-                    foreach($a_category_form as $a_item)
+                    foreach($a_category_form as $k => $a_item)
                     {
                       echo('<option value="'.$a_item['k_product_category'].'">'.$a_item['s_title'].'</option>');
                     }
@@ -57,46 +57,67 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-5 calc-cost-box">
-            <table class="calc-cost-box-table">
-              <tr >
-                <td rowspan="3">
-                  <div class="calc-cost-box-img-title">
-                    <img class="js-calc-cost-box-img-title" src="<?=VIEW?>img/formCalculationCostView/2.png" alt="">
-                  </div>
-                </td>
-                <td>
-                  <div class="calc-cost-icon-desc">
-                    <img src="<?=VIEW?>img/formCalculationCostView/light-bulb.png" alt="">
-                    <span class="js-calc-cost-count-people">0</span>
-                    <span> чел.</span>
-                  </div>
-                  <div class="calc-cost-icon-desc">
-                    <img src="<?=VIEW?>img/formCalculationCostView/light-bulb.png" alt="">
-                    <span>0.6м3/сут</span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="calc-cost-icon-desc">
-                    <img src="<?=VIEW?>img/formCalculationCostView/light-bulb.png" alt="">
-                    <span>0.96л/час.</span>
-                  </div>
-                  <div class="calc-cost-icon-desc">
-                    <img src="<?=VIEW?>img/formCalculationCostView/light-bulb.png" alt="">
-                    <span>150кВт/сут</span>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="calc-cost-item-total">
-                  <p>Рекомендуем:</p>
-                  <h4 class="js-calc-cost-title-septic">Септик Юнилос Астра 3</h4>
-                  <p>Цена <span class="js-calc-cost-price-septic">62 050 руб.</span></p>
-                </td>
-              </tr>
-            </table>
+          <div class="col-md-5 calc-cost-box js-calc-cost-box">
+            <?php
+              foreach($a_product_form as $k => $a_item)
+              {
+                $s_active = $k==0 ? 'active-calc-cost' : '';
+
+                echo('
+                  <table class="'.$s_active.' calc-cost-box-table" name="'.$k.'">
+                    <tr >
+                      <td rowspan="3">
+                        <div class="calc-cost-box-img-title">
+                          <img 
+                            class="js-calc-cost-box-img-title" 
+                            src="'.VIEW.'upload_img/product/'.$a_item['img'].'" 
+                            alt=""
+                          >
+                        </div>
+                      </td>
+                      <td>
+                        <div class="calc-cost-icon-desc">
+                          <img src="'.VIEW.'img/formCalculationCostView/light-bulb.png" alt="">
+                          <span class="js-calc-cost-count-people">0</span>
+                          <span> чел.</span>
+                        </div>
+                        <div class="calc-cost-icon-desc">
+                          <img src="'.VIEW.'img/formCalculationCostView/light-bulb.png" alt="">
+                          <span>0.6м3/сут</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="calc-cost-icon-desc">
+                          <img src="'.VIEW.'img/formCalculationCostView/light-bulb.png" alt="">
+                          <span>0.96л/час.</span>
+                        </div>
+                        <div class="calc-cost-icon-desc">
+                          <img src="'.VIEW.'img/formCalculationCostView/light-bulb.png" alt="">
+                          <span>1'.($k+1).'0кВт/сут</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="calc-cost-item-total">
+                        <p>Рекомендуем:</p>
+                        <h4 class="js-calc-cost-title-septic">'.$a_item['s_name'].'</h4>
+                        <p>Цена 
+                          <span class="js-calc-cost-price-septic">'
+                            .number_format($a_item['i_price'], 0, '.', ' ').' руб.
+                          </span>
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                ');
+              }
+            ?>
+            <h3 class="js-calc-cost-phone calc-cost-phone section-header-h3">
+              Обратитесь в офис по телефону<br/>
+              <span class="font-weight-bold">+7 (812) 413-92-98</span>
+            </h3>
           </div>
         </div>
       </div>

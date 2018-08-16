@@ -11,24 +11,20 @@ $(document).ready(function()
     var $jq_title_septic = $('.js-calc-cost-title-septic');
     var $jq_price_septic = $('.js-calc-cost-price-septic');
 
-    switch($jq_select_item.val())
-    {
-      case 'sepAstra':
-        $jq_img_title.attr('src','../View/img/formCalculationCostView/2.png');
-        $jq_title_septic.html('Септик Юнилос Астра 3');
-        $jq_price_septic.html('62 050 руб.');
-        break;
+    var $jq_box = $('.js-calc-cost-box');
 
-      case 'sepRostok':
-        $jq_img_title.attr('src','../View/img/formCalculationCostView/1.png');
-        $jq_title_septic.html('Септик Росток Мини');
-        $jq_price_septic.html('25 900 руб.');
-        break;
-
-      default:
-        $jq_img_title.attr('src','../View/img/formCalculationCostView/2.png');
-        $jq_title_septic.html('Септик Юнилос Астра 3');
-    }
+    $.ajax({
+      type: 'POST',
+      url: '/View/FormCalculationCost/formCalculationCostModel.php',
+      data: {
+        k_product_category: $(this).val()
+      },
+      success: function (data)
+      {
+        $jq_box.find('table').remove();
+        $jq_box.html(data);
+      }
+    });
   });
 
   $jq_output_count.val($jq_range.val());
