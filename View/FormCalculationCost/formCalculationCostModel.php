@@ -76,10 +76,10 @@
     $s_result = '';
     foreach($a_data as $k => $a_item)
     {
-      $s_active = $k==0 ? 'active-calc-cost' : '';
+      $s_active = $k==0 ? 'active-calc-cost ' : '';
 
       $s_result .= '
-        <table class="'.$s_active.' calc-cost-box-table" name="'.$k.'">
+        <table class="'.$s_active.'calc-cost-box-table js-table-item-'.$k.'">
           <tr >
             <td rowspan="3">
               <div class="calc-cost-box-img-title">
@@ -93,12 +93,12 @@
             <td>
               <div class="calc-cost-icon-desc">
                 <img src="/View/img/formCalculationCostView/light-bulb.png" alt="">
-                <span class="js-calc-cost-count-people">0</span>
+                <span class="js-calc-cost-count-people">2</span>
                 <span> чел.</span>
               </div>
               <div class="calc-cost-icon-desc">
                 <img src="/View/img/formCalculationCostView/light-bulb.png" alt="">
-                <span>0.6м3/сут</span>
+                <span>'.(0.6+$k*0.5).' м3/сут</span>
               </div>
             </td>
           </tr>
@@ -106,11 +106,11 @@
             <td>
               <div class="calc-cost-icon-desc">
                 <img src="/View/img/formCalculationCostView/light-bulb.png" alt="">
-                <span>0.96л/час.</span>
+                <span>'.(0.96+$k*0.5).' л/час.</span>
               </div>
               <div class="calc-cost-icon-desc">
                 <img src="/View/img/formCalculationCostView/light-bulb.png" alt="">
-                <span>1'.($k+1).'0кВт/сут</span>
+                <span>'.(150+$k*50).' кВт/сут</span>
               </div>
             </td>
           </tr>
@@ -128,6 +128,13 @@
         </table>
       ';
     }
+
+    $s_result .= '
+      <h3 class="js-calc-cost-phone calc-cost-phone section-header-h3">
+        Обратитесь в офис по телефону<br/>
+        <span class="font-weight-bold">+7 (812) 413-92-98</span>
+      </h3>
+    ';
 
     echo($s_result);
   }

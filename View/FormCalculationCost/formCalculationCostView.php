@@ -6,7 +6,6 @@
     CATEGORY_SEPTIC_BIODEKA,
     CATEGORY_SEPTIC_ROSTOK,
     CATEGORY_SEPTIC_EUROBION,
-    CATEGORY_SEPTIC_TOPAS,
     CATEGORY_SEPTIC_KOLOVESI
   ]);
 ?>
@@ -24,11 +23,11 @@
             <ul>
               <li class="calc-cost-relative">
                 <h4 class="calc-cost-text">Количество человек в доме</h4>
-                <input class="calc-cost-count js-calc-cost-count" type="text" value="0"/>
+                <input class="calc-cost-count js-calc-cost-count" type="text" value="2"/>
               </li>
               <li>
                 <div class="calc-cost-range-container">
-                  <input type="range" min="1" max="30" value="3" class="calc-cost-range" id="range-calc-cost"/>
+                  <input type="range" min="1" max="15" value="2" class="calc-cost-range" id="range-calc-cost"/>
                 </div>
               </li>
               <li>
@@ -61,10 +60,10 @@
             <?php
               foreach($a_product_form as $k => $a_item)
               {
-                $s_active = $k==0 ? 'active-calc-cost' : '';
+                $s_active = $k==0 ? 'active-calc-cost ' : '';
 
                 echo('
-                  <table class="'.$s_active.' calc-cost-box-table" name="'.$k.'">
+                  <table class="'.$s_active.'calc-cost-box-table js-table-item-'.$k.'">
                     <tr >
                       <td rowspan="3">
                         <div class="calc-cost-box-img-title">
@@ -78,12 +77,12 @@
                       <td>
                         <div class="calc-cost-icon-desc">
                           <img src="'.VIEW.'img/formCalculationCostView/light-bulb.png" alt="">
-                          <span class="js-calc-cost-count-people">0</span>
+                          <span class="js-calc-cost-count-people">2</span>
                           <span> чел.</span>
                         </div>
                         <div class="calc-cost-icon-desc">
                           <img src="'.VIEW.'img/formCalculationCostView/light-bulb.png" alt="">
-                          <span>0.6м3/сут</span>
+                          <span>'.(0.6+$k*0.5).' м3/сут</span>
                         </div>
                       </td>
                     </tr>
@@ -91,11 +90,11 @@
                       <td>
                         <div class="calc-cost-icon-desc">
                           <img src="'.VIEW.'img/formCalculationCostView/light-bulb.png" alt="">
-                          <span>0.96л/час.</span>
+                          <span>'.(0.96+$k*0.5).' л/час.</span>
                         </div>
                         <div class="calc-cost-icon-desc">
                           <img src="'.VIEW.'img/formCalculationCostView/light-bulb.png" alt="">
-                          <span>1'.($k+1).'0кВт/сут</span>
+                          <span>'.(150+$k*50).' кВт/сут</span>
                         </div>
                       </td>
                     </tr>
