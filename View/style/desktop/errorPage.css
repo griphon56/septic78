@@ -1,0 +1,35 @@
+.wrapper{
+  display: flex;
+  font-family: sans-serif;
+}
+
+.wrapper .box{
+  margin: auto;
+}
+
+.error-title-404 {
+  font-size: 90px;
+  text-align: center;
+  color: #57afb9;
+  text-shadow: 3px 3px 2px #fff, 4px 3px 1px #57afb9;
+}
+
+.error-title-403{
+  font-size: 90px;
+  text-align: center;
+  color: #ff8d29;
+  text-shadow: 3px 3px 2px #fff, 4px 3px 1px #ff8d29;
+}
+
+.box .error-desc-tip{
+  font-size: 18px;
+}
+
+.error-desc{
+  text-align: center;
+  color: #a9a9a9;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 7px;
+}

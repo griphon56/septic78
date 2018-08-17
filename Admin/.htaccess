@@ -1,7 +1,7 @@
 AddDefaultCharset utf-8
 
 # Запрет входа
-deny from all
+#deny from all
 
 RewriteEngine On
 RewriteBase /

@@ -1,6 +1,6 @@
 AddDefaultCharset utf-8
-ErrorDocument 404 /View/ErrorPage/notFound.php
-ErrorDocument 403 /View/ErrorPage/forbidden.php
+ErrorDocument 404 /View/ErrorPage/404.php
+ErrorDocument 403 /View/ErrorPage/403.php
 
 <Files .htaccess>
   Order Allow,Deny
