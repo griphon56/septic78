@@ -1,4 +1,6 @@
 <?php
+  include(USER_TEMPLATE.'Product/productAbstaract.php');
+
   $a_product = getSingleProduct($_REQUEST['k_product']);
   $a_category = getProductCategory($a_product['k_product_category']);
 

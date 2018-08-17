@@ -1,4 +1,5 @@
 <?php
+  include(USER_TEMPLATE.'Product/productAbstaract.php');
   include(USER_TEMPLATE.'Catalog/catalogMarkerCategory.php');
 
   $k_product_category = $_REQUEST['k_product_category'];
