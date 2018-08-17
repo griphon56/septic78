@@ -92,12 +92,12 @@
             </td>
             <td>
               <div class="calc-cost-icon-desc">
-                <img src="/View/img/formCalculationCostView/light-bulb.png" alt="">
+                <img src="/View/img/formCalculationCostView/people.png" alt="">
                 <span class="js-calc-cost-count-people">2</span>
                 <span> чел.</span>
               </div>
               <div class="calc-cost-icon-desc">
-                <img src="/View/img/formCalculationCostView/light-bulb.png" alt="">
+                <img src="/View/img/formCalculationCostView/valve.png" alt="">
                 <span>'.(0.6+$k*0.5).' м3/сут</span>
               </div>
             </td>
@@ -105,11 +105,11 @@
           <tr>
             <td>
               <div class="calc-cost-icon-desc">
-                <img src="/View/img/formCalculationCostView/light-bulb.png" alt="">
+                <img src="/View/img/formCalculationCostView/water-faucet.png" alt="">
                 <span>'.(0.96+$k*0.5).' л/час.</span>
               </div>
               <div class="calc-cost-icon-desc">
-                <img src="/View/img/formCalculationCostView/light-bulb.png" alt="">
+                <img src="/View/img/formCalculationCostView/lightbulb.png" alt="">
                 <span>'.(150+$k*50).' кВт/сут</span>
               </div>
             </td>
