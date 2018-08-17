@@ -124,7 +124,6 @@ function send_calc_form(o_sender)
       },
       success: function(data)
       {
-        alert(data);
         jq_name.val('');
         jq_phone.val('');
         // Уведомление об отправки сообщения.
