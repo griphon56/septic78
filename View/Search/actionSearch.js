@@ -4,14 +4,16 @@ $(document).ready(function()
   {
     if(event.keyCode===13)
     {
-      var s_search = $(this).val();
-      window.location.href='search&s_search='+s_search;
+      var s_search = $.trim($(this).val());
+      if(s_search.length)
+        window.location.href='search&s_search='+s_search;
     }
   });
 
   $('#search-icon').click(function()
   {
-      var s_search = $('#s_search').val();
+    var s_search = $.trim($('#s_search').val());
+    if(s_search.length)
       window.location.href='search&s_search='+s_search;
   });
 
