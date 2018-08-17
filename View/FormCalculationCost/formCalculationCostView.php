@@ -43,16 +43,16 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-3 calc-cost-box">
+          <div class="col-md-3 calc-cost-box js-mail-calc-cost">
             <ul>
               <li>
-                <input class="calc-cost-contact" type="text" placeholder="Имя">
+                <input class="calc-cost-contact" name="s_name" type="text" placeholder="Имя">
               </li>
               <li>
-                <input class="calc-cost-contact" type="tel" placeholder="Телефон">
+                <input class="calc-cost-contact" name="s_phone" type="tel" placeholder="Телефон">
               </li>
               <li>
-                <input type="submit" class="btn calc-cost-btn" value="ОТПРАВИТЬ">
+                <input type="button" onclick="send_calc_form(this);return false;" class="btn calc-cost-btn" value="ОТПРАВИТЬ">
               </li>
             </ul>
           </div>
