@@ -23,7 +23,7 @@
           </li>
         </ul>
       </div>
-      <div class="col-md-2 col-6 m-footer-item">
+      <div class="col-md-2 col-6">
         <div class="footer-item-title">
           <h4>Наши услуги</h4>
         </div>
@@ -39,7 +39,7 @@
           ?>
         </ul>
       </div>
-      <div class="col-md-4 col-6">
+      <div class="col-md-4 col-6 m-footer-item">
         <div class="footer-item-title">
           <h4>Каталог</h4>
         </div>
@@ -51,7 +51,7 @@
             $i=0;
             foreach ($a_data_product_category as $key => $a_item)
             {
-              if($key==6) break;
+              if($key==12) break;
 
               $i++;
               if($i==1)
