@@ -242,7 +242,8 @@
 
 .admin-product-right-menu-container li a{
   display: block;
-  padding: 5px 10px;
+  font-size: 14px;
   margin-bottom: 5px;
+  padding: 5px 10px;
   text-decoration: none;
 }

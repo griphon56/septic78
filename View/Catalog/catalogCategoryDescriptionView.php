@@ -11,8 +11,8 @@
     <div class="row">
       <div class="col">
         <h2 class="catalog-category-desc-title"><?=$a_category['s_title']?></h2>
-        <div>
-          <p class="catalog-category-desc-content"><?=$a_category['s_description']?></p>
+        <div class="catalog-category-desc-content">
+          <?=$a_category['s_description']?>
         </div>
       </div>
     </div>

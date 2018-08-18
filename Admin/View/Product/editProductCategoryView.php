@@ -1,7 +1,6 @@
 <?php
   include('../Admin/View/Product/actionProductCategory.php');
   $a_data = getProductCategory($_GET['k_product_category']);
-  var_dump($_GET);
 ?>
 <div class="container">
   <div class="row add-product-container">
