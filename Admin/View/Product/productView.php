@@ -56,15 +56,17 @@
     }
 
     // Правое меню.
-    echo('<div id="admin-right-menu" class="admin-product-right-menu-container"><ul>');
+    echo('<div id="admin-right-menu" class="admin-product-right-menu-container">');
+    $i = 0;
     foreach ($a_sort_data as $key => $a_item)
     {
+      $i++;
       echo('
-        <li>
-          <a class="btn btn-light" href="#category-'.$a_item[0]['k_product_category'].'">'.$a_item[0]['name_category'].'</a>
-        </li>
+        <a style="display: inline-block;" class="btn btn-light" href="#category-'.$a_item[0]['k_product_category'].'">'
+          .$a_item[0]['name_category'].
+        '</a>
       ');
     }
-    echo('</ul></div>');
+    echo('</div>');
     ?>
 </div>

@@ -238,11 +238,12 @@
   position: fixed;
   top: 11%;
   right: 30px;
+  width: 300px;
 }
 
-.admin-product-right-menu-container li a{
-  display: block;
-  font-size: 14px;
+.admin-product-right-menu-container a{
+  display: inline-block;
+  font-size: 13px;
   margin-bottom: 5px;
   padding: 5px 10px;
   text-decoration: none;

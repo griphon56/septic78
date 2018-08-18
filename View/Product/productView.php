@@ -30,24 +30,37 @@
             <?php
               if($id_product==PAGE_PRODUCT_SEPTIC)
               {
-                echo('
-                  <div class="row">
-                    <label class="include-with-product-label" for="">Можно подключить:</label>
-                  </div>
-                  <div class="row justify-content-md-around ">
-                ');
-
-                foreach ($a_config as $s_key => $a_item)
+                $can_include = 0;
+                foreach($a_config as $key => $a_item)
                 {
                   if($a_item)
                   {
-                    echo('<div class="col-4 col-md-2 col-sm-4 include-with-product-img">');
-                    echo('<img src="'.VIEW.'img/productView/'.substr($s_key,2).'.png" alt="">');
-                    echo('<p class="include-with-product-count">X-'.$a_item.'</p>');
-                    echo('</div>');
+                    $can_include++;
+                    break;
                   }
                 }
-                echo('</div>');
+
+                if($can_include)
+                {
+                  echo('
+                    <div class="row">
+                      <label class="include-with-product-label" for="">Можно подключить:</label>
+                    </div>
+                    <div class="row justify-content-md-around ">
+                 ');
+
+                  foreach($a_config as $s_key => $a_item)
+                  {
+                    if($a_item)
+                    {
+                      echo('<div class="col-4 col-md-2 col-sm-4 include-with-product-img">');
+                      echo('<img src="' . VIEW . 'img/productView/' . substr($s_key, 2) . '.png" alt="">');
+                      echo('<p class="include-with-product-count">X-' . $a_item . '</p>');
+                      echo('</div>');
+                    }
+                  }
+                  echo('</div>');
+                }
               }
             ?>
           </div>
