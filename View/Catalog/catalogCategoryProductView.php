@@ -77,12 +77,12 @@
           echo('<div class="row product-list-row">');
         }
 
-        $s_img = $a_item['is_stock'] ? 'Aktsia.png' : 'Khit.png';
+        $o_img = $a_item['is_stock'] ? '<img class="product-item-status-img" src="'.VIEW.'img/productView/Aktsia.png" alt="">' : '';
 
         echo('
         <div class="col-md-3 col-sm-6 m-product-list">
           <div class="product-item">
-            <img class="product-item-status-img" src="'.VIEW.'img/productView/'.$s_img.'" alt="">
+            '.$o_img.'
             <ul>
               <li class="product-item-img">
                 <a href="product&k_product='.$a_item['k_product'].'">
