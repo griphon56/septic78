@@ -2,7 +2,7 @@
   include(USER_TEMPLATE.'Product/productAbstaract.php');
   include(USER_TEMPLATE.'Catalog/catalogMarkerCategory.php');
 
-  $k_product_category = $_REQUEST['k_product_category'];
+  $k_product_category = $_GET['k_product_category'];
   $a_product = getProduct($k_product_category);
 
   if(isset($a_product[0]['name_category']))

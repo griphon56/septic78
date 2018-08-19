@@ -1,5 +1,5 @@
 <?php
-  $k_product_category = $_REQUEST['k_product_category'];
+  $k_product_category = $_GET['k_product_category'];
   $a_category = getProductCategory($k_product_category);
 ?>
 
