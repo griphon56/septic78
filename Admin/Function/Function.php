@@ -99,7 +99,6 @@ function getProduct(string $k_product_category=null)
     order by 
       product_category.s_title asc,
       product.s_name asc
-    limit 48;
   ";
 
   $r_query = mysqli_query($link,$query);
