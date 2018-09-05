@@ -33,6 +33,17 @@ $(document).ready(function() {
     autoplay: true,
     autoplaySpeed: 2000
   });
+
+  // Fixed main menu
+  var jq_window = $(window);
+
+  jq_window.scroll(function()
+  {
+    if(jq_window.scrollTop() >= 215)
+      $('.js-main-menu').addClass('fixed-main-menu');
+    else
+      $('.js-main-menu').removeClass('fixed-main-menu');
+  });
 });
 
 // Плагин расчета стоимости сепиков.

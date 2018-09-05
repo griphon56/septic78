@@ -1,5 +1,6 @@
 .main-menu {
   background-color: #f4f4f4;
+  z-index: 200;
 }
 
 .main-menu .active-menu{
@@ -66,6 +67,11 @@
 
 .header-submenu-col{
   display: table-cell;
+}
+
+.fixed-main-menu {
+  position:fixed;
+  top:0
 }
 
 /*mobile menu*/
