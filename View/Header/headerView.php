@@ -21,27 +21,25 @@
 
 <div class="container-fluid header-top-line">
   <div class="container">
-    <div class="row no-gutters">
-      <div class="col col-md-7 col-sm-4 text-phone text">
+    <div class="row no-gutters align-items-center">
+      <div class="col col-md-3 col-sm-4 text-phone text">
         <p>Автономные канализации в СПб
           и Ленинградской области.</p>
       </div>
-      <div class="col col-md-7 col-sm-4 text-phone text">
+      <div class="col col-md-6 col-sm-4 text-phone text">
         <p>Продажа и установка автономных канализаций, септиков, дренажных систем,
           систем отопление, бернеие скважин, монтаж электрики,
           монтаж газгольдера.</p>
       </div>
-      <div class="col col-md-3 col-sm-5 phone text-phone">
+      <div class="col col-md-3 col-sm-4 phone text-phone">
         <img src="<?=VIEW?>img/headerView/old-typical-phone.png" alt="">
         <p>Заказать бесплатную консультацию:</p>
-      </div>
-      <div class="col col-md-2 col-sm-3 phone">
         <ul>
           <li>
-            <p>+7 (821) 413-92-98</p>
+            <p class="header-phone">+7 (821) 413-92-98</p>
           </li>
           <li>
-            <p>+8 (800) 200-68-57</p>
+            <p class="header-phone">+8 (800) 200-68-57</p>
           </li>
         </ul>
       </div>
@@ -61,7 +59,7 @@
       </div>
       <div class="col-5 col-md-6 col-sm-5">
         <div class="header-logo">
-          <a href="home"><img src="<?=VIEW?>img/headerView/3.png" alt=""></a>
+          <a href="home"><img src="<?=VIEW?>img/headerView/logo.png" alt=""></a>
         </div>
       </div>
       <div class="col-4 col-md-6 col-sm-6">

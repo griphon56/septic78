@@ -1,6 +1,7 @@
 .header-top-line{
   background-color: #5bb7c2;
   color: #f4f4f4;
+  padding: 5px 0;
 }
 
 .header-top-line .phone img{
@@ -13,7 +14,6 @@
 
 .header-top-line .text-phone p{
   display: inline-block;
-  margin: 8px 0;
 }
 
 .header-top-line p{
@@ -22,7 +22,11 @@
 
 .header-search .header-logo img{
   width: 260px;
-  margin: 25px 0;
+  margin: 10px 0;
+}
+
+.header-phone{
+  font-weight: 600;
 }
 
 .search-input .box-search,.m-search-open-input .box-search{
