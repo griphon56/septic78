@@ -23,9 +23,13 @@
   <div class="container">
     <div class="row no-gutters">
       <div class="col col-md-7 col-sm-4 text-phone text">
+        <p>Автономные канализации в СПб
+          и Ленинградской области.</p>
+      </div>
+      <div class="col col-md-7 col-sm-4 text-phone text">
         <p>Продажа и установка автономных канализаций, септиков, дренажных систем,
           систем отопление, бернеие скважин, монтаж электрики,
-          монтаж газгольдера и монтаж автономной канализации в Санкт-Петербурге и области</p>
+          монтаж газгольдера.</p>
       </div>
       <div class="col col-md-3 col-sm-5 phone text-phone">
         <img src="<?=VIEW?>img/headerView/old-typical-phone.png" alt="">
