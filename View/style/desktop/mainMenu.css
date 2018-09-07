@@ -1,6 +1,6 @@
 .main-menu {
   background-color: #f4f4f4;
-  z-index: 200;
+  z-index: 140;
 }
 
 .main-menu .active-menu{
@@ -35,6 +35,11 @@
 
 .main-menu ul li a:hover + .header-submenu{
   display: block;
+}
+
+.main-menu .header-logo img{
+  text-align: center;
+  width: 150px;
 }
 
 .header-submenu{

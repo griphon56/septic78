@@ -36,10 +36,9 @@ $(document).ready(function() {
 
   // Fixed main menu
   var jq_window = $(window);
-
   jq_window.scroll(function()
   {
-    if(jq_window.scrollTop() >= 215)
+    if(jq_window.scrollTop() > 0)
       $('.js-main-menu').addClass('fixed-main-menu');
     else
       $('.js-main-menu').removeClass('fixed-main-menu');

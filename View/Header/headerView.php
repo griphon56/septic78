@@ -19,35 +19,10 @@
   $a_cart_data = getCartHeaderSession();
 ?>
 
-<div class="container-fluid header-top-line">
-  <div class="container">
-    <div class="row no-gutters align-items-center">
-      <div class="col col-md-3 col-sm-4 text-phone text">
-        <p>Автономные канализации в СПб
-          и Ленинградской области.</p>
-      </div>
-      <div class="col col-md-6 col-sm-4 text-phone text">
-        <p>Продажа и установка автономных канализаций, септиков, дренажных систем,
-          систем отопление, бернеие скважин, монтаж электрики,
-          монтаж газгольдера.</p>
-      </div>
-      <div class="col col-md-3 col-sm-4 phone text-phone">
-        <img src="<?=VIEW?>img/headerView/old-typical-phone.png" alt="">
-        <p>Заказать бесплатную консультацию:</p>
-        <ul>
-          <li>
-            <p class="header-phone">+7 (821) 413-92-98</p>
-          </li>
-          <li>
-            <p class="header-phone">+8 (800) 200-68-57</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid header-search header-cart">
+<div
+  class="container-fluid header-search header-cart"
+  style="display: none;"
+>
   <div class="container">
     <div class="row no-gutters align-items-center">
       <div class="m-header-menu col-3 col-sm-1">
@@ -62,9 +37,6 @@
           <a href="home"><img src="<?=VIEW?>img/headerView/logo.png" alt=""></a>
         </div>
       </div>
-      <div class="col-4 col-md-6 col-sm-6">
-        <?php include (USER_TEMPLATE.'Search/searchView.php'); ?>
-      </div>
     </div>
   </div>
 </div>
@@ -72,6 +44,5 @@
 
 <?php
   include ('MainMenu/mainMenuView.php');
-
   include ('headerFormTargetView.php');
 ?>

@@ -1,32 +1,28 @@
-.header-top-line{
-  background-color: #5bb7c2;
-  color: #f4f4f4;
-  padding: 5px 0;
-}
-
-.header-top-line .phone img{
+.header-target-form .phone img{
   width: 18px;
 }
 
-.header-top-line .phone ul{
+.header-target-form .phone ul{
   margin: 8px 0;
 }
 
-.header-top-line .text-phone p{
+.header-target-form .text-phone p{
+  color: #fff;
   display: inline-block;
-}
-
-.header-top-line p{
+  text-shadow: 1px 1px 5px #444;
   font-size: 15px;
 }
 
-.header-search .header-logo img{
-  width: 260px;
-  margin: 10px 0;
+.header-search{
+  display: none;
 }
 
 .header-phone{
   font-weight: 600;
+}
+
+.header-top-content{
+  padding: 20px 0 40px 0;
 }
 
 .search-input .box-search,.m-search-open-input .box-search{
@@ -132,11 +128,28 @@
 
   /* Форма захвата */
 
+.header-call-btn{
+  color: #e41d1a!important;
+  text-shadow: 1px 1px 1px #b3b3b3!important;
+  font-weight: 500;
+  font-size: 18px!important;
+  background-color: rgba(247, 247, 247, 0.75);
+  padding: 2px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header-call-btn:hover{
+  background-color: rgba(247, 247, 247, 0.9);
+  border: 1px dotted #e41d1a;
+  padding: 1px 7px;
+}
+
 .header-target-form{
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -100px;
-  padding: 150px;
+  padding: 10px 150px 150px 150px;
 }
 
 .header-target-form .header-target-form-desc, .header-target-form .header-target-form-title{
@@ -187,4 +200,65 @@
   top: 15px;
   right: 75px;
   width: 132%;
+}
+
+/* Installment */
+.header-installment{
+  background-color: rgba(247, 247, 247, 0.75);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.header-installment-title{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #e41d1a;
+  padding: 5px;
+}
+
+.header-installment-box{
+  text-align: center;
+}
+
+.header-installment-btn{
+  background-color: #5bb7c2;
+  color: #f4f4f4;
+  display: block;
+  font-weight: 600;
+  padding: 12px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+.header-installment-btn:hover{
+  background-color: #328690;
+  color: #f4f4f4;
+}
+
+.header-installment-rect{
+  background-color: #e41d1a;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  padding-bottom: 9px;
+  text-shadow: 1px 1px 5px #545454;
+  text-transform: uppercase;
+  width: 32%;
+}
+
+.header-installment-rect .title{
+  font-size: 50px;
+}
+
+.header-installment-rect .desc{
+  font-size: 10px;
+}
+
+.header-installment-sale{
+  color: #e41d1a;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-weight: 600;
 }

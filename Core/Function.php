@@ -25,6 +25,11 @@ function drawMenu(array $a_menu)
     $id_page = 'home';
 
   echo('<ul>');
+  echo('
+    <li class="header-logo">
+      <img src="'.VIEW.'img/headerView/logo.png" alt="">
+    </li>
+  ');
   foreach($a_menu as $item)
   {
     echo('<li>');
@@ -61,7 +66,10 @@ function drawMenu(array $a_menu)
         if($i_count==6)
         {
           $i_count=0; 
-          echo ('</ul></div>');
+          echo ('
+              </ul>
+            </div>
+          ');
         }
 
       }
