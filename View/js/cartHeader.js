@@ -111,3 +111,28 @@ $(document).ready(function()
     });
   }
 });
+
+/**
+ * Метод закрытия формы с телефоном.
+ */
+function close_form_phone()
+{
+  $('.js-header-form-phone').css('display','none');
+  $('.js-header-call-back').css('display','none');
+}
+
+/**
+ * Метод открытия формы с телефоном.
+ */
+function open_form_phone()
+{
+  $('.js-header-form-phone').css('display','flex');
+}
+
+/**
+ * Метод открытия формы с обратного звонка.
+ */
+function open_form_callBack()
+{
+  $('.js-header-call-back').css('display','flex');
+}

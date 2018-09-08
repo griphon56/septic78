@@ -44,8 +44,7 @@
               монтаж газгольдера.</p>
           </div>
           <div class="col col-md-3 col-sm-4 phone text-phone">
-            <img src="<?=VIEW?>img/headerView/old-typical-phone.png" alt="">
-            <p class="header-call-btn js-header-call-btn">Заказать звонок:</p>
+            <p class="header-call-btn js-header-call-btn" onclick="open_form_phone();">Заказать звонок:</p>
             <ul>
               <li>
                 <p class="header-phone">+7 (821) 413-92-98</p>

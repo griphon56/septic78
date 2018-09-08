@@ -45,4 +45,6 @@
 <?php
   include ('MainMenu/mainMenuView.php');
   include ('headerFormTargetView.php');
+  include ('headerFormPhoneView.php');
+  include ('headerCallBackView.php');
 ?>

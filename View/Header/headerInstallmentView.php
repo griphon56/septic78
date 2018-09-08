@@ -19,7 +19,11 @@
     </li>
     <li>
       <p class="header-installment-sale">Предложение действует до 30 сентября</p>
-      <a class="header-installment-btn btn" href="#">Оформить рассрочку</a>
+      <a
+        class="header-installment-btn btn"
+        onclick="open_form_phone(); return false;"
+        href="#"
+      >Оформить рассрочку</a>
     </li>
   </ul>
 </div>
