@@ -27,6 +27,16 @@
 <div class="container">
   <div class="row">
     <div class="col">
+      <h2 class="section-item">Лидеры продаж Пластиковые ёмкости</h2>
+    </div>
+  </div>
+</div>
+
+<?php include(USER_TEMPLATE.'Product/productListHitSalesGRPView.php');?>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
       <h2 class="section-item">Наши услуги</h2>
     </div>
   </div>

@@ -11,6 +11,9 @@
     <div class="col-md-3">
       <a href="add_product&id_product=2" class="btn btn-info">Добавить новый Погреб</a>
     </div>
+    <div class="col-md-3">
+      <a href="add_product&id_product=3" class="btn btn-info">Добавить новые Пластиковые емкости</a>
+    </div>
   </div>
 
     <?php

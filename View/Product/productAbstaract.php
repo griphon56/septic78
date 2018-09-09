@@ -1,4 +1,7 @@
 <?php
+  // Категория Пластиковые емкости
+  define('CATEGORY_GPR',64);
+
   // Категория погребов тополь-эко ПП.
   define('CATEGORY_CELLAR_TOPOL',46);
 
