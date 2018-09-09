@@ -27,7 +27,7 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <h2 class="section-item">Лидеры продаж Пластиковые ёмкости</h2>
+      <h2 class="section-item">Лидеры продаж Емкости из стеклопластика</h2>
     </div>
   </div>
 </div>
