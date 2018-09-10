@@ -67,10 +67,6 @@
     z-index: 140;
   }
 
-  .m-main-menu .header-logo{
-    display: none;
-  }
-
   .header-submenu{
     overflow-y: scroll;
   }
@@ -158,5 +154,10 @@
 
   .m-header-target-form-title{
     display: none;
+  }
+
+  .header-call-back-btn{
+    width: 40px;
+    height: auto;
   }
 }

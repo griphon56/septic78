@@ -31,5 +31,8 @@
 /* Стили для Корзины*/
 @import url("m-cart.css");
 
+/* Стили для Меню*/
+@import url("m-main-menu.css");
+
 /** Стиль Калькулятора стоимости канализации */
 @import url("m-form-calculation-cost.css");

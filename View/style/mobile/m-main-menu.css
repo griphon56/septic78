@@ -1,0 +1,23 @@
+@media screen and (max-width: 768px){
+  .main-menu-bg{
+    display: none;
+  }
+
+  .m-main-menu ul li a:hover{
+    background: #f4f4f4!important;
+    color: #5bb7c2;
+  }
+
+  .m-main-menu .header-submenu li a:hover{
+    background: #5bb7c2;
+    border: none;
+    color: #f4f4f4;
+    padding: 20px 14px;
+    text-decoration: none;
+  }
+
+  .m-main-menu .header-logo{
+    display: none!important;
+  }
+
+}
