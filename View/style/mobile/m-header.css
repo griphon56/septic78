@@ -152,12 +152,7 @@
     padding: 30px;
   }
 
-  .m-header-target-form-title{
+  .m-header-target-form-title,.header-call-back-btn{
     display: none;
-  }
-
-  .header-call-back-btn{
-    width: 40px;
-    height: auto;
   }
 }
