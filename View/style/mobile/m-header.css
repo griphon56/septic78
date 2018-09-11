@@ -90,6 +90,11 @@
   }
 
   /*installment*/
+  .header-installment{
+    top: 0;
+    left: 0;
+  }
+
   .header-installment-rect .title{
     font-size: 30px;
   }
