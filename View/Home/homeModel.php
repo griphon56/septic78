@@ -40,6 +40,9 @@ function getProductLeaderSalesSeptic(array $a_product_category=null, bool $is_no
     where
       product.is_active=1 and
       ".$where."
+    order by
+    product.s_name,
+      product.i_price
     limit 16;
   ";
 

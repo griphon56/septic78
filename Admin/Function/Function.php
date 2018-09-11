@@ -96,9 +96,8 @@ function getProduct(string $k_product_category=null)
     where
       product.is_active=1 and
       ".$where."
-    order by 
-      product_category.s_title asc,
-      product.s_name asc
+    order by
+      product.i_price
   ";
 
   $r_query = mysqli_query($link,$query);
