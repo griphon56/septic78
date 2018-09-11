@@ -46,7 +46,7 @@
 
 .main-menu .header-logo img{
   text-align: center;
-  width: 150px;
+  width: 300px;
 }
 
 .header-submenu{
@@ -89,7 +89,7 @@
 .main-menu-bg{
   left: 0;
   position: absolute;
-  top: 25px;
+  top: 70px;
   width: 100%;
 }
 
