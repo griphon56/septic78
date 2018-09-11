@@ -2,10 +2,14 @@
   class="container-fluid cart-order-clearance js-cart-order-clearance"
   id="cart-order-clearance"
 >
-  <img class="btn-form-order-close" src="<?=VIEW ?>img/cartView/clear-button.png" alt="">
-  <div class="close-order-form" onclick="close_order_form();"></div>
   <form action="" method="post" class="form-text-submit">
     <div class="container cart-order-clearance-box">
+      <img
+        class="btn-form-order-close"
+        onclick="close_order_form();"
+        src="<?=VIEW ?>img/cartView/clear-button.png"
+        alt=""
+      >
       <div class="row">
         <div class="col">
           <h3 class="section-header-h3">Оформление заказа</h3>

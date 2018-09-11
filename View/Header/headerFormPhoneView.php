@@ -1,8 +1,12 @@
 <div class="container-fluid header-form-phone js-header-form-phone">
-  <img class="btn-form-order-close" src="<?=VIEW ?>img/cartView/clear-button.png" alt="">
-  <div class="close-order-form" onclick="close_form_phone();"></div>
   <div class="form-text-submit">
     <div class="header-form  js-mail-form-contact">
+      <img
+        class="btn-form-order-close"
+        onclick="close_form_phone();"
+        src="<?=VIEW ?>img/cartView/clear-button.png"
+        alt=""
+      >
       <h2 class="header-form-phone-title">
         Заказать обратный звонок
       </h2>

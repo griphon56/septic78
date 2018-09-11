@@ -15,19 +15,29 @@
   background-color: rgba(51, 51, 51, 0.80);
   border-radius: 5px;
   padding: 25px 30px;
+  position: relative;
 }
 
 .cart-order-clearance-box .section-header-h3{
   color: #f5f5f5;
 }
 
+.cart-order-clearance-box .btn-form-order-close{
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 15px;
+}
+
 .btn-form-order-close{
   position: absolute;
   top: 10px;
-  right: 15px;
-  width: 30px;
-  filter: brightness(0) invert(1);
-  -webkit-filter: brightness(0) invert(1);
+  right: 10px;
+  cursor: pointer;
+  width: 15px;
 }
 
 .close-order-form{

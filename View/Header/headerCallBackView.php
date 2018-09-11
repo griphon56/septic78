@@ -8,10 +8,14 @@
 </div>
 
 <div class="container-fluid header-form-phone js-header-call-back">
-  <img class="btn-form-order-close" src="<?=VIEW ?>img/cartView/clear-button.png" alt="">
-  <div class="close-order-form" onclick="close_form_phone();"></div>
   <div class="form-text-submit">
     <div class="header-form  js-mail-form-contact">
+      <img
+        class="btn-form-order-close"
+        src="<?=VIEW ?>img/cartView/clear-button.png"
+        alt=""
+        onclick="close_form_phone();"
+      >
       <h2 class="header-form-phone-title">
         У вас есть вопросы?
       </h2>
