@@ -28,7 +28,7 @@
         class="container-fluid header-target-form"
         style="
           background-image: url('.VIEW.'img/headerView/bghome.jpg);
-          background-position-y: 1;"
+          background-position-y: 1px;"
       >
     ');
     echo('
