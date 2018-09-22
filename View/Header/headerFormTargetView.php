@@ -47,7 +47,7 @@
             <p class="header-call-btn js-header-call-btn" onclick="open_form_phone();">Заказать звонок:</p>
             <ul>
               <li>
-                <p class="header-phone">+7 (821) 958-15-33</p>
+                <p class="header-phone">958-15-33</p>
               </li>
               <li>
                 <p class="header-phone">+8 (921) 856-26-51</p>
