@@ -18,7 +18,7 @@
       </div>
     </li>
     <li>
-      <p class="header-installment-sale">Предложение действует до 30 сентября</p>
+      <p class="header-installment-sale">Предложение действует до конца года</p>
       <a
         class="header-installment-btn btn"
         onclick="open_form_phone(); return false;"
