@@ -38,7 +38,7 @@
 
 .main-menu .header-logo img{
   text-align: center;
-  width: 230px;
+  width: 200px;
 }
 
 .header-submenu{
@@ -81,7 +81,7 @@
 .main-menu-bg{
   left: 0;
   position: absolute;
-  top: 45px;
+  top: 34px;
   width: 100%;
 }
 
