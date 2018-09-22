@@ -47,10 +47,10 @@
             <p class="header-call-btn js-header-call-btn" onclick="open_form_phone();">Заказать звонок:</p>
             <ul>
               <li>
-                <p class="header-phone">+7 (821) 413-92-98</p>
+                <p class="header-phone">+7 (821) 958-15-33</p>
               </li>
               <li>
-                <p class="header-phone">+8 (800) 200-68-57</p>
+                <p class="header-phone">+8 (921) 856-26-51</p>
               </li>
             </ul>
           </div>
