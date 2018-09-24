@@ -1,10 +1,11 @@
 <?php
-  $a_product = getProductLeaderSalesSeptic(
+  $a_product = getProductListHitSales(
     [
-      CATEGORY_CELLAR_KELLARI,
-      CATEGORY_CELLAR_TINGARD,
-      CATEGORY_CELLAR_TOPOL
-    ],true
+      CATEGORY_SEPTIC_BIODEKA,
+      CATEGORY_SEPTIC_ROSTOK,
+      CATEGORY_SEPTIC_TOPAS,
+      CATEGORY_SEPTIC_ASTRA
+    ]
   );
 ?>
 <div class="container-fluid bootstrap-slider-product-hit-sales">
