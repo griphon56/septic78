@@ -79,4 +79,40 @@ function drawMenu(array $a_menu)
   }
   echo('</ul>');
 }
+
+  /**
+   * Метод отрисовки Админ меню сайта.
+   *
+   * @param array $a_menu
+   */
+  function drawMenuAdmin(array $a_menu)
+  {
+    $id_page = getPageId();
+
+    if(empty($id_page))
+      $id_page = 'home';
+
+    echo('<ul>');
+    foreach($a_menu as $item)
+    {
+      echo('<li>');
+
+      $s_active = '';
+      if($item['id']==$id_page)
+        $s_active = 'class="active-menu"';
+
+      if(isset($item['a_submenu']))
+        echo('
+          <a '.$s_active.' href='.$item["href"].'>
+            <span>'.$item["link"].'</span>
+            <img src="'.VIEW.'img/headerView/right-arrow.png" class="m-menu-icon-arrow">
+          </a>
+        ');
+      else
+        echo('<a '.$s_active.' href='.$item["href"].'><span>'.$item["link"].'</span></a>');
+
+      echo('</li>');
+    }
+    echo('</ul>');
+  }
 ?>
