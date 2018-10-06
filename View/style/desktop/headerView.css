@@ -11,6 +11,10 @@
   color: #252525;
   text-shadow: 1px 1px 1px #a7a7a7;
   font-size: 15px;
+  background-color: rgba(247,247,247,0.7);
+  padding: 1px 7px;
+  border-radius: 5px;
+  margin-bottom: 2px;
 }
 
 .header-search{
@@ -138,13 +142,12 @@
   font-weight: 500;
   text-shadow: 1px 1px 1px #b3b3b3!important;
   background-color: rgba(247, 247, 247, 0.75);
-  padding: 2px 8px;
 }
 
 .header-call-btn:hover{
   background-color: rgba(247, 247, 247, 0.9);
   border: 1px dotted #e41d1a;
-  padding: 1px 7px;
+  padding: 0 6px!important;
 }
 
 .header-target-form{
