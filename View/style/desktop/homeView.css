@@ -169,3 +169,31 @@
   color: #444;
   font-size: 18px;
 }
+
+/* Our Work*/
+.slider-our-work{
+  position: relative;
+}
+
+.slider-our-work .product-item{
+  position: relative;
+}
+
+.slider-our-work .slider-product-indicators{
+  background: transparent;
+  cursor: pointer;
+  height: auto;
+  margin: 0;
+  text-indent: 10px;
+}
+
+.slider-our-work .carousel-indicators{
+  top: 0;
+  bottom: inherit;
+}
+
+.slider-our-work .product-item-img {
+  display: block;
+  height: 240px;
+  overflow: hidden;
+}
