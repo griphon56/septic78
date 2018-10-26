@@ -27,16 +27,6 @@
 <div class="container">
   <div class="row">
     <div class="col">
-      <h2 class="section-item">Лидеры продаж Емкости из стеклопластика</h2>
-    </div>
-  </div>
-</div>
-
-<?php include(USER_TEMPLATE.'Product/productListHitSalesGRPView.php');?>
-
-<div class="container">
-  <div class="row">
-    <div class="col">
       <h2 class="section-item">Примеры работ</h2>
     </div>
   </div>
