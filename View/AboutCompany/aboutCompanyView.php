@@ -58,8 +58,8 @@
           <a href="<?=VIEW?>img/aboutView/7.jpg" rel="gallery-4" class="swipebox">
             <img src="<?=VIEW?>img/aboutView/7.jpg" alt="icon" class="about-sertific-img y-class">
           </a>
-          <a href="<?=VIEW?>img/aboutView/8.JPG" rel="gallery-4" class="swipebox">
-            <img src="<?=VIEW?>img/aboutView/8.JPG" alt="icon" class="about-sertific-img">
+          <a href="<?=VIEW?>img/aboutView/8.jpg" rel="gallery-4" class="swipebox">
+            <img src="<?=VIEW?>img/aboutView/8.jpg" alt="icon" class="about-sertific-img">
           </a>
         </div>
       </div>
